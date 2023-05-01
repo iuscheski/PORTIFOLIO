@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# PORTIFOLIO -PT-BR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portifólio para display de conhecimentos e projetos.
 
-## Available Scripts
+A idéia principal é a criação de um portifólio em linguas diferentes e em cada lingua a estética do site muda.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#DESIGN BASE
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Link para o figma da primeira parte em desenvolvimento, o potuguês.
 
-### `npm test`
+https://www.figma.com/file/Ajyebqcx9FSqGdTSpkBVYJ/PORTIF%C3%93LIO-V2?t=bYiUv5Muy9CEpDrn-1
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# PORTEFEUILLE GR-CA
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Portfolio pour afficher les connaissances et les projets.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+L'idée principale est de créer un portfolio dans différentes langues et dans chaque langue l'esthétique du site change.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#CONCEPTION DE BASE
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Lien vers la figma de la première partie en développement, le portugais.
+https://www.figma.com/file/Ajyebqcx9FSqGdTSpkBVYJ/PORTIF%C3%93LIO-V2?t=bYiUv5Muy9CEpDrn-1
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+# PORTFOLIO EN-US
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Portfolio to display my knowledge and projects.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The main idea is to create a portfolio in different languages and in each language the aesthetic of the site changes.
 
-### Code Splitting
+git 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#BASE DESIGN
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Link to figma of the first part in development, portuguese.
+https://www.figma.com/file/Ajyebqcx9FSqGdTSpkBVYJ/PORTIF%C3%93LIO-V2?t=bYiUv5Muy9CEpDrn-1
