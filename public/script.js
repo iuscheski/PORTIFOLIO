@@ -5,10 +5,3 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   rotulos.classList.toggle("active");
 });
-
-document.querySelectorAll(".rotulos-link").forEach((n) =>
-  n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    rotulos.classList.remove("active");
-  })
-);

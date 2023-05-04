@@ -17,7 +17,7 @@
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
   text-decoration: none;
-  list-style-type: none;
+  list-style: none;
 }
 
 /*FIM P1*/
@@ -128,7 +128,6 @@ body {
 
 .container {
   position: fixed;
-  top: 0;
   width: 100%;
   display: flex;
 }
@@ -155,10 +154,11 @@ body {
 
 @media (max-width: 450px) {
   .nav-bar {
-    position: fixed;
+    position: fixed !important;
     height: 7%;
     width: 100%;
-    transition: 0.7ms ease-in;
+    transition: 0.7s ease-in;
+
     padding: 0;
     margin: 0;
   }
@@ -170,7 +170,8 @@ body {
     background-color: #ffcc29;
     width: 100%;
     height: 100%;
-    right: 200%;
+    right: -200%;
+    transition: 0.5s ease-out;
   }
 
   .rotulos a {
@@ -180,9 +181,8 @@ body {
     transform: rotate(360deg);
     line-height: 3vh;
     margin: 0;
-    margin-right: 3vh;
+    margin-right: 5vh;
     border-color: #ffcc29;
-    transition: all ease-in;
   }
 
   .rotulos li:nth-child(1) {
@@ -199,6 +199,7 @@ body {
 
   .rotulos.active {
     right: 0;
+    transition: 0.5s;
   }
   .linguas {
     display: flex;
@@ -238,7 +239,7 @@ body {
     align-items: center;
     padding: 0;
     margin: 0;
-    padding-right: 4%;
+    padding-right: 6%;
     padding-top: 1vh;
   }
 
@@ -246,7 +247,7 @@ body {
     opacity: 0;
   }
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(1.5vh) rotate(45deg);
+    transform: translateY(1.55vh) rotate(45deg);
   }
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-1.2vh) rotate(-45deg);
@@ -262,6 +263,15 @@ body {
     transition: all 0.3s ease-in-out;
     background-color: #112e59;
     border-color: none;
+  }
+
+  .container {
+    top: -3%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    transform: none !important;
+    flex-direction: column;
   }
 }
 /*TABLETS*/

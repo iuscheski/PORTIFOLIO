@@ -108,5 +108,15 @@
       var s = skrollr.init();
     </script>
     <script type="click" src="script.js"></script>
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const rotulos = document.querySelector(".rotulos");
+        document.querySelectorAll(".rotulos-link").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          rotulos.classList.remove("active");
+        })
+      );</script>
+    </script>
   </body>
 </html>
