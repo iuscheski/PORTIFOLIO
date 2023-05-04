@@ -1,124 +1,138 @@
-    /*IMPORTAÇÕES*/
-    
-    @font-face {
-        font-family: Kross-book;
-        src: url(C:\Users\FlpAl\Documents\GitHub\PORTIFOLIO\fonts\font\KrossNeueGrotesk-Book.ttf);
-    }
-    /*P1 - CONFIGURAÇÕES GERAIS DA PÁGINA*/
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    /*FIM P1*/
-    /* P2 - WEBKIT PARA DEIXAR O SCROLL LATERAL TRANSPARENTE*/
-    
-    body {
-        overflow: overlay;
-    }
-    
-     ::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
-    }
-    
-     ::-webkit-scrollbar-thumb {
-        background: rgba(90, 90, 90, 0.11);
-    }
-    
-     ::-webkit-scrollbar-track {
-        background: rgba(0, 0, 0, 0);
-    }
-    /*FIM P2*/
-    /*P3 - DESIGN COMPONENTE DE NAVEGAÇÃO*/
-    
-    .nav-bar {
-        position: fixed;
-        height: 100vh;
-        width: 3%;
-        z-index: 1;
-        background-color: #FFCC29;
-    }
-    
-    .nav-bar .rotulos {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        font-size: 0.67em;
-        margin-top: 5vh;
-        text-indent: 2vh;
-    }
-    
-    .nav-bar .rotulos h3 {
-        font-family: Kross-book;
-        writing-mode: vertical-rl;
-        transform: rotate(180deg);
-        color: #112E59;
-    }
-    
-    .nav-bar .rotulos :hover {
-        color: #b98f03;
-    }
-    
-    .nav-bar .linguas {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        font-size: 0.60em;
-        margin-top: 10vh;
-        line-height: 4vh;
-    }
-    
-    .nav-bar .linguas h3.eng {
-        font-family: Kross-book;
-        color: #112E59;
-        border-top: 0.4vh solid#112E59;
-    }
-    
-    .nav-bar .linguas h3.fra {
-        font-family: Kross-book;
-        color: #112E59;
-        border-bottom: 0.4vh solid#112E59;
-    }
-    
-    .nav-bar .socials {
-        display: grid;
-        justify-content: center;
-        position: absolute;
-        bottom: 1vh;
-        width: 100%;
-    }
-    
-    .nav-bar .socials .github {
-        display: grid;
-        margin-top: 11vh;
-        margin-bottom: 1vh;
-    }
-    
-    .nav-bar .socials .linkedin {
-        display: grid;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-    }
-    /*P4 - DESIGN ÁREA PRINCIPAL DA PÁGINA*/
-    
-    .container {
-        position: fixed;
-        top: 0;
-        left: 2.5%;
-        width: 100%;
-        display: flex;
-    }
-    
-    .container section {
-        min-width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100VH;
-        background-color: #15652B;
-    }
-    /*FIM P4*/
+/*IMPORTAÇÕES*/
+
+@font-face {
+  font-family: Kross-book;
+  src: url(C:\Users\Avanso Solucoes\Documents\GitHub\PORTIFOLIO\fonts\font\KrossNeueGrotesk-Book.ttf);
+}
+
+/*P1 - CONFIGURAÇÕES GERAIS DA PÁGINA*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*FIM P1*/
+
+/* P2 - WEBKIT PARA DEIXAR O SCROLL LATERAL TRANSPARENTE*/
+
+body {
+  overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90, 0.11);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+/*FIM P2*/
+
+/*P3 - DESIGN COMPONENTE DE NAVEGAÇÃO*/
+
+.nav-bar {
+  position: fixed;
+  height: 100vh;
+  width: 3%;
+  z-index: 1;
+  background-color: #ffcc29;
+}
+
+.nav-bar .rotulos ul li {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.79em;
+  margin-top: 5vh;
+  text-indent: -2vh;
+}
+
+.nav-bar .rotulos a {
+  font-family: Kross-book;
+  font-weight: 600;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: #112e59;
+}
+
+.nav-bar .rotulos :hover {
+  color: #b98f03;
+}
+
+.nav-bar .linguas ul {
+  display: grid;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+  margin-top: 15vh;
+  line-height: 3vh;
+}
+
+.nav-bar .linguas li .eng {
+  font-family: Kross-book;
+  color: #112e59;
+  border-top: 0.2vh solid#112E59;
+  padding-top: 1vh;
+}
+
+.nav-bar .linguas li .fra {
+  font-family: Kross-book;
+  color: #112e59;
+  border-bottom: 0.2vh solid#112E59;
+  padding-bottom: 1vh;
+}
+
+.nav-bar .socials {
+  display: grid;
+  justify-content: center;
+  position: absolute;
+  font-size: 1.7em;
+  bottom: 1vh;
+  width: 100%;
+}
+
+.nav-bar .socials .github {
+  display: grid;
+  margin-top: 11vh;
+  margin-bottom: 1vh;
+}
+
+.nav-bar .socials .linkedin {
+  display: grid;
+  margin-top: 0.5vh;
+  margin-bottom: 1vh;
+}
+
+/*P4 - DESIGN ÁREA PRINCIPAL DA PÁGINA*/
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 2.5%;
+  width: 100%;
+  display: flex;
+}
+
+.container section {
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #15652b;
+}
+
+/*FIM P4*/
