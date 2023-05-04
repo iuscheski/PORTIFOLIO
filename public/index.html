@@ -12,27 +12,31 @@
       referrerpolicy="no-referrer"
     />
     <title>Portifolio</title>
-  </head>
-
-  <body>
-    <div class="nav-bar">
+    <nav class="nav-bar">
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
       <ul class="rotulos">
-        <li><a href="#CONTATO">CONTATO</a></li>
-        <li><a href="#PORTIFOLIO">PORTIFÓLIO</a></li>
-        <li><a href="#SOBRE">SOBRE</a></li>
-        <li><a href="#INICIO">INÍCIO</a></li>
+        <li class="nav-item">
+          <a href="#contato" class="rotulos-link">CONTATO</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portifolio" class="rotulos-link">PORTIFÓLIO</a>
+        </li>
+        <li class="nav-item">
+          <a href="#sobre" class="rotulos-link">SOBRE</a>
+        </li>
+        <li class="nav-item">
+          <a href="#inicio" class="rotulos-link">INÍCIO</a>
+        </li>
       </ul>
 
       <ul class="linguas">
         <li><a class="eng" href="#ENG">ENG</a></li>
         <li><a class="fra" href="#FRA">FRA</a></li>
       </ul>
-
       <div class="socials">
         <div class="github">
           <a href="https://github.com/iuscheski">
@@ -45,8 +49,10 @@
           ></a>
         </div>
       </div>
-    </div>
+    </nav>
+  </head>
 
+  <body>
     <div
       class="container"
       data-0="transform:translateX(0%);"
@@ -101,5 +107,6 @@
     <script type="text/javascript">
       var s = skrollr.init();
     </script>
+    <script type="click" src="script.js"></script>
   </body>
 </html>

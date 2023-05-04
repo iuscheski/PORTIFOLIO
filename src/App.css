@@ -4,6 +4,10 @@
   font-family: Kross-book;
   src: url(C:\Users\Avanso Solucoes\Documents\GitHub\PORTIFOLIO\fonts\font\KrossNeueGrotesk-Book.ttf);
 }
+@font-face {
+  font-family: Kross-bold;
+  src: url(C:\Users\Avanso Solucoes\Documents\GitHub\PORTIFOLIO\fonts\font\KrossNeueGrotesk-Bold.ttf);
+}
 
 /*P1 - CONFIGURAÇÕES GERAIS DA PÁGINA*/
 
@@ -160,21 +164,25 @@ body {
   }
 
   .rotulos {
+    font-family: Kross-bold;
     position: fixed;
     top: 7%;
     background-color: #ffcc29;
     width: 100%;
     height: 100%;
+    right: 200%;
   }
 
   .rotulos a {
     font-size: 5vh;
+    font-weight: 700;
     writing-mode: horizontal-tb;
     transform: rotate(360deg);
     line-height: 3vh;
     margin: 0;
     margin-right: 3vh;
     border-color: #ffcc29;
+    transition: all ease-in;
   }
 
   .rotulos li:nth-child(1) {
@@ -189,7 +197,7 @@ body {
     text-indent: 0%;
   }
 
-  .rotulos .active {
+  .rotulos.active {
     right: 0;
   }
   .linguas {
@@ -234,14 +242,14 @@ body {
     padding-top: 1vh;
   }
 
-  .hamburger.active .bar :nth-child(2) {
+  .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  .hamburger.active .bar :nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(1.5vh) rotate(45deg);
   }
-  .hamburger.active .bar :nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-1.2vh) rotate(-45deg);
   }
 
   .bar {
@@ -252,7 +260,7 @@ body {
     border-radius: 2vh;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #15652b;
+    background-color: #112e59;
     border-color: none;
   }
 }
