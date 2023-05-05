@@ -60,15 +60,21 @@
     >
       <section>
         <div class="inicio">
-          <h2>Inicio</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequuntur hic quas placeat veniam? Atque necessitatibus, quidem
-            aliquid ut, quas vitae nam fuga alias commodi delectus fugit
-            voluptatem nemo esse explicabo.
-          </p>
+          <h2 class="nome">Olá,</h2>
+          <h2 class="nome">eu sou o felipe</h2>
+          <h2 class="nome">Desenvolvedor front-end</h2>
         </div>
+        <img
+          class="arara"
+          src="https://i.postimg.cc/5tjCkXfc/Asset-2.png"
+          alt="arara"
+        />
       </section>
+      <div class="divisor">
+        <p class="dsobre">
+          SOBRE - SOBRE - SOBRE - SOBRE - SOBRE - SOBRE - SOBRE -
+        </p>
+      </div>
       <section>
         <div class="Sobre">
           <h2>Sobre</h2>
@@ -108,15 +114,15 @@
       var s = skrollr.init();
     </script>
     <script type="click" src="script.js"></script>
-      <script>
-        const hamburger = document.querySelector(".hamburger");
-        const rotulos = document.querySelector(".rotulos");
-        document.querySelectorAll(".rotulos-link").forEach((n) =>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const rotulos = document.querySelector(".rotulos");
+      document.querySelectorAll(".rotulos-link").forEach((n) =>
         n.addEventListener("click", () => {
           hamburger.classList.remove("active");
           rotulos.classList.remove("active");
         })
-      );</script>
+      );
     </script>
   </body>
 </html>

@@ -2,11 +2,16 @@
 
 @font-face {
   font-family: Kross-book;
-  src: url(C:\Users\Avanso Solucoes\Documents\GitHub\PORTIFOLIO\fonts\font\KrossNeueGrotesk-Book.ttf);
+  src: url(/public/font/KrossNeueGrotesk-Book.ttf);
 }
 @font-face {
   font-family: Kross-bold;
-  src: url(C:\Users\Avanso Solucoes\Documents\GitHub\PORTIFOLIO\fonts\font\KrossNeueGrotesk-Bold.ttf);
+  src: url(/public/font/KrossNeueGrotesk-Bold.ttf);
+}
+
+@font-face {
+  font-family: Brown-sugar;
+  src: url(/public/font/Brown-Sugar.ttf);
 }
 
 /*P1 - CONFIGURAÇÕES GERAIS DA PÁGINA*/
@@ -127,6 +132,7 @@ body {
 /*P4 - DESIGN ÁREA PRINCIPAL DA PÁGINA*/
 
 .container {
+  scroll-behavior: smooth;
   position: fixed;
   width: 100%;
   display: flex;
@@ -134,19 +140,72 @@ body {
 
 .container section {
   min-width: 100%;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  position: relative;
   align-items: center;
   height: 100vh;
   background-color: #15652b;
-  padding: 5%;
+  z-index: 56;
+  border: 1px solid #15652b;
 }
 
-.container .inicio {
-  text-align: center;
-  justify-content: center;
-}
 /*FIM P4*/
+
+/**************************************** SECTION 1 - SOBRE MIM ****************************************************/
+.inicio {
+  margin-bottom: 10%;
+}
+
+.nome {
+  z-index: 100;
+  font-family: Brown-sugar;
+  font-weight: 100;
+  font-size: 8vh;
+  text-align: left;
+  margin-left: 15%;
+  margin-bottom: 0.5%;
+  color: #ffcc29;
+}
+
+.nome:nth-child(3) {
+  font-size: 7vh;
+  position: absolute;
+  padding-top: -1;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  display: table;
+  color: #112e59;
+  background-color: #ffcc29;
+}
+
+img.arara {
+  left: 50%;
+  position: absolute;
+  display: flex;
+  width: 40%;
+}
+
+.divisor {
+  height: 100%;
+  width: 5%;
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: 1vh;
+  background-color: #15652b;
+  margin: none;
+  padding: none;
+  border: 1px solid #15652b;
+}
+.dsobre {
+  color: white;
+  font-family: Brown-Sugar;
+  font-weight: 100;
+  transform: rotate(-90deg);
+  font-size: 10vh;
+  margin-top: 100vh;
+}
 
 /********************************* MEDIA QUERY  *********************************************/
 
@@ -154,13 +213,13 @@ body {
 
 @media (max-width: 450px) {
   .nav-bar {
-    position: fixed !important;
+    position: absolute;
     height: 7%;
     width: 100%;
     transition: 0.7s ease-in;
-
     padding: 0;
     margin: 0;
+    z-index: 999;
   }
 
   .rotulos {
@@ -181,7 +240,7 @@ body {
     transform: rotate(360deg);
     line-height: 3vh;
     margin: 0;
-    margin-right: 5vh;
+    margin-right: 5%;
     border-color: #ffcc29;
   }
 
@@ -239,7 +298,7 @@ body {
     align-items: center;
     padding: 0;
     margin: 0;
-    padding-right: 6%;
+    padding-right: 5%;
     padding-top: 1vh;
   }
 
@@ -273,5 +332,119 @@ body {
     transform: none !important;
     flex-direction: column;
   }
+
+  .inicio {
+    margin-bottom: -5%;
+    align-content: center;
+  }
+
+  .nome {
+    font-family: Brown-sugar;
+    font-weight: 100;
+    font-size: 5vh;
+    margin: 0;
+    text-align: center;
+  }
+
+  .nome:nth-child(1) {
+    display: table;
+    position: relative;
+    font-size: 8vh;
+    display: grid;
+    text-align: right;
+    margin: 0;
+    margin-right: 5vh;
+  }
+  .nome:nth-child(3) {
+    font-size: 5vh;
+    width: 100%;
+    height: 25vh;
+    position: absolute;
+    bottom: -2vh;
+    margin: 0;
+    display: table;
+    text-align: center;
+    padding-top: 4vh;
+  }
+
+  img.arara {
+    left: 22%;
+    position: absolute;
+    display: flex;
+    width: 65%;
+    bottom: 50%;
+  }
+
+  .divisor {
+    display: none;
+  }
 }
 /*TABLETS*/
+@media (min-width: 451px) and (max-width: 850px) {
+  .nav-bar {
+    position: fixed;
+    width: 100%;
+    height: 4%;
+  }
+  .rotulos {
+    padding: 1.4%;
+    text-align: right;
+    height: 5%;
+    align-content: center;
+  }
+  .rotulos a {
+    display: grid;
+    margin: 0;
+    display: inline;
+    writing-mode: horizontal-tb;
+    transform: rotate(-90deg);
+  }
+  .rotulos li {
+    display: inline;
+    padding: 0.5rem;
+  }
+
+  .linguas {
+    display: flex;
+    gap: 2vh;
+    margin: -1.9%;
+    padding-left: 3%;
+    justify-content: left;
+  }
+  .linguas ul {
+    z-index: 2;
+    font-weight: 600;
+    font-size: 0.7em;
+  }
+
+  .linguas li .eng {
+    font-size: larger;
+    border-top: none;
+    border-right: 0.3vh solid #112e59;
+    padding: 0;
+    padding-right: 20%;
+  }
+  .linguas li .fra {
+    font-size: larger;
+    border-bottom: none;
+  }
+
+  .nav-bar .socials {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .bar {
+    display: none;
+  }
+
+  .container {
+    top: -3%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    transform: none !important;
+    flex-direction: column;
+  }
+}
