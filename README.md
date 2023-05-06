@@ -1,4 +1,4 @@
-# PORTIFOLIO -PT-BR
+# PORTIFOLIO PT-BR
 
 Portifólio para display de conhecimentos e projetos.
 
@@ -34,7 +34,6 @@ Portfolio to display my knowledge and projects.
 
 The main idea is to create a portfolio in different languages and in each language the aesthetic of the site changes.
 
-git 
 
 #BASE DESIGN
 
