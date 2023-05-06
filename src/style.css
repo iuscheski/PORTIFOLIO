@@ -185,73 +185,23 @@ img.arara {
 }
 
 .divisor {
-  height: 100%;
-  width: 5%;
-  display: inline-block;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  letter-spacing: 1vh;
-  background-color: #15652b;
-  margin: none;
-  padding: none;
-  border: 1px solid #15652b;
-}
-.dsobre {
-  color: white;
-  font-family: Brown-Sugar;
-  font-weight: 100;
-  transform: rotate(-90deg);
-  font-size: 10vh;
-  margin-top: 100vh;
-}
-
-/**************************************** SECTION 1 - SOBRE MIM ****************************************************/
-.inicio {
-  margin-bottom: 10%;
-}
-
-.nome {
+  overflow: visible;
   z-index: 100;
-  font-family: Brown-sugar;
-  font-weight: 100;
-  font-size: 8vh;
-  text-align: left;
-  margin-left: 15%;
-  margin-bottom: 0.5%;
-  color: #ffcc29;
-}
-
-.nome:nth-child(3) {
-  font-size: 7vh;
-  position: absolute;
-  padding-top: -1;
-  padding-left: 1vh;
-  padding-right: 1vh;
-  display: table;
-  color: #112e59;
-  background-color: #ffcc29;
-}
-
-img.arara {
-  left: 50%;
-  position: absolute;
-  display: flex;
-  width: 40%;
-}
-
-.divisor {
   height: 100%;
-  width: 5%;
+  width: 1%;
   display: inline-block;
   position: relative;
   text-align: left;
   white-space: nowrap;
   letter-spacing: 1vh;
   background-color: #15652b;
-  margin: none;
-  padding: none;
+  place-self: start end;
   border: 1px solid #15652b;
+}
+
+.b-bg {
+  -webkit-animation: scrolling-left1 20s linear infinite;
+  animation: scrolling-left1 20s linear infinite;
 }
 .dsobre {
   color: white;
@@ -260,6 +210,18 @@ img.arara {
   transform: rotate(-90deg);
   font-size: 10vh;
   margin-top: 100vh;
+}
+
+/* scrolling-left is continuous/repeatly text */
+@keyframes scrolling-left1 {
+  0% {
+    transform: translateY(100%);
+    -webkit-transform: translateY(500%);
+  }
+  100% {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-500%);
+  }
 }
 
 /********************************* MEDIA QUERY  *********************************************/
@@ -469,7 +431,40 @@ img.arara {
   }
 
   .divisor {
-    display: none;
+    overflow: visible;
+    z-index: 100;
+    height: 1%;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+
+    white-space: nowrap;
+    border: none;
+    place-self: start end;
+  }
+
+  .b-bg {
+    -webkit-animation: scrolling-left1 30s linear infinite;
+    animation: scrolling-left1 30s linear infinite;
+  }
+  .dsobre {
+    color: white;
+    font-family: Brown-Sugar;
+    font-weight: 100;
+    transform: rotate(0deg);
+    font-size: 5vh;
+    margin-top: 0vh;
+  }
+
+  @keyframes scrolling-left1 {
+    0% {
+      transform: translateX(200%);
+      -webkit-transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(-200%);
+      -webkit-transform: translateX(-200%);
+    }
   }
 
   .nav-bar {
@@ -531,38 +526,40 @@ img.arara {
   }
 
   .inicio {
-    margin-top: 30%;
+    margin-top: 40%;
   }
 
   .nome {
     z-index: 100;
     font-family: Brown-sugar;
     font-weight: 100;
-    font-size: 6vh;
-    text-align: center;
+    font-size: 8.5vw;
+    text-align: right;
     align-items: center;
     margin: 0;
+    margin-right: 3%;
     color: #ffcc29;
   }
 
   .nome:nth-child(3) {
-    width: 70vw;
-    font-size: 5vh;
+    width: 100%;
+    font-size: 8vw;
     position: absolute;
     display: table;
-
-    padding: 0;
+    padding-top: 7%;
+    padding-left: 15%;
+    padding-right: 3%;
+    top: 73%;
     margin: 0;
-    text-align: center;
-    color: #112e59;
-    background-color: #ffcc29;
+    text-align: right;
+    height: 10vh;
   }
   .nome:nth-child(1) {
-    font-size: 8vh;
+    font-size: 10vh;
     display: grid;
     text-align: right;
     margin: 0;
-    margin-right: 20vw;
+    margin-right: 3%;
   }
   img.arara {
     left: 27%;
