@@ -1,4 +1,4 @@
-# PORTIFOLIO -PT-BR
+# PORTIFOLIO PT-BR
 
 Portifólio para display de conhecimentos e projetos.
 
@@ -13,7 +13,7 @@ Link para o figma da primeira parte em desenvolvimento, o potuguês.
 https://www.figma.com/file/Ajyebqcx9FSqGdTSpkBVYJ/PORTIF%C3%93LIO-V2?t=bYiUv5Muy9CEpDrn-1
 
 
-# PORTEFEUILLE GR-CA
+# PORTEFEUILLE FR-CA
 
 Portfolio pour afficher les connaissances et les projets.
 
@@ -34,7 +34,6 @@ Portfolio to display my knowledge and projects.
 
 The main idea is to create a portfolio in different languages and in each language the aesthetic of the site changes.
 
-git 
 
 #BASE DESIGN
 
