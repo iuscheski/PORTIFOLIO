@@ -266,11 +266,11 @@ img.arara {
 .sobre p {
   color: white;
   font-family: Kross-book;
-  font-size: 0.8em;
+  font-size: 1.7vh;
   width: 100%;
   text-align: justify;
   text-justify: inter-word;
-  line-height: 2em;
+  line-height: 250%;
 }
 
 span.id_ola {
@@ -324,8 +324,8 @@ span.id_ola {
 
 .lt2 span {
   font-family: Brown-sugar;
-  font-size: 9vh;
-  line-height: 1.1em;
+  font-size: 7.3vh;
+  line-height: 9vh;
 }
 .ccor {
   color: var(--br-amarelo-norm);
@@ -562,6 +562,71 @@ span.id_ola {
   .divisor {
     display: none;
   }
+
+  .lt1 {
+    display: grid;
+    grid-template-columns: 1;
+    width: 80%;
+    height: 40%;
+    top: 4%;
+  }
+  .sobre {
+    bottom: 0;
+  }
+  .sobre p {
+    padding-top: 3%;
+    font-size: 1.3vh;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 250%;
+  }
+
+  span.id_ola {
+    font-family: Brown-Sugar;
+    color: var(--br-amarelo-norm);
+    font-size: 2em;
+  }
+  .lt2 {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  .lt2 div {
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    top: 84%;
+    left: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    animation: scrolling-left3 40s linear infinite;
+    transition: all 1s ease;
+  }
+  /* scrolling-left is continuous/repeatly text */
+  @keyframes scrolling-left3 {
+    0% {
+      transform: translateX(300%);
+    }
+    100% {
+      transform: translateX(-300%);
+    }
+  }
+  .lt2 span {
+    font-size: 5vh;
+  }
+
+  .btn-cv {
+    font-size: 3vh;
+    padding: 3% 5% 3% 5%;
+  }
+
+  .divisor1 {
+    display: none;
+  }
 }
 
 /*TABLETS*/
@@ -689,6 +754,63 @@ span.id_ola {
     bottom: 40vh;
   }
   .deslise {
+    display: none;
+  }
+  .lt1 {
+    display: block;
+    width: 100vw;
+    margin: 0;
+    padding: 0% 5% 0% 5%;
+  }
+  .sobre {
+    top: 0;
+    width: 100vw;
+  }
+  .sobre p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1vh;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 250%;
+  }
+
+  span.id_ola {
+    font-size: 2em;
+  }
+  .lt2 {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  .lt2 div {
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    top: 84%;
+    left: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    animation: scrolling-left3 40s linear infinite;
+  }
+  /* scrolling-left is continuous/repeatly text */
+  @keyframes scrolling-left3 {
+    0% {
+      transform: translateX(300%);
+    }
+    100% {
+      transform: translateX(-300%);
+    }
+  }
+  .lt2 span {
+    font-size: 12vh;
+  }
+
+  .divisor1 {
     display: none;
   }
 }
