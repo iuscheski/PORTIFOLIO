@@ -19,6 +19,7 @@
   --br-verde-norm: #15652b;
   --br-amarelo-norm: #ffcc29;
   --br-amarelo-hover: #b98f03;
+  --br-laranja-norm: #ffa929;
   --br-azul-norm: #112e59;
 }
 
@@ -381,6 +382,149 @@ span.id_ola {
   }
 }
 
+/**************************************** SECTION 3 - PORTIFOLIO ****************************************************/
+.galeria span {
+  display: flex;
+  position: absolute;
+  top: 12%;
+  left: 12%;
+  align-items: flex-start;
+  text-align: left;
+}
+.galeria span h2 {
+  width: 22vw;
+  font-family: Brown-sugar;
+  font-size: 3em;
+  font-weight: 100;
+  color: white;
+  text-align: left;
+  z-index: 999;
+}
+
+.circulo-menor {
+  width: 17%;
+  margin-right: -10%;
+}
+
+.circulo-maior {
+  display: flex;
+  position: absolute;
+  left: 10%;
+  bottom: -59%;
+  width: 50vw;
+}
+.safari {
+  display: flex;
+  position: absolute;
+  top: 40%;
+  width: 55%;
+  left: 7%;
+  z-index: 20;
+}
+
+.box {
+  display: flex;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 25%;
+  height: 77%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.box-card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  width: 90%;
+  height: 30%;
+  top: 5%;
+  border-radius: 0.6em;
+  background-color: var(--br-amarelo-norm);
+  margin-bottom: 5%;
+}
+.img1 {
+  background-color: var(--br-laranja-norm);
+  width: 90%;
+  height: 80%;
+  margin: 5%;
+
+  justify-content: center;
+  border-radius: 0.5em;
+}
+.left-side h2 {
+  font-family: Brown-sugar;
+  font-size: 1em;
+  margin-top: 5%;
+  color: var(--br-verde-norm);
+}
+
+.left-side p {
+  font-family: Kross-book;
+  font-size: 0.6em;
+  width: 95%;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 5%;
+}
+
+.left-side button {
+  font-family: Kross-bold;
+  font-size: 1em;
+  background-color: var(--br-laranja-norm);
+  border: none;
+  padding: 2%;
+  color: var(--br-amarelo-norm);
+  border-radius: 0.3em;
+  margin-bottom: 4%;
+  justify-content: end;
+}
+
+.left-side button:hover {
+  color: var(--br-verde-norm);
+}
+
+.divisor2 {
+  overflow: visible;
+  z-index: 100;
+  height: 100%;
+  width: 1%;
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  background-color: var(--br-verde-norm);
+  margin-bottom: -40%;
+}
+
+.b-bg2 {
+  animation: scrolling-left2 20s linear infinite;
+}
+.dcontato {
+  white-space: nowrap;
+  letter-spacing: 1vh;
+  color: white;
+  font-family: Brown-Sugar;
+  font-weight: 100;
+  transform: rotate(-90deg);
+  font-size: 9vh;
+  margin-top: 165vh;
+}
+
+/* scrolling-left is continuous/repeatly text */
+@keyframes scrolling-left2 {
+  0% {
+    transform: translateY(700%);
+  }
+  100% {
+    transform: translateY(-700%);
+  }
+}
+
 /********************************* MEDIA QUERY  *********************************************/
 
 /*SMARTPHONES*/
@@ -609,10 +753,10 @@ span.id_ola {
   /* scrolling-left is continuous/repeatly text */
   @keyframes scrolling-left3 {
     0% {
-      transform: translateX(300%);
+      transform: translateX(500%);
     }
     100% {
-      transform: translateX(-300%);
+      transform: translateX(-900%);
     }
   }
   .lt2 span {
@@ -625,6 +769,9 @@ span.id_ola {
   }
 
   .divisor1 {
+    display: none;
+  }
+  .divisor2 {
     display: none;
   }
 }
