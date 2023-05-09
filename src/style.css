@@ -30,13 +30,13 @@
 
 * {
   scroll-behavior: smooth;
-  transition: 3s linear;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
   text-decoration: none;
   list-style: none;
+  touch-action: auto;
 }
 .outer-wrapper {
   width: 100vh;
@@ -69,7 +69,6 @@
   width: 3%;
   z-index: 1;
   background-color: var(--br-amarelo-norm);
-  transition: 0.7ms ease-in;
 }
 .rotulos li {
   display: flex;
