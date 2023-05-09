@@ -722,6 +722,7 @@ form ::placeholder {
     width: 100%;
     transform: rotate(0deg) translateY(0vh);
     transform-origin: top left;
+    overflow: scroll;
     -webkit-overflow-scrolling: touch;
   }
   .inicio {
