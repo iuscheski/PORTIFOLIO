@@ -37,6 +37,7 @@
   text-decoration: none;
   list-style: none;
   touch-action: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .outer-wrapper {
   width: 100vh;
