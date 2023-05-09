@@ -17,6 +17,7 @@
 /* COLORS*/
 :root {
   --br-verde-norm: #15652b;
+  --br-verde-escuro: #135826;
   --br-amarelo-norm: #ffcc29;
   --br-amarelo-hover: #b98f03;
   --br-laranja-norm: #ffa929;
@@ -193,6 +194,7 @@ img.arara {
   position: absolute;
   display: flex;
   width: 40%;
+  pointer-events: none;
 }
 
 .deslise {
@@ -216,6 +218,7 @@ img.arara {
 .circulo {
   width: 2.5em;
   margin-right: -3%;
+  pointer-events: none;
 }
 
 .divisor {
@@ -286,6 +289,7 @@ span.id_ola {
   width: 100%;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
 }
 .bg-btn-cv {
   width: 100%;
@@ -404,6 +408,7 @@ span.id_ola {
 .circulo-menor {
   width: 17%;
   margin-right: -10%;
+  pointer-events: none;
 }
 
 .circulo-maior {
@@ -412,6 +417,7 @@ span.id_ola {
   left: 10%;
   bottom: -59%;
   width: 50vw;
+  pointer-events: none;
 }
 .safari {
   display: flex;
@@ -420,6 +426,7 @@ span.id_ola {
   width: 55%;
   left: 7%;
   z-index: 20;
+  pointer-events: none;
 }
 
 .box {
@@ -427,11 +434,10 @@ span.id_ola {
   position: absolute;
   right: 10%;
   top: 10%;
-  width: 25%;
-  height: 77%;
+  width: 20em;
+  height: 80%;
   overflow-x: hidden;
   overflow-y: scroll;
-
   align-items: center;
   flex-direction: column;
 }
@@ -450,7 +456,7 @@ span.id_ola {
 .img1 {
   background-color: var(--br-laranja-norm);
   width: 90%;
-  height: 80%;
+  height: 88%;
   margin: 5%;
 
   justify-content: center;
@@ -474,7 +480,7 @@ span.id_ola {
 
 .left-side button {
   font-family: Kross-bold;
-  font-size: 1em;
+  font-size: 0.8em;
   background-color: var(--br-laranja-norm);
   border: none;
   padding: 2%;
@@ -525,6 +531,61 @@ span.id_ola {
   }
 }
 
+/**************************************** SECTION 4 - CONTATO ****************************************************/
+.forms {
+  width: 50%;
+  height: 80%;
+  display: flex;
+}
+.forms form {
+  display: grid;
+  position: absolute;
+  width: 23vw;
+  height: 17vh;
+  align-content: space-around;
+  margin-left: 12vw;
+}
+
+.feedback-input {
+  resize: none;
+  height: 6vh;
+  margin: 2%;
+  background-color: var(--br-verde-escuro);
+  color: white;
+  font-family: Brown-sugar;
+  border: none;
+  border-radius: 0.6em;
+  padding-left: 4%;
+  font-size: 2vh;
+}
+.feedback-input:nth-child(3) {
+  height: 14vh;
+  padding-top: 2%;
+}
+form ::placeholder {
+  color: white;
+}
+
+[type="submit"] {
+  background-color: var(--br-amarelo-norm);
+  border: none;
+  height: 5vh;
+  width: 8vw;
+  border-radius: 0.6em;
+  font-family: Brown-sugar;
+  color: var(--br-verde-norm);
+  font-size: 2vh;
+  margin-left: 7vw;
+  margin-top: 9vh;
+}
+
+.arara2 {
+  position: absolute;
+  width: 57vw;
+  top: 29vh;
+  right: 0vw;
+  pointer-events: none;
+}
 /********************************* MEDIA QUERY  *********************************************/
 
 /*SMARTPHONES*/
@@ -771,6 +832,37 @@ span.id_ola {
   .divisor1 {
     display: none;
   }
+  .galeria span {
+    top: -5vw;
+    left: 9vh;
+  }
+
+  .galeria span h2 {
+    width: 53vh;
+    font-size: 2em;
+    left: 1vw;
+  }
+
+  .safari {
+    position: absolute;
+    top: 80vh;
+    left: 12vw;
+    width: 77vw;
+  }
+  .circulo-maior {
+    overflow: hidden;
+    position: absolute;
+    bottom: -24vh;
+    left: 5vw;
+    width: 91vw;
+  }
+
+  .box {
+    position: absolute;
+    width: 90%;
+    height: 60%;
+    left: 5%;
+  }
   .divisor2 {
     display: none;
   }
@@ -958,6 +1050,52 @@ span.id_ola {
   }
 
   .divisor1 {
+    display: none;
+  }
+
+  .galeria span {
+    position: absolute;
+    left: 6vw;
+    top: -3vh;
+  }
+  .galeria span h2 {
+    width: 84vw;
+  }
+
+  .circulo-maior {
+    left: 5vw;
+    bottom: -36vh;
+    width: 90vw;
+  }
+
+  .safari {
+    top: 66vh;
+    width: 86vw;
+    left: 8vw;
+    z-index: 20;
+  }
+  .box {
+    position: absolute;
+    width: 88vw;
+    height: 53vh;
+    right: 6vw;
+
+    /*  */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    align-items: center;
+    flex-direction: row;
+    row-gap: 2;
+  }
+  .box-card {
+    left: 2.5vh;
+    width: 37vw;
+    height: 11vh;
+  }
+  .divisor2 {
     display: none;
   }
 }

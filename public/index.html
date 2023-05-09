@@ -54,7 +54,7 @@
   <body>
     <div class="outer-wrapper">
       <div class="container">
-        <section>
+        <section class="painel inicio">
           <div class="inicio">
             <h2 class="nome">Olá,</h2>
             <h2 class="nome">eu sou o felipe</h2>
@@ -82,7 +82,7 @@
             </h2>
           </div>
         </div>
-        <section>
+        <section class="painel sobre">
           <div class="sobre">
             <div class="lt1">
               <p>
@@ -144,8 +144,8 @@
           </div>
         </div>
 
-        <section>
-          <div class="Portifolio">
+        <section class="painel portifolio">
+          <div class="portifolio">
             <div class="galeria">
               <span>
                 <img
@@ -271,29 +271,41 @@
             </h2>
           </div>
         </div>
-        <section>
-          <div class="Contato">
-            <h2>Contato</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consequuntur hic quas placeat veniam? Atque necessitatibus, quidem
-              aliquid ut, quas vitae nam fuga alias commodi delectus fugit
-              voluptatem nemo esse explicabo.
-            </p>
+        <section class="painel contato">
+          <div class="contato">
+            <div class="forms">
+              <form>
+                <input
+                  name="Nome"
+                  type="text"
+                  class="feedback-input"
+                  placeholder="Nome"
+                />
+                <input
+                  name="email"
+                  type="text"
+                  class="feedback-input"
+                  placeholder="Email"
+                />
+                <textarea
+                  name="text"
+                  class="feedback-input"
+                  placeholder="Mensagem"
+                ></textarea>
+                <input type="submit" value="ENVIAR" />
+              </form>
+            </div>
+            <div class="img-fundo">
+              <img
+                class="arara2"
+                src="https://i.postimg.cc/FHckHM48/araras-150x.png"
+                alt="arara"
+              />
+            </div>
           </div>
         </section>
       </div>
     </div>
     <script type="click" src="App.js"></script>
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const rotulos = document.querySelector(".rotulos");
-      document.querySelectorAll(".rotulos-link").forEach((n) =>
-        n.addEventListener("click", () => {
-          hamburger.classList.remove("active");
-          rotulos.classList.remove("active");
-        })
-      );
-    </script>
   </body>
 </html>
