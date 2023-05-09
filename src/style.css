@@ -606,7 +606,7 @@ form ::placeholder {
   }
 
   .nav-bar {
-    position: absolute;
+    position: fixed;
     height: 7%;
     width: 100%;
     transition: 0.7s ease-in;
