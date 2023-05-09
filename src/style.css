@@ -591,10 +591,10 @@ form ::placeholder {
 
 /*SMARTPHONES*/
 
-@media (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .outer-wrapper {
     width: 100vw;
-    min-height: -webkit-fill-available;
+    height: 100vh;
     transform: rotate(0deg) translateX(0vh);
     transform-origin: top left;
     overflow-y: scroll;
@@ -602,9 +602,6 @@ form ::placeholder {
     position: absolute;
     scrollbar-width: none;
     -ms-overflow-style: none;
-  }
-  .outer-wrapper.innerHeight {
-    height: -webkit-fill;
   }
 
   .nav-bar {
