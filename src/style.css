@@ -593,20 +593,19 @@ form ::placeholder {
 
 @media (max-width: 450px) {
   .outer-wrapper {
-    width: 100vw;
+    min-height: -webkit-fill-available;
     height: 100vh;
     transform: rotate(0deg) translateX(0vh);
     transform-origin: top left;
     overflow-y: scroll;
-
-    overflow-x: auto;
+    overflow-x: hidden;
     position: absolute;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
 
   .nav-bar {
-    position: fixed;
+    position: absolute;
     height: 7%;
     width: 100%;
     transition: 0.7s ease-in;
