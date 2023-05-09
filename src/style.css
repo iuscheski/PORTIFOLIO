@@ -598,8 +598,6 @@ form ::placeholder {
     height: 100%;
     transform: rotate(0deg) translateX(0vh);
     transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
     position: absolute;
     scrollbar-width: none;
     -webkit-overflow-scrollin: touch;
