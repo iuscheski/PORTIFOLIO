@@ -37,7 +37,6 @@
   text-decoration: none;
   list-style: none;
   touch-action: auto;
-  -webkit-overflow-scrolling: touch;
 }
 .outer-wrapper {
   width: 100vh;
@@ -603,6 +602,7 @@ form ::placeholder {
     position: absolute;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    -webkit-overflow-scrollin: touch;
   }
 
   .nav-bar {
@@ -724,6 +724,7 @@ form ::placeholder {
     width: 100%;
     transform: rotate(0deg) translateY(0vh);
     transform-origin: top left;
+    -webkit-overflow-scrollin: touch;
   }
   .inicio {
     margin-bottom: -5%;
@@ -743,7 +744,7 @@ form ::placeholder {
     display: grid;
     text-align: right;
     margin: 0;
-    margin-right: 5vh;
+    margin-right: 8vh;
   }
   .nome:nth-child(3) {
     font-size: 5vh;
@@ -896,7 +897,7 @@ form ::placeholder {
 }
 
 /*TABLETS*/
-@media (min-width: 451px) and (max-width: 850px) {
+@media screen and (min-width: 451px) and (max-width: 850px) {
   .outer-wrapper {
     width: 100vw;
     height: 100vh;
@@ -907,6 +908,7 @@ form ::placeholder {
     position: absolute;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    -webkit-overflow-scrollin: touch;
   }
 
   .container {
