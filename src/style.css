@@ -603,9 +603,10 @@ form ::placeholder {
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
-  .container section {
-    min-height: -webkit-fill-available;
+  .outer-wrapper.innerHeight {
+    height: -webkit-fill;
   }
+
   .nav-bar {
     position: absolute;
     height: 7%;
