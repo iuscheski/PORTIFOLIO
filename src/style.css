@@ -55,6 +55,7 @@
   width: 400vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
+  -webkit-overflow-scrolling: touch;
 }
 
 ::-webkit-scrollbar {
@@ -724,7 +725,7 @@ form ::placeholder {
     width: 100%;
     transform: rotate(0deg) translateY(0vh);
     transform-origin: top left;
-    -webkit-overflow-scrollin: touch;
+    -webkit-overflow-scrolling: touch;
   }
   .inicio {
     margin-bottom: -5%;
@@ -734,8 +735,8 @@ form ::placeholder {
     font-family: Brown-sugar;
     font-weight: 100;
     font-size: 5vh;
-    margin: 0;
-    text-align: center;
+    margin-right: 8%;
+    text-align: end;
   }
   .nome:nth-child(1) {
     display: table;
@@ -743,8 +744,6 @@ form ::placeholder {
     font-size: 8vh;
     display: grid;
     text-align: right;
-    margin: 0;
-    margin-right: 8vh;
   }
   .nome:nth-child(3) {
     font-size: 5vh;
