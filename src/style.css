@@ -29,6 +29,8 @@
 /*P1 - CONFIGURAÇÕES GERAIS DA PÁGINA*/
 
 * {
+  scroll-behavior: smooth;
+  transition: 3s linear;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -850,7 +852,6 @@ form ::placeholder {
     width: 77vw;
   }
   .circulo-maior {
-    overflow: hidden;
     position: absolute;
     bottom: -24vh;
     left: 5vw;
@@ -865,6 +866,32 @@ form ::placeholder {
   }
   .divisor2 {
     display: none;
+  }
+  .forms {
+    height: 43vh;
+    margin: 0;
+    border: 0;
+  }
+  .forms form {
+    width: 78vw;
+    height: 11vh;
+    align-content: space-around;
+    margin-left: 10vw;
+  }
+
+  [type="submit"] {
+    height: 7vh;
+    width: 25vw;
+    border-radius: 0.6em;
+    font-size: 2vh;
+    margin-left: 25vw;
+    margin-top: 4vh;
+  }
+  .arara2 {
+    width: 106vw;
+    top: 62vh;
+    right: -3vw;
+    overflow: hidden;
   }
 }
 
@@ -996,8 +1023,10 @@ form ::placeholder {
     display: none;
   }
   .lt1 {
-    display: block;
-    width: 100vw;
+    position: absolute;
+    width: 86vw;
+    top: 12vh;
+    left: 8vw;
     margin: 0;
     padding: 0% 5% 0% 5%;
   }
@@ -1008,11 +1037,11 @@ form ::placeholder {
   .sobre p {
     padding: 0;
     margin: 0;
-    font-size: 1.1vh;
+    font-size: 1.3vh;
     width: 100%;
     text-align: justify;
     text-justify: inter-word;
-    line-height: 250%;
+    line-height: 4.5vw;
   }
 
   span.id_ola {
@@ -1055,8 +1084,8 @@ form ::placeholder {
 
   .galeria span {
     position: absolute;
-    left: 6vw;
-    top: -3vh;
+    left: 4vw;
+    top: 7vh;
   }
   .galeria span h2 {
     width: 84vw;
@@ -1076,9 +1105,10 @@ form ::placeholder {
   }
   .box {
     position: absolute;
-    width: 88vw;
-    height: 53vh;
-    right: 6vw;
+    width: 83vw;
+    height: 42vh;
+    right: 9vw;
+    top: 23vh;
 
     /*  */
     display: grid;
@@ -1097,5 +1127,31 @@ form ::placeholder {
   }
   .divisor2 {
     display: none;
+  }
+  .forms {
+    height: 43vh;
+    margin: 0;
+    border: 0;
+  }
+  .forms form {
+    width: 61vw;
+    height: 2vh;
+    align-content: space-around;
+    margin-left: 21vw;
+  }
+
+  [type="submit"] {
+    height: 7vh;
+    width: 25vw;
+    border-radius: 0.6em;
+    font-size: 2vh;
+    margin-left: 18vw;
+    margin-top: 4vh;
+  }
+  .arara2 {
+    width: 77vw;
+    top: 58vh;
+    right: 11vw;
+    overflow: hidden;
   }
 }
