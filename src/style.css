@@ -37,7 +37,6 @@
   text-decoration: none;
   list-style: none;
   touch-action: auto;
-  -webkit-overflow-scrolling: touch;
 }
 .outer-wrapper {
   width: 100vh;
@@ -600,7 +599,8 @@ form ::placeholder {
     transform-origin: top left;
     position: absolute;
     scrollbar-width: none;
-    -webkit-overflow-scrollin: touch;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav-bar {
