@@ -919,9 +919,6 @@ form ::placeholder {
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    -webkit-overflow-scrollin: touch;
   }
 
   .container {
