@@ -340,17 +340,17 @@
           <span class="en-bar"></span>
         </div>
         <ul class="en-rotulos">
-          <li class="nav-item">
-            <a href="#contato" class="rotulos-link">CONTACT</a>
+          <li class="en-nav-item">
+            <a href="#en-contato" class="en-rotulos-link">CONTACT</a>
           </li>
-          <li class="nav-item">
-            <a href="#portifolio" class="rotulos-link">PORTIFOLIO</a>
+          <li class="en-nav-item">
+            <a href="#en-portifolio" class="en-rotulos-link">PORTIFOLIO</a>
           </li>
-          <li class="nav-item">
-            <a href="#sobre" class="rotulos-link">ABOUT</a>
+          <li class="en-nav-item">
+            <a href="#en-sobre" class="en-rotulos-link">ABOUT</a>
           </li>
-          <li class="nav-item">
-            <a href="#inicio" class="rotulos-link">HOME</a>
+          <li class="en-nav-item">
+            <a href="#en-inicio" class="en-rotulos-link">HOME</a>
           </li>
         </ul>
 
@@ -633,50 +633,318 @@
         </div>
       </div>
     </div>
+    <script>
+      const enhamburger = docufrt.querySelector(".en-hamburger");
+      const enrotulos = document.querySelector(".en-rotulos");
+      document.querySelectorAll(".en-rotulos-link").forEach((n) =>
+        n.addEventListener("click", () => {
+          enhamburger.classList.remove("active");
+          enrotulos.classList.remove("active");
+        })
+      );
+    </script>
+
     <div id="fra" style="display: none">
-      FRANCH
-      <nav class="nav-bar">
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+      <nav class="fr-nav-bar">
+        <div class="fr-hamburger">
+          <span class="fr-bar"></span>
+          <span class="fr-bar"></span>
+          <span class="fr-bar"></span>
         </div>
-        <ul class="rotulos">
-          <li class="nav-item">
-            <a href="#contato" class="rotulos-link">CONTATO</a>
+        <ul class="fr-rotulos">
+          <li class="fr-nav-item">
+            <a href="#fr-contato" class="fr-rotulos-link">CONTAT</a>
+          </li>
+          <li class="fr-nav-item">
+            <a href="#fr-portifolio" class="fr-rotulos-link">PORTEFEUILLE</a>
+          </li>
+          <li class="fr-nav-item">
+            <a href="#fr-sobre" class="fr-rotulos-link">A PROPOS</a>
           </li>
           <li class="nav-item">
-            <a href="#portifolio" class="rotulos-link">PORTIFÓLIO</a>
-          </li>
-          <li class="nav-item">
-            <a href="#sobre" class="rotulos-link">SOBRE</a>
-          </li>
-          <li class="nav-item">
-            <a href="#inicio" class="rotulos-link">INÍCIO</a>
+            <a href="#fr-inicio" class="fr-rotulos-link">HOME</a>
           </li>
         </ul>
 
-        <ul class="linguas">
+        <ul class="fr-linguas">
           <li>
-            <a class="eng" href="#" onclick="return show('por','fra');">POR</a>
+            <a class="por" href="#" onclick="return show('por','fra');">POR</a>
           </li>
           <li>
-            <a class="fra" href="#" onclick="return show('eng','fra');">ENG</a>
+            <a class="eng" href="#" onclick="return show('eng','fra');">ENG</a>
           </li>
         </ul>
-        <div class="socials">
+        <div class="fr-socials">
           <div class="github">
             <a href="https://github.com/iuscheski">
-              <i class="fa-brands fa-square-github" style="color: #112e59"></i
+              <i class="fa-brands fa-square-github" style="color: #bf2121"></i
             ></a>
           </div>
           <div class="linkedin">
             <a href="https://www.linkedin.com/in/felipe-almeida-797166105/">
-              <i class="fa-brands fa-linkedin" style="color: #112e59"></i
+              <i class="fa-brands fa-linkedin" style="color: #bf2121"></i
             ></a>
           </div>
         </div>
       </nav>
+      <div class="fr-outer-wrapper">
+        <div class="fr-container">
+          <section id="fr-inicio">
+            <div class="fr-inicio">
+              <h2 class="fr-nome">Salut,</h2>
+              <h2 class="fr-nome">Je suis felipe</h2>
+              <h2 class="fr-nome">Front-end devéloppeur</h2>
+            </div>
+            <span class="fr-deslise">
+              <img
+                class="fr-circulo"
+                src="https://i.postimg.cc/sxrnmKPf/circle2.png"
+                alt="circulo"
+              />
+              <h2 class="fr-des">GLISSER A GOUCHE</h2>
+            </span>
+            <img
+              class="fr-aguia"
+              src="https://i.postimg.cc/3J3SDSJn/BG-CA.png"
+              alt="aguia"
+            />
+          </section>
+          <div class="fr-divisor">
+            <div class="fr-b-bg">
+              <h2 class="fr-dsobre">
+                A PROPOS - A PROPOS - A PROPOS - A PROPOS - A PROPOS - A PROPOS - A PROPOS - A PROPOS -
+                A PROPOS - A PROPOS -
+              </h2>
+            </div>
+          </div>
+          <section id="fr-sobre">
+            <div class="fr-sobre">
+              <div class="fr-lt1">
+                <p>
+                  <span class="fr-id_ola"> Salut,</span> Je suis Felipe, un développeur front-end junior, j'ai des compétences dans plusieurs domaines du développement de projets web. Cela inclut la maîtrise des langages HTML, CSS et JavaScript, ainsi que la connaissance des frameworks frontaux tels que React, Angular et Vue.js. J'ai également de l'expérience dans le design responsive et mobile-first, ce qui me permet de créer des sites web qui s'adaptent à différentes tailles d'écran. De plus, je suis familier avec le contrôle de version à l'aide de préprocesseurs GIT et CSS tels que Sass et LESS. Je comprends également l'importance de l'accessibilité et des bonnes pratiques de référencement pour créer des sites Web accessibles et faciles à trouver sur le Web.
+                </p>
+                <div class="fr-imgbtn">
+                  <img
+                    class="fr-bg-btn-cv"
+                    src="https://i.postimg.cc/59BKyd1X/br-button.png"
+                    alt=""
+                  />
+                  <button class="fr-btn-cv">Mon DIGITAL CV</button>
+                </div>
+              </div>
+              <div class="fr-lt2">
+                <div>
+                  <p><span class="fr-ccor">NEXT.JS</span></p>
+                  <p>
+                    <span class="fr-scor">GIT </span
+                    ><span class="fr-ccor">CSS</span
+                    ><span class="fr-scor"> UI</span>
+                  </p>
+                  <p>
+                    <span class="fr-ccor">UX </span
+                    ><span class="fr-scor">AJAX</span
+                    ><span class="fr-ccor"> JS</span>
+                  </p>
+                  <p>
+                    <span class="fr-scor">CSSA </span
+                    ><span class="fr-ccor">GULP</span>
+                  </p>
+                  <p><span class="fr-ccor">ANGULAR</span></p>
+                  <p>
+                    <span class="fr-scor">VUE.JS </span
+                    ><span class="fr-ccor">NOSQL</span>
+                  </p>
+                  <p>
+                    <span class="fr-ccor">REACT </span
+                    ><span class="fr-scor">SQL</span>
+                  </p>
+                  <p><span class="fr-scor">BOOTSTRAP</span></p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="fr-divisor1">
+            <div class="fr-b-bg1">
+              <h2 class="fr-dportifolio">
+                PORTEFEUILLE - PORTEFEUILLE - PORTEFEUILLE - PORTEFEUILLE - PORTEFEUILLE -
+                PORTEFEUILLE - PORTEFEUILLE - PORTEFEUILLE - PORTEFEUILLE - PORTEFEUILLE -
+              </h2>
+            </div>
+          </div>
+
+          <section id="fr-portifolio">
+            <div class="fr-portifolio">
+              <div class="fr-galeria">
+                <span>
+                  <img
+                    class="fr-circulo-menor"
+                    src="https://i.postimg.cc/sxrnmKPf/circle2.png"
+                    alt=""
+                  />
+                  <h2>
+                    PROJECT <br />
+                    GALLERY
+                  </h2>
+                </span>
+                <img
+                  class="fr-safari"
+                  src="https://i.postimg.cc/bNL60xZ8/city.png"
+                  alt=""
+                />
+                <img
+                  class="fr-circulo-maior"
+                  src="https://i.postimg.cc/qqx15nQs/circulo3.png"
+                  alt=""
+                />
+              </div>
+              <div class="fr-box">
+                <div class="fr-box-card">
+                  <div class="fr-right-side">
+                    <div class="fr-img1"></div>
+                  </div>
+                  <div class="fr-left-side">
+                    <h2>PROJECT 1</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="fr-btn-git">GIT</button>
+                    <button class="fr-btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="fr-box-card">
+                  <div class="fr-right-side">
+                    <div class="fr-img1"></div>
+                  </div>
+                  <div class="fr-left-side">
+                    <h2>PROJECT 2</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="fr-btn-git">GIT</button>
+                    <button class="fr-btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="fr-box-card">
+                  <div class="fr-right-side">
+                    <div class="fr-img1"></div>
+                  </div>
+                  <div class="fr-left-side">
+                    <h2>PROJECT 3</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="fr-btn-git">GIT</button>
+                    <button class="fr-btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="fr-box-card">
+                  <div class="fr-right-side">
+                    <div class="fr-img1"></div>
+                  </div>
+                  <div class="fr-left-side">
+                    <h2>PROJECT 4</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="fr-btn-git">GIT</button>
+                    <button class="fr-btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="fr-box-card">
+                  <div class="fr-right-side">
+                    <div class="fr-img1"></div>
+                  </div>
+                  <div class="fr-left-side">
+                    <h2>PROJECT 5</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="fr-btn-git">GIT</button>
+                    <button class="fr-btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="fr-box-card">
+                  <div class="fr-right-side">
+                    <div class="fr-img1"></div>
+                  </div>
+                  <div class="fr-left-side">
+                    <h2>PROJECT 6</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="fr-btn-git">GIT</button>
+                    <button class="fr-btn-demo">DEMO</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="fr-divisor2">
+            <div class="fr-b-bg2">
+              <h2 class="fr-dcontato">
+                CONTACT - CONTACT - CONTACT - CONTACT - CONTACT - CONTACT -
+                CONTACT - CONTACT - CONTACT - CONTACT -
+              </h2>
+            </div>
+          </div>
+          <section id="fr-contato">
+            <div class="fr-contato">
+              <div class="fr-forms">
+                <form>
+                  <input
+                    name="Nome"
+                    type="text"
+                    class="fr-feedback-input"
+                    placeholder="NOM"
+                  />
+                  <input
+                    name="email"
+                    type="text"
+                    class="fr-feedback-input"
+                    placeholder="Email"
+                  />
+                  <textarea
+                    name="text"
+                    class="fr-feedback-input"
+                    placeholder="Mesagem"
+                  ></textarea>
+                  <input class="fr-sub" type="submit" value="ENVOYER" />
+                </form>
+              </div>
+              <div class="fr-img-fundo">
+                <img
+                  class="fr-arara2"
+                  src="https://i.postimg.cc/DwZxxSGG/castle.png"
+                  alt="fr-arara"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script>
+      const frhamburger = document.querySelector(".fr-hamburger");
+      const frrotulos = document.querySelector(".fr-rotulos");
+      document.querySelectorAll(".fr-rotulos-link").forEach((n) =>
+        n.addEventListener("click", () => {
+          frhamburger.classList.remove("active");
+          frrotulos.classList.remove("active");
+        })
+      );
+    </script>
     </div>
   </body>
 </html>
