@@ -808,7 +808,8 @@ form ::placeholder {
     margin: 0;
   }
   .lt2 div {
-    width: 100vw;
+    display: none;
+    /* width: 100vw;
     display: flex;
     position: absolute;
     top: 106vh;
@@ -819,7 +820,7 @@ form ::placeholder {
     margin: 0;
     padding: 0;
     animation: scrolling-left3 40s linear infinite;
-    transition: all 1s ease;
+    transition: all 1s ease; */
   }
   /* scrolling-left is continuous/repeatly text */
   @keyframes scrolling-left3 {
