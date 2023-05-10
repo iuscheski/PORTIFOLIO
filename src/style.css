@@ -691,14 +691,15 @@ form ::placeholder {
     display: none;
   }
   .hamburger {
-    display: block;
+    display: none;
+    /* display: block;
     float: right;
     clear: right;
     align-items: center;
     padding: 0;
     margin: 0;
     padding-right: 5%;
-    padding-top: 1vh;
+    padding-top: 1vh; */
   }
 
   .hamburger.active .bar:nth-child(2) {
