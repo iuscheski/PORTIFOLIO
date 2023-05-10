@@ -612,14 +612,13 @@ form ::placeholder {
   }
 
   .nav-bar {
-    display: none;
-    /* position: fixed;
+    position: fixed;
     height: 7%;
     width: 100%;
     transition: 0.7s ease-in;
     padding: 0;
     margin: 0;
-    z-index: 999; */
+    z-index: 999;
   }
 
   .rotulos {
