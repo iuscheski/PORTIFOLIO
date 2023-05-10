@@ -612,13 +612,14 @@ form ::placeholder {
   }
 
   .nav-bar {
-    position: fixed;
+    display: none;
+    /* position: fixed;
     height: 7%;
     width: 100%;
     transition: 0.7s ease-in;
     padding: 0;
     margin: 0;
-    z-index: 999;
+    z-index: 999; */
   }
 
   .rotulos {
@@ -691,15 +692,14 @@ form ::placeholder {
     display: none;
   }
   .hamburger {
-    display: none;
-    /* display: block;
+    display: block;
     float: right;
     clear: right;
     align-items: center;
     padding: 0;
     margin: 0;
     padding-right: 5%;
-    padding-top: 1vh; */
+    padding-top: 1vh;
   }
 
   .hamburger.active .bar:nth-child(2) {
