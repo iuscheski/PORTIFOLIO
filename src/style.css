@@ -608,8 +608,8 @@ form ::placeholder {
     transform-origin: top left;
     position: absolute;
     scrollbar-width: none;
-    overflow: hidden;
-    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .nav-bar {
@@ -727,12 +727,11 @@ form ::placeholder {
   /*INÍCIO*/
   .container {
     display: flex;
+    position: fixed;
     flex-direction: column;
     width: 100%;
     transform: rotate(0deg) translateY(0vh);
     transform-origin: top left;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
   }
   .inicio {
     margin-bottom: -5%;
