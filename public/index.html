@@ -11,311 +11,672 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script>
+      function show(shown, hidden) {
+        document.getElementById(shown).style.display = "block";
+        document.getElementById(hidden).style.display = "none";
+        return false;
+      }
+    </script>
     <title>Portifólio</title>
-    <nav class="nav-bar">
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <ul class="rotulos">
-        <li class="nav-item">
-          <a href="#contato" class="rotulos-link">CONTATO</a>
-        </li>
-        <li class="nav-item">
-          <a href="#portifolio" class="rotulos-link">PORTIFÓLIO</a>
-        </li>
-        <li class="nav-item">
-          <a href="#sobre" class="rotulos-link">SOBRE</a>
-        </li>
-        <li class="nav-item">
-          <a href="#inicio" class="rotulos-link">INÍCIO</a>
-        </li>
-      </ul>
-
-      <ul class="linguas">
-        <li><a class="eng" href="#ENG">ENG</a></li>
-        <li><a class="fra" href="#FRA">FRA</a></li>
-      </ul>
-      <div class="socials">
-        <div class="github">
-          <a href="https://github.com/iuscheski">
-            <i class="fa-brands fa-square-github" style="color: #112e59"></i
-          ></a>
-        </div>
-        <div class="linkedin">
-          <a href="https://www.linkedin.com/in/felipe-almeida-797166105/">
-            <i class="fa-brands fa-linkedin" style="color: #112e59"></i
-          ></a>
-        </div>
-      </div>
-    </nav>
   </head>
   <body>
-    <div class="outer-wrapper">
-      <div class="container">
-        <section id="inicio">
-          <div class="inicio">
-            <h2 class="nome">Olá,</h2>
-            <h2 class="nome">eu sou o felipe</h2>
-            <h2 class="nome">Desenvolvedor front-end</h2>
+    <div id="por">
+      <nav class="nav-bar">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="rotulos">
+          <li class="nav-item">
+            <a href="#contato" class="rotulos-link">CONTATO</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portifolio" class="rotulos-link">PORTIFÓLIO</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobre" class="rotulos-link">SOBRE</a>
+          </li>
+          <li class="nav-item">
+            <a href="#inicio" class="rotulos-link">INÍCIO</a>
+          </li>
+        </ul>
+
+        <ul class="linguas">
+          <li>
+            <a class="eng" href="#" onclick="return show('eng','por');">ENG</a>
+          </li>
+          <li>
+            <a class="fra" href="#" onclick="return show('fra','por');">FRA</a>
+          </li>
+        </ul>
+        <div class="socials">
+          <div class="github">
+            <a href="https://github.com/iuscheski">
+              <i class="fa-brands fa-square-github" style="color: #112e59"></i
+            ></a>
           </div>
-          <span class="deslise">
-            <img
-              class="circulo"
-              src="https://i.postimg.cc/cCY7mvjG/Asset-2.png"
-              alt="circulo"
-            />
-            <h2 class="des">DESLIZE PARA O LADO</h2>
-          </span>
-          <img
-            class="arara"
-            src="https://i.postimg.cc/5tjCkXfc/Asset-2.png"
-            alt="arara"
-          />
-        </section>
-        <div class="divisor">
-          <div class="b-bg">
-            <h2 class="dsobre">
-              SOBRE - SOBRE - SOBRE - SOBRE - SOBRE - SOBRE - SOBRE - SOBRE -
-              SOBRE - SOBRE -
-            </h2>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/felipe-almeida-797166105/">
+              <i class="fa-brands fa-linkedin" style="color: #112e59"></i
+            ></a>
           </div>
         </div>
-        <section id="sobre">
-          <div class="sobre">
-            <div class="lt1">
-              <p>
-                <span class="id_ola"> Olá,</span> eu sou o Felipe, desenvolvedor
-                front-end junior, tenho habilidades em diversas áreas de
-                desenvolvimento de projetos web. Isso inclui o domínio das
-                linguagens HTML, CSS e JavaScript, além do conhecimento em
-                frameworks front-end, como React, Angular e Vue.js. Também
-                possuo experiência em design responsivo e mobile-first, o que me
-                permite criar sites que se adaptam a diferentes tamanhos de
-                tela. Além disso, tenho familiaridade com controle de versão
-                usando GIT e pré-processadores de CSS, como Sass e LESS. Também
-                entendo a importância da acessibilidade e boas práticas de SEO
-                para criar sites que são acessíveis e fáceis de encontrar na
-                web.
-              </p>
-              <div class="imgbtn">
+      </nav>
+      <div class="outer-wrapper">
+        <div class="container">
+          <section id="inicio">
+            <div class="inicio">
+              <h2 class="nome">Olá,</h2>
+              <h2 class="nome">eu sou o felipe</h2>
+              <h2 class="nome">Desenvolvedor front-end</h2>
+            </div>
+            <span class="deslise">
+              <img
+                class="circulo"
+                src="https://i.postimg.cc/cCY7mvjG/Asset-2.png"
+                alt="circulo"
+              />
+              <h2 class="des">DESLIZE PARA O LADO</h2>
+            </span>
+            <img
+              class="arara"
+              src="https://i.postimg.cc/5tjCkXfc/Asset-2.png"
+              alt="arara"
+            />
+          </section>
+          <div class="divisor">
+            <div class="b-bg">
+              <h2 class="dsobre">
+                SOBRE - SOBRE - SOBRE - SOBRE - SOBRE - SOBRE - SOBRE - SOBRE -
+                SOBRE - SOBRE -
+              </h2>
+            </div>
+          </div>
+          <section id="sobre">
+            <div class="sobre">
+              <div class="lt1">
+                <p>
+                  <span class="id_ola"> Olá,</span> eu sou o Felipe,
+                  desenvolvedor front-end junior, tenho habilidades em diversas
+                  áreas de desenvolvimento de projetos web. Isso inclui o
+                  domínio das linguagens HTML, CSS e JavaScript, além do
+                  conhecimento em frameworks front-end, como React, Angular e
+                  Vue.js. Também possuo experiência em design responsivo e
+                  mobile-first, o que me permite criar sites que se adaptam a
+                  diferentes tamanhos de tela. Além disso, tenho familiaridade
+                  com controle de versão usando GIT e pré-processadores de CSS,
+                  como Sass e LESS. Também entendo a importância da
+                  acessibilidade e boas práticas de SEO para criar sites que são
+                  acessíveis e fáceis de encontrar na web.
+                </p>
+                <div class="imgbtn">
+                  <img
+                    class="bg-btn-cv"
+                    src="https://i.postimg.cc/kgZr6y3J/Asset-1.png"
+                    alt=""
+                  />
+                  <button class="btn-cv">MEU CV DIGITAL</button>
+                </div>
+              </div>
+              <div class="lt2">
+                <div>
+                  <p><span class="ccor">NEXT.JS</span></p>
+                  <p>
+                    <span class="scor">GIT </span><span class="ccor">CSS</span
+                    ><span class="scor"> UI</span>
+                  </p>
+                  <p>
+                    <span class="ccor">UX </span><span class="scor">AJAX</span
+                    ><span class="ccor"> JS</span>
+                  </p>
+                  <p>
+                    <span class="scor">CSSA </span
+                    ><span class="ccor">GULP</span>
+                  </p>
+                  <p><span class="ccor">ANGULAR</span></p>
+                  <p>
+                    <span class="scor">VUE.JS </span
+                    ><span class="ccor">NOSQL</span>
+                  </p>
+                  <p>
+                    <span class="ccor">REACT </span
+                    ><span class="scor">SQL</span>
+                  </p>
+                  <p><span class="scor">BOOTSTRAP</span></p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="divisor1">
+            <div class="b-bg1">
+              <h2 class="dportifolio">
+                PORTIFOLIO - PORTIFOLIO - PORTIFOLIO - PORTIFOLIO - PORTIFOLIO -
+                PORTIFOLIO - PORTIFOLIO - PORTIFOLIO - PORTIFOLIO - PORTIFOLIO -
+              </h2>
+            </div>
+          </div>
+
+          <section id="portifolio">
+            <div class="portifolio">
+              <div class="galeria">
+                <span>
+                  <img
+                    class="circulo-menor"
+                    src="https://i.postimg.cc/cCY7mvjG/Asset-2.png"
+                    alt=""
+                  />
+                  <h2>
+                    GALERIA <br />
+                    DE PROJETOS
+                  </h2>
+                </span>
                 <img
-                  class="bg-btn-cv"
-                  src="https://i.postimg.cc/kgZr6y3J/Asset-1.png"
+                  class="safari"
+                  src="https://i.postimg.cc/PJwjrH5s/Asset-2.png"
                   alt=""
                 />
-                <button class="btn-cv">MEU CV DIGITAL</button>
-              </div>
-            </div>
-            <div class="lt2">
-              <div>
-                <p><span class="ccor">NEXT.JS</span></p>
-                <p>
-                  <span class="scor">GIT </span><span class="ccor">CSS</span
-                  ><span class="scor"> UI</span>
-                </p>
-                <p>
-                  <span class="ccor">UX </span><span class="scor">AJAX</span
-                  ><span class="ccor"> JS</span>
-                </p>
-                <p>
-                  <span class="scor">CSSA </span><span class="ccor">GULP</span>
-                </p>
-                <p><span class="ccor">ANGULAR</span></p>
-                <p>
-                  <span class="scor">VUE.JS </span
-                  ><span class="ccor">NOSQL</span>
-                </p>
-                <p>
-                  <span class="ccor">REACT </span><span class="scor">SQL</span>
-                </p>
-                <p><span class="scor">BOOTSTRAP</span></p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="divisor1">
-          <div class="b-bg1">
-            <h2 class="dportifolio">
-              PORTIFOLIO - PORTIFOLIO - PORTIFOLIO - PORTIFOLIO - PORTIFOLIO -
-              PORTIFOLIO - PORTIFOLIO - PORTIFOLIO - PORTIFOLIO - PORTIFOLIO -
-            </h2>
-          </div>
-        </div>
-
-        <section id="portifolio">
-          <div class="portifolio">
-            <div class="galeria">
-              <span>
                 <img
-                  class="circulo-menor"
+                  class="circulo-maior"
                   src="https://i.postimg.cc/cCY7mvjG/Asset-2.png"
                   alt=""
                 />
-                <h2>
-                  GALERIA <br />
-                  DE PROJETOS
-                </h2>
-              </span>
-              <img
-                class="safari"
-                src="https://i.postimg.cc/PJwjrH5s/Asset-2.png"
-                alt=""
-              />
-              <img
-                class="circulo-maior"
-                src="https://i.postimg.cc/cCY7mvjG/Asset-2.png"
-                alt=""
-              />
+              </div>
+              <div class="box">
+                <div class="box-card">
+                  <div class="right-side">
+                    <div class="img1"></div>
+                  </div>
+                  <div class="left-side">
+                    <h2>PROJETO 1</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="btn-git">GIT</button>
+                    <button class="btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="box-card">
+                  <div class="right-side">
+                    <div class="img1"></div>
+                  </div>
+                  <div class="left-side">
+                    <h2>PROJETO 2</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="btn-git">GIT</button>
+                    <button class="btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="box-card">
+                  <div class="right-side">
+                    <div class="img1"></div>
+                  </div>
+                  <div class="left-side">
+                    <h2>PROJETO 3</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="btn-git">GIT</button>
+                    <button class="btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="box-card">
+                  <div class="right-side">
+                    <div class="img1"></div>
+                  </div>
+                  <div class="left-side">
+                    <h2>PROJETO 4</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="btn-git">GIT</button>
+                    <button class="btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="box-card">
+                  <div class="right-side">
+                    <div class="img1"></div>
+                  </div>
+                  <div class="left-side">
+                    <h2>PROJETO 5</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="btn-git">GIT</button>
+                    <button class="btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="box-card">
+                  <div class="right-side">
+                    <div class="img1"></div>
+                  </div>
+                  <div class="left-side">
+                    <h2>PROJETO 6</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="btn-git">GIT</button>
+                    <button class="btn-demo">DEMO</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="box">
-              <div class="box-card">
-                <div class="right-side">
-                  <div class="img1"></div>
-                </div>
-                <div class="left-side">
-                  <h2>PROJETO 1</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem suscipit sint odio ad blanditiis enim illum aliquid
-                    dolores alias est?
-                  </p>
-                  <button class="btn-git">GIT</button>
-                  <button class="btn-demo">DEMO</button>
-                </div>
-              </div>
-              <div class="box-card">
-                <div class="right-side">
-                  <div class="img1"></div>
-                </div>
-                <div class="left-side">
-                  <h2>PROJETO 2</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem suscipit sint odio ad blanditiis enim illum aliquid
-                    dolores alias est?
-                  </p>
-                  <button class="btn-git">GIT</button>
-                  <button class="btn-demo">DEMO</button>
-                </div>
-              </div>
-              <div class="box-card">
-                <div class="right-side">
-                  <div class="img1"></div>
-                </div>
-                <div class="left-side">
-                  <h2>PROJETO 3</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem suscipit sint odio ad blanditiis enim illum aliquid
-                    dolores alias est?
-                  </p>
-                  <button class="btn-git">GIT</button>
-                  <button class="btn-demo">DEMO</button>
-                </div>
-              </div>
-              <div class="box-card">
-                <div class="right-side">
-                  <div class="img1"></div>
-                </div>
-                <div class="left-side">
-                  <h2>PROJETO 4</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem suscipit sint odio ad blanditiis enim illum aliquid
-                    dolores alias est?
-                  </p>
-                  <button class="btn-git">GIT</button>
-                  <button class="btn-demo">DEMO</button>
-                </div>
-              </div>
-              <div class="box-card">
-                <div class="right-side">
-                  <div class="img1"></div>
-                </div>
-                <div class="left-side">
-                  <h2>PROJETO 5</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem suscipit sint odio ad blanditiis enim illum aliquid
-                    dolores alias est?
-                  </p>
-                  <button class="btn-git">GIT</button>
-                  <button class="btn-demo">DEMO</button>
-                </div>
-              </div>
-              <div class="box-card">
-                <div class="right-side">
-                  <div class="img1"></div>
-                </div>
-                <div class="left-side">
-                  <h2>PROJETO 6</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem suscipit sint odio ad blanditiis enim illum aliquid
-                    dolores alias est?
-                  </p>
-                  <button class="btn-git">GIT</button>
-                  <button class="btn-demo">DEMO</button>
-                </div>
-              </div>
+          </section>
+          <div class="divisor2">
+            <div class="b-bg2">
+              <h2 class="dcontato">
+                CONTATO - CONTATO - CONTATO - CONTATO - CONTATO - CONTATO -
+                CONTATO - CONTATO - CONTATO - CONTATO -
+              </h2>
             </div>
           </div>
-        </section>
-        <div class="divisor2">
-          <div class="b-bg2">
-            <h2 class="dcontato">
-              CONTATO - CONTATO - CONTATO - CONTATO - CONTATO - CONTATO -
-              CONTATO - CONTATO - CONTATO - CONTATO -
-            </h2>
+          <section id="contato">
+            <div class="contato">
+              <div class="forms">
+                <form>
+                  <input
+                    name="Nome"
+                    type="text"
+                    class="feedback-input"
+                    placeholder="Nome"
+                  />
+                  <input
+                    name="email"
+                    type="text"
+                    class="feedback-input"
+                    placeholder="Email"
+                  />
+                  <textarea
+                    name="text"
+                    class="feedback-input"
+                    placeholder="Mensagem"
+                  ></textarea>
+                  <input type="submit" value="ENVIAR" />
+                </form>
+              </div>
+              <div class="img-fundo">
+                <img
+                  class="arara2"
+                  src="https://i.postimg.cc/FHckHM48/araras-150x.png"
+                  alt="arara"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <script type="click" src="App.js"></script>
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const rotulos = document.querySelector(".rotulos");
+        document.querySelectorAll(".rotulos-link").forEach((n) =>
+          n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            rotulos.classList.remove("active");
+          })
+        );
+      </script>
+    </div>
+    <div id="eng" style="display: none">
+      <nav class="en-nav-bar">
+        <div class="en-hamburger">
+          <span class="en-bar"></span>
+          <span class="en-bar"></span>
+          <span class="en-bar"></span>
+        </div>
+        <ul class="en-rotulos">
+          <li class="nav-item">
+            <a href="#contato" class="rotulos-link">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portifolio" class="rotulos-link">PORTIFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobre" class="rotulos-link">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a href="#inicio" class="rotulos-link">HOME</a>
+          </li>
+        </ul>
+
+        <ul class="en-linguas">
+          <li>
+            <a class="por" href="#" onclick="return show('por','eng');">POR</a>
+          </li>
+          <li>
+            <a class="fra" href="#" onclick="return show('fra','eng');">FRA</a>
+          </li>
+        </ul>
+        <div class="en-socials">
+          <div class="github">
+            <a href="https://github.com/iuscheski">
+              <i class="fa-brands fa-square-github" style="color: #ffffff"></i
+            ></a>
+          </div>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/felipe-almeida-797166105/">
+              <i class="fa-brands fa-linkedin" style="color: #ffffff"></i
+            ></a>
           </div>
         </div>
-        <section id="contato">
-          <div class="contato">
-            <div class="forms">
-              <form>
-                <input
-                  name="Nome"
-                  type="text"
-                  class="feedback-input"
-                  placeholder="Nome"
-                />
-                <input
-                  name="email"
-                  type="text"
-                  class="feedback-input"
-                  placeholder="Email"
-                />
-                <textarea
-                  name="text"
-                  class="feedback-input"
-                  placeholder="Mensagem"
-                ></textarea>
-                <input type="submit" value="ENVIAR" />
-              </form>
+      </nav>
+      <div class="en-outer-wrapper">
+        <div class="en-container">
+          <section id="en-inicio">
+            <div class="en-inicio">
+              <h2 class="en-nome">Hello,</h2>
+              <h2 class="en-nome">i am felipe</h2>
+              <h2 class="en-nome">Front-end developer</h2>
             </div>
-            <div class="img-fundo">
+            <span class="en-deslise">
               <img
-                class="arara2"
-                src="https://i.postimg.cc/FHckHM48/araras-150x.png"
-                alt="arara"
+                class="en-circulo"
+                src="https://i.postimg.cc/mkWsX2zQ/circulo.png"
+                alt="circulo"
               />
+              <h2 class="en-des">SCROLL LEFT</h2>
+            </span>
+            <img
+              class="en-aguia"
+              src="https://i.postimg.cc/KvPhTdfk/AGUIA-HOME.png"
+              alt="aguia"
+            />
+          </section>
+          <div class="en-divisor">
+            <div class="en-b-bg">
+              <h2 class="en-dsobre">
+                ABOUT - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT - ABOUT -
+                ABOUT - ABOUT -
+              </h2>
             </div>
           </div>
-        </section>
+          <section id="en-sobre">
+            <div class="en-sobre">
+              <div class="en-lt1">
+                <p>
+                  <span class="en-id_ola"> Hello there,</span> I am Felipe, a
+                  junior front-end developer, I have skills in several areas of
+                  web project development. This includes knowlege of HTML, CSS
+                  and JavaScript languages, as well as knowledge of front-end
+                  frameworks such as React, Angular and Vue.js. I also have
+                  experience in responsive and mobile-first design, which allows
+                  me to create websites that adapt to different screen sizes.
+                  Also, I am familiar with version control using GIT and CSS
+                  preprocessors such as Sass and LESS. I also understand the
+                  importance of accessibility and good SEO practices to create
+                  websites that are accessible and easy to find on the web.
+                </p>
+                <div class="en-imgbtn">
+                  <img
+                    class="en-bg-btn-cv"
+                    src="https://i.postimg.cc/B6Hqttwk/Asset-3.png"
+                    alt=""
+                  />
+                  <button class="en-btn-cv">MY DIGITAL CV</button>
+                </div>
+              </div>
+              <div class="en-lt2">
+                <div>
+                  <p><span class="en-ccor">NEXT.JS</span></p>
+                  <p>
+                    <span class="en-scor">GIT </span
+                    ><span class="en-ccor">CSS</span
+                    ><span class="en-scor"> UI</span>
+                  </p>
+                  <p>
+                    <span class="en-ccor">UX </span
+                    ><span class="en-scor">AJAX</span
+                    ><span class="en-ccor"> JS</span>
+                  </p>
+                  <p>
+                    <span class="en-scor">CSSA </span
+                    ><span class="en-ccor">GULP</span>
+                  </p>
+                  <p><span class="en-ccor">ANGULAR</span></p>
+                  <p>
+                    <span class="en-scor">VUE.JS </span
+                    ><span class="en-ccor">NOSQL</span>
+                  </p>
+                  <p>
+                    <span class="en-ccor">REACT </span
+                    ><span class="en-scor">SQL</span>
+                  </p>
+                  <p><span class="en-scor">BOOTSTRAP</span></p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="en-divisor1">
+            <div class="en-b-bg1">
+              <h2 class="en-dportifolio">
+                PORTIFOLIO - PORTIFOLIO - PORTIFOLIO - PORTIFOLIO - PORTIFOLIO -
+                PORTIFOLIO - PORTIFOLIO - PORTIFOLIO - PORTIFOLIO - PORTIFOLIO -
+              </h2>
+            </div>
+          </div>
+
+          <section id="en-portifolio">
+            <div class="en-portifolio">
+              <div class="en-galeria">
+                <span>
+                  <img
+                    class="en-circulo-menor"
+                    src="https://i.postimg.cc/mkWsX2zQ/circulo.png"
+                    alt=""
+                  />
+                  <h2>
+                    PROJECT <br />
+                    GALLERY
+                  </h2>
+                </span>
+                <img
+                  class="en-safari"
+                  src="https://i.postimg.cc/GpZLcvzv/Asset-2.png"
+                  alt=""
+                />
+                <img
+                  class="en-circulo-maior"
+                  src="https://i.postimg.cc/2y5pyHtK/circulo-maior.png"
+                  alt=""
+                />
+              </div>
+              <div class="en-box">
+                <div class="en-box-card">
+                  <div class="en-right-side">
+                    <div class="en-img1"></div>
+                  </div>
+                  <div class="en-left-side">
+                    <h2>PROJECT 1</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="en-btn-git">GIT</button>
+                    <button class="en-btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="en-box-card">
+                  <div class="en-right-side">
+                    <div class="en-img1"></div>
+                  </div>
+                  <div class="en-left-side">
+                    <h2>PROJECT 2</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="en-btn-git">GIT</button>
+                    <button class="en-btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="en-box-card">
+                  <div class="en-right-side">
+                    <div class="en-img1"></div>
+                  </div>
+                  <div class="en-left-side">
+                    <h2>PROJECT 3</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="en-btn-git">GIT</button>
+                    <button class="en-btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="en-box-card">
+                  <div class="en-right-side">
+                    <div class="en-img1"></div>
+                  </div>
+                  <div class="en-left-side">
+                    <h2>PROJECT 4</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="en-btn-git">GIT</button>
+                    <button class="en-btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="en-box-card">
+                  <div class="en-right-side">
+                    <div class="en-img1"></div>
+                  </div>
+                  <div class="en-left-side">
+                    <h2>PROJECT 5</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="en-btn-git">GIT</button>
+                    <button class="en-btn-demo">DEMO</button>
+                  </div>
+                </div>
+                <div class="en-box-card">
+                  <div class="en-right-side">
+                    <div class="en-img1"></div>
+                  </div>
+                  <div class="en-left-side">
+                    <h2>PROJECT 6</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem suscipit sint odio ad blanditiis enim illum aliquid
+                      dolores alias est?
+                    </p>
+                    <button class="en-btn-git">GIT</button>
+                    <button class="en-btn-demo">DEMO</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="en-divisor2">
+            <div class="en-b-bg2">
+              <h2 class="en-dcontato">
+                CONTACT - CONTACT - CONTACT - CONTACT - CONTACT - CONTACT -
+                CONTACT - CONTACT - CONTACT - CONTACT -
+              </h2>
+            </div>
+          </div>
+          <section id="en-contato">
+            <div class="en-contato">
+              <div class="en-forms">
+                <form>
+                  <input
+                    name="Nome"
+                    type="text"
+                    class="en-feedback-input"
+                    placeholder="Name"
+                  />
+                  <input
+                    name="email"
+                    type="text"
+                    class="en-feedback-input"
+                    placeholder="Email"
+                  />
+                  <textarea
+                    name="text"
+                    class="en-feedback-input"
+                    placeholder="Mensagem"
+                  ></textarea>
+                  <input class="en-sub" type="submit" value="SUBMIT" />
+                </form>
+              </div>
+              <div class="en-img-fundo">
+                <img
+                  class="en-arara2"
+                  src="https://i.postimg.cc/Wb7LRYNr/goden.png"
+                  alt="en-arara"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
-    <script type="click" src="App.js"></script>
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const rotulos = document.querySelector(".rotulos");
-      document.querySelectorAll(".rotulos-link").forEach((n) =>
-        n.addEventListener("click", () => {
-          hamburger.classList.remove("active");
-          rotulos.classList.remove("active");
-        })
-      );
-    </script>
+    <div id="fra" style="display: none">
+      FRANCH
+      <nav class="nav-bar">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="rotulos">
+          <li class="nav-item">
+            <a href="#contato" class="rotulos-link">CONTATO</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portifolio" class="rotulos-link">PORTIFÓLIO</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobre" class="rotulos-link">SOBRE</a>
+          </li>
+          <li class="nav-item">
+            <a href="#inicio" class="rotulos-link">INÍCIO</a>
+          </li>
+        </ul>
+
+        <ul class="linguas">
+          <li>
+            <a class="eng" href="#" onclick="return show('por','fra');">POR</a>
+          </li>
+          <li>
+            <a class="fra" href="#" onclick="return show('eng','fra');">ENG</a>
+          </li>
+        </ul>
+        <div class="socials">
+          <div class="github">
+            <a href="https://github.com/iuscheski">
+              <i class="fa-brands fa-square-github" style="color: #112e59"></i
+            ></a>
+          </div>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/felipe-almeida-797166105/">
+              <i class="fa-brands fa-linkedin" style="color: #112e59"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </div>
   </body>
 </html>

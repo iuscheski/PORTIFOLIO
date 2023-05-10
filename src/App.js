@@ -1,11 +1,18 @@
 import "./style.css";
 const hamburger = document.querySelector(".hamburger");
 const rotulos = document.querySelector(".rotulos");
+const enhamburger = document.querySelector(".en-hamburger");
+const enrotulos = document.querySelector(".en-rotulos");
 
 document.addEventListener("touchstart", function () {}, true);
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   rotulos.classList.toggle("active");
+});
+document.addEventListener("touchstart", function () {}, true);
+enhamburger.addEventListener("click", () => {
+  enhamburger.classList.toggle("active");
+  enrotulos.classList.toggle("active");
 });
 function App() {}
 
