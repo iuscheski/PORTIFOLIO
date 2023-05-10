@@ -2007,4 +2007,262 @@ form ::placeholder {
     overflow: hidden;
   }
 }
+/*TABLETS*/
+@media only screen and (min-width: 451px) and (max-width: 850px) {
+  .en-outer-wrapper {
+    width: 100vw;
+    height: 100vh;
+    transform: rotate(0deg) translateX(0vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrollin: touch;
+  }
+
+  .en-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    transform: rotate(0deg) translateY(0vh);
+    transform-origin: top left;
+  }
+
+  .en-divisor {
+    display: none;
+  }
+  .en-nav-bar {
+    position: fixed;
+    width: 100%;
+    height: 4%;
+  }
+  .en-rotulos {
+    padding: 1.4%;
+    text-align: right;
+    height: 5%;
+    align-content: center;
+  }
+  .en-rotulos a {
+    display: grid;
+    margin: 0;
+    display: inline;
+    writing-mode: horizontal-tb;
+    transform: rotate(-90deg);
+  }
+  .en-rotulos li {
+    display: inline;
+    padding: 0.5rem;
+  }
+
+  .en-linguas {
+    display: flex;
+    gap: 2vh;
+    margin: -1.9%;
+    padding-left: 3%;
+    justify-content: left;
+  }
+  .en-linguas ul {
+    z-index: 2;
+    font-weight: 600;
+    font-size: 0.7em;
+  }
+
+  .en-linguas li .por {
+    font-size: larger;
+    border-top: none;
+    border-right: 0.3vh solid var(--br-azul-norm);
+    padding: 0;
+    padding-right: 20%;
+  }
+  .en-linguas li .fra {
+    font-size: larger;
+    border-bottom: none;
+  }
+
+  .en-nav-bar .en-socials {
+    display: none;
+  }
+  .en-hamburger {
+    display: none;
+  }
+  .en-bar {
+    display: none;
+  }
+  .en-inicio {
+    margin-top: 40%;
+  }
+  .en-nome {
+    z-index: 100;
+    font-family: Brown-sugar;
+    font-weight: 100;
+    font-size: 8.5vw;
+    text-align: right;
+    align-items: center;
+    margin: 0;
+    margin-right: 3%;
+    color: white;
+  }
+
+  .en-nome:nth-child(3) {
+    width: 100%;
+    font-size: 8vw;
+    position: absolute;
+    display: table;
+    padding-top: 7%;
+    padding-left: 15%;
+    padding-right: 3%;
+    top: 73%;
+    margin: 0;
+    text-align: right;
+    height: 27vh;
+  }
+
+  img.en-aguia {
+    left: 2vw;
+    position: absolute;
+    display: flex;
+    width: 78vw;
+    bottom: 40vh;
+  }
+  .en-deslise {
+    display: none;
+  }
+  .en-lt1 {
+    position: absolute;
+    width: 86vw;
+    top: 12vh;
+    left: 8vw;
+    margin: 0;
+    padding: 0% 5% 0% 5%;
+  }
+  .en-sobre {
+    top: 0;
+    width: 100vw;
+  }
+  .en-sobre p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.3vh;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 4.5vw;
+  }
+
+  span.en-id_ola {
+    font-size: 2em;
+  }
+  .en-lt2 {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  .en-lt2 div {
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    top: 84%;
+    left: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    animation: scrolling-left3 40s linear infinite;
+  }
+  /* scrolling-left is continuous/repeatly text */
+  @keyframes scrolling-left3 {
+    0% {
+      transform: translateX(300%);
+    }
+    100% {
+      transform: translateX(-300%);
+    }
+  }
+  .en-lt2 span {
+    font-size: 12vh;
+  }
+
+  .en-divisor1 {
+    display: none;
+  }
+
+  .en-galeria span {
+    position: absolute;
+    left: 37vw;
+    top: 7vh;
+  }
+  .en-galeria span h2 {
+    width: 84vw;
+  }
+
+  .en-circulo-maior {
+    left: 5vw;
+    bottom: -36vh;
+    width: 90vw;
+  }
+
+  .en-safari {
+    top: 74vh;
+    width: 86vw;
+    left: 8vw;
+    z-index: 20;
+  }
+  .en-box {
+    position: absolute;
+    width: 83vw;
+    height: 42vh;
+    right: 9vw;
+    top: 23vh;
+
+    /*  */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    align-items: center;
+    flex-direction: row;
+    row-gap: 2;
+  }
+  .en-box-card {
+    left: 2.5vh;
+    width: 37vw;
+    height: 11vh;
+  }
+  .en-divisor2 {
+    display: none;
+  }
+  .en-forms {
+    height: 43vh;
+    margin: 0;
+    border: 0;
+  }
+  .en-forms form {
+    width: 61vw;
+    height: 21vh;
+    align-content: space-around;
+    margin-left: 21vw;
+  }
+
+  .en-sub {
+    height: 7vh;
+    width: 25vw;
+    border-radius: 0.6em;
+    font-size: 2vh;
+    margin-left: 18vw;
+    margin-top: 4vh;
+  }
+  .en-arara2 {
+    width: 105vw;
+    top: 46vh;
+    right: -1vw;
+    overflow: hidden;
+  }
+}
+
+/* ********************************************* */
+
 /* END ENGLISH VERSION */
