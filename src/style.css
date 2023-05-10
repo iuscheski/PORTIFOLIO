@@ -607,7 +607,6 @@ form ::placeholder {
     transform: rotate(0deg) translateX(0vh);
     transform-origin: top left;
     position: absolute;
-    scrollbar-width: none;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -734,7 +733,7 @@ form ::placeholder {
     transform-origin: top left;
   }
   .inicio {
-    margin-bottom: -5%;
+    margin-bottom: -28vh;
     align-content: center;
   }
   .nome {
@@ -747,6 +746,7 @@ form ::placeholder {
   }
   .nome:nth-child(1) {
     display: table;
+    justify-content: center;
     position: relative;
     font-size: 8vh;
     display: grid;
@@ -807,8 +807,7 @@ form ::placeholder {
     margin: 0;
   }
   .lt2 div {
-    display: none;
-    /* width: 100vw;
+    width: 100vw;
     display: flex;
     position: absolute;
     top: 106vh;
@@ -819,7 +818,7 @@ form ::placeholder {
     margin: 0;
     padding: 0;
     animation: scrolling-left3 40s linear infinite;
-    transition: all 1s ease; */
+    transition: all 1s ease;
   }
   /* scrolling-left is continuous/repeatly text */
   @keyframes scrolling-left3 {
@@ -1729,9 +1728,8 @@ form ::placeholder {
     transform: rotate(0deg) translateX(0vh);
     transform-origin: top left;
     position: absolute;
-    scrollbar-width: none;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   .en-nav-bar {
     position: fixed;
@@ -1851,8 +1849,6 @@ form ::placeholder {
     width: 100%;
     transform: rotate(0deg) translateY(0vh);
     transform-origin: top left;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
   }
   .en-inicio {
     display: inline-block;
@@ -2842,9 +2838,8 @@ form ::placeholder {
     transform: rotate(0deg) translateX(0vh);
     transform-origin: top left;
     position: absolute;
-    scrollbar-width: none;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   .fr-nav-bar {
     position: fixed;
@@ -2964,8 +2959,6 @@ form ::placeholder {
     width: 100%;
     transform: rotate(0deg) translateY(0vh);
     transform-origin: top left;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
   }
   .fr-inicio {
     display: inline-block;
