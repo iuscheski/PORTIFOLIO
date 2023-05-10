@@ -608,7 +608,7 @@ form ::placeholder {
     transform-origin: top left;
     position: absolute;
     scrollbar-width: none;
-    overflow: scroll;
+    overflow: hidden;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -904,9 +904,9 @@ form ::placeholder {
     margin-top: 4vh;
   }
   .arara2 {
-    width: 106vw;
+    width: 96vw;
     top: 58%;
-    right: -3vw;
+    right: 1vw;
     overflow: hidden;
   }
 }
