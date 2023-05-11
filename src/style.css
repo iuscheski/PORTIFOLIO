@@ -24,7 +24,7 @@
   --br-verde-norm: #15652b;
   --br-verde-escuro: #135826;
   --br-amarelo-norm: #ffcc29;
-  --br-amarelo-hover: #b98f03;
+  --br-amarelo-hover: #ffc812;
   --br-laranja-norm: #ffa929;
   --br-azul-norm: #112e59;
   --us-azul-escuro: #022859;
@@ -613,22 +613,22 @@ form ::placeholder {
 
   .nav-bar {
     position: fixed;
-    height: 7%;
+    height: 5vh;
     width: 100%;
     transition: 0.7s ease-in;
     padding: 0;
     margin: 0;
-    z-index: 999;
+    z-index: 100;
   }
 
   .rotulos {
     font-family: Kross-bold;
     position: fixed;
-    top: 7%;
+    top: 0;
     background-color: var(--br-amarelo-norm);
     width: 100%;
     height: 100%;
-    right: -200%;
+    top: -200%;
     transition: 0.5s ease-out;
   }
 
@@ -656,15 +656,15 @@ form ::placeholder {
   }
 
   .rotulos.active {
-    right: 0;
-    transition: 0.5s;
+    top: 0;
+    transition: 0.8s;
   }
   .linguas {
     display: flex;
-    gap: 2vh;
+    gap: 1.5vh;
     align-items: center;
     margin: 0;
-    padding-top: 3%;
+    padding-top: 2%;
     padding-left: 3%;
     justify-content: left;
     line-height: 3vh;
@@ -698,15 +698,17 @@ form ::placeholder {
     align-items: center;
     padding: 0;
     margin: 0;
-    padding-right: 5%;
-    padding-top: 0.5vh;
+    right: 4vw;
+    top: 0.7vh;
+    position: absolute;
+    z-index: 100;
   }
 
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(1.55vh) rotate(45deg);
+    transform: translateY(0.8vh) rotate(45deg);
   }
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-1.2vh) rotate(-45deg);
@@ -714,8 +716,8 @@ form ::placeholder {
 
   .bar {
     display: block;
-    width: 4vh;
-    height: 0.7vh;
+    width: 3vh;
+    height: 0.3vh;
     margin: 0.7vh auto;
     border-radius: 2vh;
     -webkit-transition: all 0.3s ease-in-out;
@@ -734,15 +736,18 @@ form ::placeholder {
     transform-origin: top left;
   }
   .inicio {
-    margin-bottom: -28vh;
-    align-content: center;
+    margin-bottom: -37vh;
   }
   .nome {
     font-family: Brown-sugar;
     font-weight: 100;
     font-size: 4.7vh;
-    margin-right: 11vw;
+    margin-right: 0;
     text-align: center;
+    margin-left: 0;
+  }
+  .nome:nth-child(1) {
+    font-size: 6.2vh;
   }
 
   .nome:nth-child(3) {
@@ -757,11 +762,11 @@ form ::placeholder {
     padding-top: 4vh;
   }
   img.arara {
-    left: 7vh;
+    left: -13vh;
     position: absolute;
     display: flex;
-    width: 80vw;
-    bottom: 43vh;
+    width: 119vw;
+    bottom: 32vh;
   }
   .deslise {
     display: none;
@@ -772,10 +777,9 @@ form ::placeholder {
 
   .lt1 {
     display: grid;
-    grid-template-columns: 1;
     width: 80%;
     height: 40%;
-    top: 4%;
+    margin-top: 27vh;
   }
   .sobre {
     bottom: 0;
@@ -794,40 +798,12 @@ form ::placeholder {
     color: var(--br-amarelo-norm);
     font-size: 2em;
   }
-  .lt2 {
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-  }
-  .lt2 div {
-    width: 100vw;
-    display: flex;
-    position: absolute;
-    top: 106vh;
-    left: 0;
-    align-items: flex-start;
-    justify-content: flex-start;
-    white-space: nowrap;
-    margin: 0;
-    padding: 0;
-    animation: scrolling-left3 40s linear infinite;
-  }
-  .lt2 div p {
-    white-space: nowrap;
-    transition: all 1s ease;
-  }
 
-  /* scrolling-left is continuous/repeatly text */
-  @keyframes scrolling-left3 {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  .imgbtn {
+    margin-top: 15vh;
   }
-  .lt2 span {
-    font-size: 5vh;
+  .lt2 {
+    display: none;
   }
 
   .btn-cv {
@@ -900,9 +876,9 @@ form ::placeholder {
     margin-top: 4vh;
   }
   .arara2 {
-    width: 96vw;
-    top: 58%;
-    right: 1vw;
+    width: 116vw;
+    top: 141vw;
+    right: -10vw;
     overflow: hidden;
   }
 }
@@ -1730,22 +1706,22 @@ form ::placeholder {
   }
   .en-nav-bar {
     position: fixed;
-    height: 7%;
+    height: 5vh;
     width: 100%;
     transition: 0.7s ease-in;
     padding: 0;
     margin: 0;
-    z-index: 999;
+    z-index: 100;
   }
 
   .en-rotulos {
     font-family: Kross-bold;
     position: fixed;
-    top: 7%;
+    top: 0;
     background-color: var(--us-vermelho-norm);
     width: 100%;
     height: 100%;
-    right: -200%;
+    top: -200%;
     transition: 0.5s ease-out;
   }
 
@@ -1773,15 +1749,15 @@ form ::placeholder {
   }
 
   .en-rotulos.active {
-    right: 0;
-    transition: 0.5s;
+    top: 0;
+    transition: 0.8s;
   }
   .en-linguas {
     display: flex;
-    gap: 2vh;
+    gap: 1.5vh;
     align-items: center;
     margin: 0;
-    padding-top: 3%;
+    padding-top: 2%;
     padding-left: 3%;
     justify-content: left;
   }
@@ -1812,17 +1788,17 @@ form ::placeholder {
     float: right;
     clear: right;
     align-items: center;
-    padding: 0;
-    margin: 0;
-    padding-right: 5%;
-    padding-top: 0.5vh;
+    right: 4vw;
+    top: 0.7vh;
+    position: absolute;
+    z-index: 100;
   }
 
   .en-hamburger.active .en-bar:nth-child(2) {
     opacity: 0;
   }
   .en-hamburger.active .en-bar:nth-child(1) {
-    transform: translateY(1.55vh) rotate(45deg);
+    transform: translateY(0.8vh) rotate(45deg);
   }
   .en-hamburger.active .en-bar:nth-child(3) {
     transform: translateY(-1.2vh) rotate(-45deg);
@@ -1830,8 +1806,8 @@ form ::placeholder {
 
   .en-bar {
     display: block;
-    width: 4vh;
-    height: 0.7vh;
+    width: 3vh;
+    height: 0.3vh;
     margin: 0.7vh auto;
     border-radius: 2vh;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1853,6 +1829,7 @@ form ::placeholder {
     align-content: center;
     text-align: center;
     margin: 0 0 -50% 0;
+    margin-bottom: -37vh;
   }
   .en-nome {
     font-family: Brown-sugar;
@@ -1861,7 +1838,9 @@ form ::placeholder {
     margin-right: 11vw;
     text-align: center;
   }
-
+  .en-nome:nth-child(1) {
+    font-size: 6.2vh;
+  }
   .en-nome:nth-child(3) {
     font-size: 5vh;
     width: 100%;
@@ -1874,11 +1853,11 @@ form ::placeholder {
     padding-top: 4vh;
   }
   img.en-aguia {
-    left: 12vw;
+    left: -38vw;
     position: absolute;
     display: flex;
-    width: 80vw;
-    bottom: 49vh;
+    width: 131vw;
+    bottom: 40vh;
   }
   .en-deslise {
     display: none;
@@ -1889,10 +1868,9 @@ form ::placeholder {
 
   .en-lt1 {
     display: grid;
-    grid-template-columns: 1;
     width: 80%;
     height: 40%;
-    top: 4%;
+    margin-top: 27vh;
   }
   .en-sobre {
     bottom: 0;
@@ -1911,36 +1889,12 @@ form ::placeholder {
     color: var(--us-cinza-norm);
     font-size: 2em;
   }
+
+  .en-imgbtn {
+    margin-top: 15vh;
+  }
   .en-lt2 {
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-  }
-  .en-lt2 div {
-    width: 100vw;
-    display: flex;
-    position: absolute;
-    top: 106vh;
-    left: 0;
-    align-items: flex-start;
-    justify-content: flex-start;
-    white-space: nowrap;
-    margin: 0;
-    padding: 0;
-    animation: scrolling-left3 40s linear infinite;
-    transition: all 1s ease;
-  }
-  /* scrolling-left is continuous/repeatly text */
-  @keyframes scrolling-left3 {
-    0% {
-      transform: translateX(500%);
-    }
-    100% {
-      transform: translateX(-900%);
-    }
-  }
-  .en-lt2 span {
-    font-size: 5vh;
+    display: none;
   }
 
   .en-btn-cv {
@@ -2845,22 +2799,22 @@ form ::placeholder {
   }
   .fr-nav-bar {
     position: fixed;
-    height: 7%;
+    height: 5vh;
     width: 100%;
     transition: 0.7s ease-in;
     padding: 0;
     margin: 0;
-    z-index: 999;
+    z-index: 100;
   }
 
   .fr-rotulos {
     font-family: Kross-bold;
     position: fixed;
-    top: 7%;
+    top: 0;
     background-color: white;
     width: 100%;
     height: 100%;
-    right: -200%;
+    top: -200%;
     transition: 0.5s ease-out;
   }
 
@@ -2888,15 +2842,15 @@ form ::placeholder {
   }
 
   .fr-rotulos.active {
-    right: 0;
-    transition: 0.5s;
+    top: 0;
+    transition: 0.8s;
   }
   .fr-linguas {
     display: flex;
-    gap: 2vh;
+    gap: 1.5vh;
     align-items: center;
     margin: 0;
-    padding-top: 3%;
+    padding-top: 2%;
     padding-left: 3%;
     justify-content: left;
   }
@@ -2929,15 +2883,17 @@ form ::placeholder {
     align-items: center;
     padding: 0;
     margin: 0;
-    padding-right: 5%;
-    padding-top: 0.5vh;
+    right: 4vw;
+    top: 0.7vh;
+    position: absolute;
+    z-index: 100;
   }
 
   .fr-hamburger.active .fr-bar:nth-child(2) {
     opacity: 0;
   }
   .fr-hamburger.active .fr-bar:nth-child(1) {
-    transform: translateY(1.55vh) rotate(45deg);
+    transform: translateY(0.8vh) rotate(45deg);
   }
   .fr-hamburger.active .fr-bar:nth-child(3) {
     transform: translateY(-1.2vh) rotate(-45deg);
@@ -2945,8 +2901,8 @@ form ::placeholder {
 
   .fr-bar {
     display: block;
-    width: 4vh;
-    height: 0.7vh;
+    width: 3vh;
+    height: 0.3vh;
     margin: 0.7vh auto;
     border-radius: 2vh;
     -webkit-transition: all 0.3s ease-in-out;
@@ -2968,6 +2924,7 @@ form ::placeholder {
     align-content: center;
     text-align: center;
     margin: 0 0 -50% 0;
+    margin-bottom: -37vh;
   }
   .fr-nome {
     font-family: Brown-sugar;
@@ -2977,6 +2934,9 @@ form ::placeholder {
     text-align: center;
   }
 
+  .fr-nome:nth-child(1) {
+    font-size: 6.2vh;
+  }
   .fr-nome:nth-child(3) {
     font-size: 5vh;
     width: 100%;
@@ -3004,10 +2964,9 @@ form ::placeholder {
 
   .fr-lt1 {
     display: grid;
-    grid-template-columns: 1;
     width: 80%;
     height: 40%;
-    top: 4%;
+    margin-top: 27vh;
   }
   .fr-sobre {
     bottom: 0;
@@ -3026,36 +2985,11 @@ form ::placeholder {
     color: var(--us-cinza-norm);
     font-size: 2em;
   }
+  .fr-imgbtn {
+    margin-top: 15vh;
+  }
   .fr-lt2 {
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-  }
-  .fr-lt2 div {
-    width: 100vw;
-    display: flex;
-    position: absolute;
-    top: 106vh;
-    left: 0;
-    align-items: flex-start;
-    justify-content: flex-start;
-    white-space: nowrap;
-    margin: 0;
-    padding: 0;
-    animation: scrolling-left3 40s linear infinite;
-    transition: all 1s ease;
-  }
-  /* scrolling-left is continuous/repeatly text */
-  @keyframes scrolling-left3 {
-    0% {
-      transform: translateX(500%);
-    }
-    100% {
-      transform: translateX(-900%);
-    }
-  }
-  .fr-lt2 span {
-    font-size: 5vh;
+    display: none;
   }
 
   .fr-btn-cv {

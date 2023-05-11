@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="theme-color" class="bar_theme_color" content="#15652b"/>
+    <meta name="msapplication-navbutton-color" class="bar_theme_color" content="#15652b" />
+    <meta name="apple-mobile-web-app-status-bar-style" class="bar_theme_color" content="#15652b" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -18,9 +21,16 @@
         return false;
       }
     </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
+    <script>
+      var modify = function(color) {
+          $(".bar_theme_color").attr("content", color);
+      };
+      </script>
     <title>Portifólio</title>
   </head>
   <body>
+    
     <div id="por">
       <nav class="nav-bar">
         <div class="hamburger">
@@ -45,10 +55,10 @@
 
         <ul class="linguas">
           <li>
-            <a class="eng" href="#" onclick="return show('eng','por');">ENG</a>
+            <a class="eng" href="#" onclick="return show('eng','por'), modify('#022859');">ENG</a>
           </li>
           <li>
-            <a class="fra" href="#" onclick="return show('fra','por');">FRA</a>
+            <a class="fra" href="#" onclick="return show('fra','por'), modify('#bf2121')">FRA</a>
           </li>
         </ul>
         <div class="socials">
@@ -333,6 +343,7 @@
       </script>
     </div>
     <div id="eng" style="display: none">
+      
       <nav class="en-nav-bar">
         <div class="en-hamburger">
           <span class="en-bar"></span>
@@ -356,10 +367,10 @@
 
         <ul class="en-linguas">
           <li>
-            <a class="por" href="#" onclick="return show('por','eng');">POR</a>
+            <a class="por" href="#" onclick="return show('por','eng'), modify('#15652b');">POR</a>
           </li>
           <li>
-            <a class="fra" href="#" onclick="return show('fra','eng');">FRA</a>
+            <a class="fra" href="#" onclick="return show('fra','eng'), modify('#bf2121');">FRA</a>
           </li>
         </ul>
         <div class="en-socials">
@@ -668,10 +679,10 @@
 
         <ul class="fr-linguas">
           <li>
-            <a class="por" href="#" onclick="return show('por','fra');">POR</a>
+            <a class="por" href="#" onclick="return show('por','fra'), modify('#15652b');">POR</a>
           </li>
           <li>
-            <a class="eng" href="#" onclick="return show('eng','fra');">ENG</a>
+            <a class="eng" href="#" onclick="return show('eng','fra'), modify('#022859');">ENG</a>
           </li>
         </ul>
         <div class="fr-socials">
