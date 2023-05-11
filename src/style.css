@@ -602,8 +602,8 @@ form ::placeholder {
 
 @media only screen and (max-width: 480px) {
   .outer-wrapper {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 400vh;
     transform: rotate(0deg) translateX(0vh);
     transform-origin: top left;
     position: absolute;
@@ -739,22 +739,14 @@ form ::placeholder {
   .nome {
     font-family: Brown-sugar;
     font-weight: 100;
-    font-size: 5vh;
-    margin-right: 5%;
-    text-align: end;
-    position: absolute;
+    font-size: 4.7vh;
+    margin-right: 11vw;
+    text-align: center;
   }
-  .nome:nth-child(1) {
-    display: table;
-    justify-content: center;
-    position: relative;
-    font-size: 8vh;
-    display: grid;
-    text-align: right;
-  }
+
   .nome:nth-child(3) {
-    font-size: 5vh;
-    width: 100%;
+    font-size: 4.7vh;
+    width: 100vw;
     height: 25vh;
     position: absolute;
     bottom: -2vh;
@@ -913,7 +905,7 @@ form ::placeholder {
 @media only screen and (min-width: 451px) and (max-width: 850px) {
   .outer-wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 400vh;
     transform: rotate(0deg) translateX(0vh);
     transform-origin: top left;
     overflow-y: scroll;
@@ -1720,8 +1712,8 @@ form ::placeholder {
 /********************************************** MEDIA QUERY */
 @media only screen and (max-width: 480px) {
   .en-outer-wrapper {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 400vh;
     transform: rotate(0deg) translateX(0vh);
     transform-origin: top left;
     position: absolute;
@@ -2024,7 +2016,7 @@ form ::placeholder {
 @media only screen and (min-width: 451px) and (max-width: 850px) {
   .en-outer-wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 400vh;
     transform: rotate(0deg) translateX(0vh);
     transform-origin: top left;
     overflow-y: scroll;
@@ -2830,8 +2822,8 @@ form ::placeholder {
 /********************************************** MEDIA QUERY */
 @media only screen and (max-width: 480px) {
   .fr-outer-wrapper {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 400vh;
     transform: rotate(0deg) translateX(0vh);
     transform-origin: top left;
     position: absolute;
@@ -3134,7 +3126,7 @@ form ::placeholder {
 @media only screen and (min-width: 451px) and (max-width: 850px) {
   .fr-outer-wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 400vh;
     transform: rotate(0deg) translateX(0vh);
     transform-origin: top left;
     overflow-y: scroll;
