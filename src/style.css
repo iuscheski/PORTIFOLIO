@@ -637,7 +637,7 @@ form ::placeholder {
     font-weight: 700;
     writing-mode: horizontal-tb;
     transform: rotate(360deg);
-    line-height: 3vh;
+    line-height: 4vh;
     margin: 0;
     margin-right: 5%;
     border-color: var(--br-amarelo-norm);
@@ -667,12 +667,13 @@ form ::placeholder {
     padding-top: 3%;
     padding-left: 3%;
     justify-content: left;
+    line-height: 3vh;
   }
   .linguas ul {
     z-index: 1;
     font-weight: 600;
     font-size: 0.7em;
-    line-height: 4vh;
+    line-height: 1vh;
   }
 
   .linguas li .eng {
@@ -698,7 +699,7 @@ form ::placeholder {
     padding: 0;
     margin: 0;
     padding-right: 5%;
-    padding-top: 1vh;
+    padding-top: 0.5vh;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -810,15 +811,19 @@ form ::placeholder {
     margin: 0;
     padding: 0;
     animation: scrolling-left3 40s linear infinite;
+  }
+  .lt2 div p {
+    white-space: nowrap;
     transition: all 1s ease;
   }
+
   /* scrolling-left is continuous/repeatly text */
   @keyframes scrolling-left3 {
     0% {
-      transform: translateX(500%);
+      transform: translateX(0%);
     }
     100% {
-      transform: translateX(-900%);
+      transform: translateX(-100%);
     }
   }
   .lt2 span {
@@ -828,6 +833,7 @@ form ::placeholder {
   .btn-cv {
     font-size: 3vh;
     padding: 3% 5% 3% 5%;
+    z-index: 100;
   }
 
   .divisor1 {
@@ -859,8 +865,8 @@ form ::placeholder {
   .circulo-maior {
     position: absolute;
     bottom: -24vh;
-    left: 5vw;
-    width: 91vw;
+    left: 8vw;
+    width: 82vw;
   }
 
   .box {
@@ -1081,36 +1087,38 @@ form ::placeholder {
   .lt2 span {
     font-size: 12vh;
   }
-
+  .btn-cv {
+    z-index: 100;
+  }
   .divisor1 {
     display: none;
   }
 
   .galeria span {
     position: absolute;
-    left: 4vw;
-    top: 7vh;
+    left: 37vw;
+    top: 8vh;
   }
   .galeria span h2 {
     width: 84vw;
   }
 
   .circulo-maior {
-    left: 5vw;
-    bottom: -36vh;
-    width: 90vw;
+    left: 13vw;
+    bottom: -35vh;
+    width: 75vw;
   }
 
   .safari {
     top: 66vh;
-    width: 86vw;
+    width: 82vw;
     left: 8vw;
     z-index: 20;
   }
   .box {
     position: absolute;
     width: 83vw;
-    height: 42vh;
+    height: 46vh;
     right: 9vw;
     top: 23vh;
 
@@ -1127,7 +1135,7 @@ form ::placeholder {
   .box-card {
     left: 2.5vh;
     width: 37vw;
-    height: 11vh;
+    height: 13vh;
   }
   .divisor2 {
     display: none;
@@ -1195,7 +1203,7 @@ form ::placeholder {
 
 .en-linguas {
   display: grid;
-  font-weight: 500;
+  font-weight: 600;
   justify-content: center;
   align-items: center;
   font-size: 0.7em;
@@ -1807,7 +1815,7 @@ form ::placeholder {
     padding: 0;
     margin: 0;
     padding-right: 5%;
-    padding-top: 1vh;
+    padding-top: 0.5vh;
   }
 
   .en-hamburger.active .en-bar:nth-child(2) {
@@ -1938,6 +1946,7 @@ form ::placeholder {
   .en-btn-cv {
     font-size: 3vh;
     padding: 3% 5% 3% 5%;
+    z-index: 100;
   }
 
   .en-divisor1 {
@@ -1971,8 +1980,8 @@ form ::placeholder {
   .en-circulo-maior {
     position: absolute;
     bottom: -24vh;
-    left: 5vw;
-    width: 91vw;
+    left: 8vw;
+    width: 82vw;
   }
 
   .en-box {
@@ -2190,6 +2199,10 @@ form ::placeholder {
     font-size: 12vh;
   }
 
+  .en-btn-cv {
+    z-index: 100;
+  }
+
   .en-divisor1 {
     display: none;
   }
@@ -2197,28 +2210,28 @@ form ::placeholder {
   .en-galeria span {
     position: absolute;
     left: 37vw;
-    top: 7vh;
+    top: 8vh;
   }
   .en-galeria span h2 {
     width: 84vw;
   }
 
   .en-circulo-maior {
-    left: 5vw;
+    left: 10vw;
     bottom: -36vh;
-    width: 90vw;
+    width: 80vw;
   }
 
   .en-safari {
-    top: 74vh;
-    width: 86vw;
-    left: 8vw;
+    top: 73vh;
+    width: 78vw;
+    left: 11vw;
     z-index: 20;
   }
   .en-box {
     position: absolute;
     width: 83vw;
-    height: 42vh;
+    height: 46vh;
     right: 9vw;
     top: 23vh;
 
@@ -2235,7 +2248,7 @@ form ::placeholder {
   .en-box-card {
     left: 2.5vh;
     width: 37vw;
-    height: 11vh;
+    height: 13vh;
   }
   .en-divisor2 {
     display: none;
@@ -2917,7 +2930,7 @@ form ::placeholder {
     padding: 0;
     margin: 0;
     padding-right: 5%;
-    padding-top: 1vh;
+    padding-top: 0.5vh;
   }
 
   .fr-hamburger.active .fr-bar:nth-child(2) {
@@ -3048,6 +3061,7 @@ form ::placeholder {
   .fr-btn-cv {
     font-size: 3vh;
     padding: 3% 5% 3% 5%;
+    z-index: 100;
   }
 
   .fr-divisor1 {
@@ -3081,8 +3095,8 @@ form ::placeholder {
   .fr-circulo-maior {
     position: absolute;
     bottom: -24vh;
-    left: 5vw;
-    width: 91vw;
+    left: 8vw;
+    width: 82vw;
   }
 
   .fr-box {
@@ -3299,7 +3313,9 @@ form ::placeholder {
   .fr-lt2 span {
     font-size: 12vh;
   }
-
+  .fr-btn-cv {
+    z-index: 100;
+  }
   .fr-divisor1 {
     display: none;
   }
@@ -3307,28 +3323,30 @@ form ::placeholder {
   .fr-galeria span {
     position: absolute;
     left: 37vw;
-    top: 7vh;
+    top: 8vh;
   }
   .fr-galeria span h2 {
     width: 84vw;
   }
-
+  .fr-circulo-menor {
+    width: 15vw;
+  }
   .fr-circulo-maior {
-    left: 5vw;
+    left: 10vw;
     bottom: -36vh;
-    width: 90vw;
+    width: 80vw;
   }
 
   .fr-safari {
-    top: 81vh;
-    width: 93vw;
-    left: 4vw;
+    top: 82vh;
+    width: 78vw;
+    left: 11vw;
     z-index: 20;
   }
   .fr-box {
     position: absolute;
     width: 83vw;
-    height: 42vh;
+    height: 46vh;
     right: 9vw;
     top: 23vh;
 
@@ -3345,7 +3363,7 @@ form ::placeholder {
   .fr-box-card {
     left: 2.5vh;
     width: 37vw;
-    height: 11vh;
+    height: 13vh;
   }
   .fr-divisor2 {
     display: none;
