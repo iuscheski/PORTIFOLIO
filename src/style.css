@@ -1,5 +1,4 @@
-/*IMPORTAÇÕES FONTS*/
-
+/*IMPORTAÇÕES DE FONTES - FONT IMPORT - IMPORTATION DE FONT */
 @font-face {
   font-family: Kross-book;
   src: url(/public/font/KrossNeueGrotesk-Book.ttf);
@@ -8,18 +7,16 @@
   font-family: Kross-bold;
   src: url(/public/font/KrossNeueGrotesk-Bold.ttf);
 }
-
 @font-face {
   font-family: Brown-sugar;
   src: url(/public/font/Brown-Sugar.ttf);
 }
-
 @font-face {
   font-family: Branch;
   src: url(/public/font/Branch.ttf);
 }
 
-/* COLORS*/
+/* BASE DE COREES - BASE COLORS - COULEURS DE BASE*/
 :root {
   --br-verde-norm: #15652b;
   --br-verde-escuro: #135826;
@@ -39,10 +36,7 @@
   --fr-cinza-claro: #d9d9d9;
 }
 
-/*FIM - COLORS */
-
-/*P1 - CONFIGURAÇÕES GERAIS DA PÁGINA*/
-
+/*PC - CONFIGURAÇÕES GERAIS DA PÁGINA - GENERAL PAGE SETTINGS - PARAMÈTRES GÉNÉRAUX DE LA PAGE*/
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -54,8 +48,7 @@
   touch-action: auto;
 }
 
-/*P3 - DESIGN COMPONENTE DE NAVEGAÇÃO*/
-
+/*PC-BR - BARRA DE NAVEGAÇÃO */
 .nav-bar {
   position: fixed;
   height: 100vh;
@@ -71,7 +64,6 @@
   margin-top: 5vh;
   text-indent: -2vh;
 }
-
 .rotulos a {
   font-family: Kross-book;
   font-weight: 600;
@@ -79,11 +71,9 @@
   transform: rotate(180deg);
   color: var(--br-azul-norm);
 }
-
 .rotulos :hover {
   color: var(--br-amarelo-hover);
 }
-
 .linguas {
   display: grid;
   font-weight: 600;
@@ -93,21 +83,18 @@
   margin-top: 15vh;
   line-height: 3vh;
 }
-
 .linguas li .eng {
   font-family: Kross-book;
   color: var(--br-azul-norm);
   border-top: 0.2vh solid var(--br-azul-norm);
   padding-top: 1vh;
 }
-
 .linguas li .fra {
   font-family: Kross-book;
   color: var(--br-azul-norm);
   border-bottom: 0.2vh solid var(--br-azul-norm);
   padding-bottom: 1vh;
 }
-
 .nav-bar .socials {
   display: grid;
   justify-content: center;
@@ -116,26 +103,33 @@
   bottom: 1vh;
   width: 100%;
 }
-
 .nav-bar .socials .github {
   display: grid;
   margin-top: 11vh;
   margin-bottom: 1vh;
 }
-
 .nav-bar .socials .linkedin {
   display: grid;
   margin-top: 0.5vh;
   margin-bottom: 1vh;
 }
-
 .hamburger {
   display: none;
   cursor: pointer;
 }
 
-/*P4 - DESIGN ÁREA PRINCIPAL DA PÁGINA*/
-
+/*PC-BR - DESIGN ÁREA CONTAINER*/
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 .container {
   scroll-behavior: smooth;
   position: fixed;
@@ -156,28 +150,14 @@
   z-index: 56;
   border: 1px solid var(--br-verde-norm);
 }
-.outer-wrapper {
-  width: 100vh;
-  height: 100vw;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: absolute;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
-/*FIM P4*/
 
-/**************************************** SECTION 1 - TELA INCIAL ****************************************************/
+/* PC-BR-PAGINA INÍCIO*/
 .inicio {
   margin-bottom: 10%;
 }
-
 .nome {
   z-index: 100;
   font-family: Brown-sugar;
@@ -188,7 +168,6 @@
   margin-bottom: 0.5%;
   color: var(--br-amarelo-norm);
 }
-
 .nome:nth-child(3) {
   font-size: 7vh;
   position: absolute;
@@ -199,7 +178,6 @@
   color: var(--br-azul-norm);
   background-color: var(--br-amarelo-norm);
 }
-
 img.arara {
   left: 45%;
   position: absolute;
@@ -207,7 +185,6 @@ img.arara {
   width: 40%;
   pointer-events: none;
 }
-
 .deslise {
   display: flex;
   position: absolute;
@@ -225,13 +202,13 @@ img.arara {
   text-align: right;
   z-index: 999;
 }
-
 .circulo {
   width: 2.5em;
   margin-right: -3%;
   pointer-events: none;
 }
 
+/*PC-BR - TEXTO DIVISOR DE PÁGINA*/
 .divisor {
   overflow: visible;
   z-index: 100;
@@ -244,7 +221,6 @@ img.arara {
   background-color: var(--br-verde-norm);
   margin-bottom: -40%;
 }
-
 .b-bg {
   animation: scrolling-left1 20s linear infinite;
 }
@@ -258,8 +234,6 @@ img.arara {
   font-size: 9vh;
   margin-top: 165vh;
 }
-
-/* scrolling-left is continuous/repeatly text */
 @keyframes scrolling-left1 {
   0% {
     transform: translateY(700%);
@@ -269,7 +243,7 @@ img.arara {
   }
 }
 
-/**************************************** SECTION 2 - SOBRE MIM ****************************************************/
+/*PC-BR-SOBRE MIM*/
 .sobre {
   display: grid;
   grid-column: 2;
@@ -287,13 +261,11 @@ img.arara {
   text-justify: inter-word;
   line-height: 250%;
 }
-
 span.id_ola {
   font-family: Brown-Sugar;
   color: var(--br-amarelo-norm);
   font-size: 4em;
 }
-
 .imgbtn {
   display: flex;
   position: relative;
@@ -305,7 +277,6 @@ span.id_ola {
   width: 100%;
   margin-top: 7%;
 }
-
 .btn-cv {
   position: absolute;
   background-color: var(--br-amarelo-norm);
@@ -319,11 +290,9 @@ span.id_ola {
   border-style: none;
   margin-top: 7%;
 }
-
 .btn-cv:hover {
   color: var(--br-amarelo-hover);
 }
-
 .lt2 {
   height: 100%;
   margin-right: 10%;
@@ -336,7 +305,6 @@ span.id_ola {
   align-items: center;
   justify-content: center;
 }
-
 .lt2 span {
   font-family: Brown-sugar;
   font-size: 7.3vh;
@@ -353,12 +321,12 @@ span.id_ola {
   color: transparent;
   -webkit-text-stroke: 0.01em white;
 }
-
 .scor:hover {
   color: white;
   -webkit-text-stroke: none;
 }
 
+/*PC-BR - TEXTO DIVISOR DE PÁGINA*/
 .divisor1 {
   overflow: visible;
   z-index: 100;
@@ -371,7 +339,6 @@ span.id_ola {
   background-color: var(--br-verde-norm);
   margin-bottom: -40%;
 }
-
 .b-bg1 {
   animation: scrolling-left2 20s linear infinite;
 }
@@ -385,8 +352,6 @@ span.id_ola {
   font-size: 9vh;
   margin-top: 165vh;
 }
-
-/* scrolling-left is continuous/repeatly text */
 @keyframes scrolling-left2 {
   0% {
     transform: translateY(700%);
@@ -396,7 +361,7 @@ span.id_ola {
   }
 }
 
-/**************************************** SECTION 3 - PORTIFOLIO ****************************************************/
+/*PC-BR-GALERIA DE PROJETOS*/
 .galeria span {
   display: flex;
   position: absolute;
@@ -414,13 +379,11 @@ span.id_ola {
   text-align: left;
   z-index: 999;
 }
-
 .circulo-menor {
   width: 17%;
   margin-right: -10%;
   pointer-events: none;
 }
-
 .circulo-maior {
   display: flex;
   position: absolute;
@@ -438,7 +401,6 @@ span.id_ola {
   z-index: 20;
   pointer-events: none;
 }
-
 .box {
   display: flex;
   position: absolute;
@@ -451,7 +413,6 @@ span.id_ola {
   align-items: center;
   flex-direction: column;
 }
-
 .box-card {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -478,7 +439,6 @@ span.id_ola {
   margin-top: 5%;
   color: var(--br-verde-norm);
 }
-
 .left-side p {
   font-family: Kross-book;
   font-size: 0.6em;
@@ -487,7 +447,6 @@ span.id_ola {
   text-justify: inter-word;
   margin-bottom: 5%;
 }
-
 .left-side button {
   font-family: Kross-bold;
   font-size: 0.8em;
@@ -499,11 +458,11 @@ span.id_ola {
   margin-bottom: 4%;
   justify-content: end;
 }
-
 .left-side button:hover {
   color: var(--br-verde-norm);
 }
 
+/*PC-BR - TEXTO DIVISOR DE PÁGINA*/
 .divisor2 {
   overflow: visible;
   z-index: 100;
@@ -516,7 +475,6 @@ span.id_ola {
   background-color: var(--br-verde-norm);
   margin-bottom: -40%;
 }
-
 .b-bg2 {
   animation: scrolling-left2 20s linear infinite;
 }
@@ -530,8 +488,6 @@ span.id_ola {
   font-size: 9vh;
   margin-top: 165vh;
 }
-
-/* scrolling-left is continuous/repeatly text */
 @keyframes scrolling-left2 {
   0% {
     transform: translateY(700%);
@@ -541,7 +497,7 @@ span.id_ola {
   }
 }
 
-/**************************************** SECTION 4 - CONTATO ****************************************************/
+/*PC-BR-PÁGINA CONTATO*/
 .forms {
   width: 50%;
   height: 80%;
@@ -555,7 +511,6 @@ span.id_ola {
   align-content: space-around;
   margin-left: 12vw;
 }
-
 .feedback-input {
   resize: none;
   height: 6vh;
@@ -575,7 +530,6 @@ span.id_ola {
 form ::placeholder {
   color: white;
 }
-
 [type="submit"] {
   background-color: var(--br-amarelo-norm);
   border: none;
@@ -588,7 +542,6 @@ form ::placeholder {
   margin-left: 7vw;
   margin-top: 9vh;
 }
-
 .arara2 {
   position: absolute;
   width: 57vw;
@@ -596,11 +549,14 @@ form ::placeholder {
   right: 0vw;
   pointer-events: none;
 }
-/********************************* MEDIA QUERY  *********************************************/
+
+/*******
+VERSIONAMENTO PARA OUTROS DISPOSITIVOS
+*******/
 
 /*SMARTPHONES*/
-
 @media only screen and (max-width: 480px) {
+  /*SP-CONFIGURAÇÃO CONTAINER*/
   .outer-wrapper {
     width: 100vw;
     height: 400vh;
@@ -610,7 +566,16 @@ form ::placeholder {
     overflow-y: scroll;
     overflow-x: hidden;
   }
+  .container {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    transform: rotate(0deg) translateY(0vh);
+    transform-origin: top left;
+  }
 
+  /*SP-BARRA DE NAVEGAÇÃO*/
   .nav-bar {
     position: fixed;
     height: 5vh;
@@ -620,7 +585,6 @@ form ::placeholder {
     margin: 0;
     z-index: 100;
   }
-
   .rotulos {
     font-family: Kross-bold;
     position: fixed;
@@ -631,7 +595,6 @@ form ::placeholder {
     top: -200%;
     transition: 0.5s ease-out;
   }
-
   .rotulos a {
     font-size: 5vh;
     font-weight: 700;
@@ -642,7 +605,6 @@ form ::placeholder {
     margin-right: 5%;
     border-color: var(--br-amarelo-norm);
   }
-
   .rotulos li:nth-child(1) {
     margin-top: 50%;
   }
@@ -654,7 +616,6 @@ form ::placeholder {
     justify-content: right;
     text-indent: 0%;
   }
-
   .rotulos.active {
     top: 0;
     transition: 0.8s;
@@ -675,7 +636,6 @@ form ::placeholder {
     font-size: 0.7em;
     line-height: 1vh;
   }
-
   .linguas li .eng {
     font-size: larger;
     border-top: none;
@@ -687,7 +647,6 @@ form ::placeholder {
     font-size: larger;
     border-bottom: none;
   }
-
   .nav-bar .socials {
     display: none;
   }
@@ -703,7 +662,6 @@ form ::placeholder {
     position: absolute;
     z-index: 100;
   }
-
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -713,7 +671,6 @@ form ::placeholder {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-1.2vh) rotate(-45deg);
   }
-
   .bar {
     display: block;
     width: 3vh;
@@ -726,15 +683,7 @@ form ::placeholder {
     border-color: none;
   }
 
-  /*INÍCIO*/
-  .container {
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    width: 100%;
-    transform: rotate(0deg) translateY(0vh);
-    transform-origin: top left;
-  }
+  /*SP-PÁGINA INÍCIO*/
   .inicio {
     margin-bottom: -37vh;
   }
@@ -749,7 +698,6 @@ form ::placeholder {
   .nome:nth-child(1) {
     font-size: 6.2vh;
   }
-
   .nome:nth-child(3) {
     font-size: 4.7vh;
     width: 100vw;
@@ -775,6 +723,7 @@ form ::placeholder {
     display: none;
   }
 
+  /*SP-PÁGINA SOBRE MIM*/
   .lt1 {
     display: grid;
     width: 80%;
@@ -792,13 +741,11 @@ form ::placeholder {
     text-justify: inter-word;
     line-height: 250%;
   }
-
   span.id_ola {
     font-family: Brown-Sugar;
     color: var(--br-amarelo-norm);
     font-size: 2em;
   }
-
   .imgbtn {
     margin-top: 15vh;
   }
@@ -806,12 +753,12 @@ form ::placeholder {
     display: none;
   }
 
+  /*SP-GALERIA DE PROJETOS*/
   .btn-cv {
     font-size: 3vh;
     padding: 3% 5% 3% 5%;
     z-index: 100;
   }
-
   .divisor1 {
     display: none;
   }
@@ -819,7 +766,6 @@ form ::placeholder {
     top: 10vw;
     left: 1ovh;
   }
-
   .galeria span h2 {
     width: 53vh;
     font-size: 2em;
@@ -828,7 +774,6 @@ form ::placeholder {
   .img1 {
     height: 15vh;
   }
-
   .left-side p {
     font-size: 1.2vh;
   }
@@ -844,7 +789,6 @@ form ::placeholder {
     left: 8vw;
     width: 82vw;
   }
-
   .box {
     position: absolute;
     width: 90%;
@@ -855,6 +799,8 @@ form ::placeholder {
   .divisor2 {
     display: none;
   }
+
+  /*SP-PÁGINA CONTATO*/
   .forms {
     height: 43vh;
     margin: 0;
@@ -866,7 +812,6 @@ form ::placeholder {
     align-content: space-around;
     margin-left: 10vw;
   }
-
   [type="submit"] {
     height: 7vh;
     width: 25vw;
@@ -885,6 +830,7 @@ form ::placeholder {
 
 /*TABLETS HORIZONTAL */
 @media only screen and (min-width: 451px) and (max-width: 850px) {
+  /*TH-CONFIGURAÇÃO CONTAINER*/
   .outer-wrapper {
     width: 100vw;
     height: 400vh;
@@ -894,7 +840,6 @@ form ::placeholder {
     overflow-x: hidden;
     position: absolute;
   }
-
   .container {
     display: flex;
     flex-direction: column;
@@ -903,6 +848,7 @@ form ::placeholder {
     transform-origin: top left;
   }
 
+  /*TH-BARRA DE NAVEGAÇÃO*/
   .divisor {
     display: none;
   }
@@ -928,10 +874,9 @@ form ::placeholder {
     display: inline;
     padding: 0.5rem;
   }
-
   .linguas {
     display: flex;
-    gap: 1.5vh;
+    gap: 1vh;
     margin: -1.9%;
     padding-left: 3%;
     justify-content: left;
@@ -941,7 +886,6 @@ form ::placeholder {
     font-weight: 600;
     font-size: 0.7em;
   }
-
   .linguas li .eng {
     font-size: larger;
     border-top: none;
@@ -953,7 +897,6 @@ form ::placeholder {
     font-size: larger;
     border-bottom: none;
   }
-
   .nav-bar .socials {
     display: none;
   }
@@ -963,6 +906,8 @@ form ::placeholder {
   .bar {
     display: none;
   }
+
+  /*TH-PÁGINA INÍCIO*/
   .inicio {
     margin-top: 54vh;
   }
@@ -977,7 +922,6 @@ form ::placeholder {
     margin-right: 3%;
     color: var(--br-amarelo-norm);
   }
-
   .nome:nth-child(3) {
     width: 82vw;
     font-size: 6vw;
@@ -1007,6 +951,8 @@ form ::placeholder {
   .deslise {
     display: none;
   }
+
+  /*TH-PÁGINA SOBRE MIM*/
   .lt1 {
     position: absolute;
     width: 86vw;
@@ -1028,7 +974,6 @@ form ::placeholder {
     text-justify: inter-word;
     line-height: 4.5vw;
   }
-
   span.id_ola {
     font-size: 2em;
   }
@@ -1050,7 +995,6 @@ form ::placeholder {
     padding: 0;
     animation: scrolling-left3 40s linear infinite;
   }
-  /* scrolling-left is continuous/repeatly text */
   @keyframes scrolling-left3 {
     0% {
       transform: translateX(300%);
@@ -1069,6 +1013,7 @@ form ::placeholder {
     display: none;
   }
 
+  /*TH-PÁGINA GALERIA DE PROJETOS*/
   .galeria span {
     position: absolute;
     left: 37vw;
@@ -1077,13 +1022,11 @@ form ::placeholder {
   .galeria span h2 {
     width: 84vw;
   }
-
   .circulo-maior {
     left: 13vw;
     bottom: -35vh;
     width: 75vw;
   }
-
   .safari {
     top: 66vh;
     width: 82vw;
@@ -1096,8 +1039,6 @@ form ::placeholder {
     height: 46vh;
     right: 9vw;
     top: 23vh;
-
-    /*  */
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 33% 33% 33%;
@@ -1115,6 +1056,8 @@ form ::placeholder {
   .divisor2 {
     display: none;
   }
+
+  /*TH-PÁGINA CONTATO*/
   .forms {
     height: 43vh;
     margin: 0;
@@ -1126,7 +1069,6 @@ form ::placeholder {
     align-content: space-around;
     margin-left: 27vw;
   }
-
   [type="submit"] {
     height: 5vh;
     width: 19vw;
@@ -1135,7 +1077,6 @@ form ::placeholder {
     margin-left: 14vw;
     margin-top: 3vh;
   }
-
   .feedback-input {
     height: 4vh;
 
@@ -1149,11 +1090,11 @@ form ::placeholder {
   }
 }
 
-/* ********************************************* */
+/*********
+ENGLISH VERSION WEBSITE ------ PORTABLE COMPUTER ENGLISH = PC-EN 
+*********/
 
-/* ENGLISH VESION  *************************************************************************************************************/
-/*P3 - ENGLISH VERSION - DESIGN - NAVEGATION COMPONESTS PAGE*/
-
+/*PC-EN - NAVBAR*/
 .en-nav-bar {
   position: fixed;
   height: 100vh;
@@ -1169,7 +1110,6 @@ form ::placeholder {
   margin-top: 5vh;
   text-indent: -2vh;
 }
-
 .en-rotulos a {
   font-family: Kross-book;
   font-weight: 500;
@@ -1177,11 +1117,9 @@ form ::placeholder {
   transform: rotate(180deg);
   color: white;
 }
-
 .en-rotulos :hover {
   color: var(--us-cinza-norm);
 }
-
 .en-linguas {
   display: grid;
   font-weight: 600;
@@ -1191,21 +1129,18 @@ form ::placeholder {
   margin-top: 15vh;
   line-height: 3vh;
 }
-
 .en-linguas li .por {
   font-family: Kross-book;
   color: white;
   border-top: 0.2vh solid white;
   padding-top: 1vh;
 }
-
 .en-linguas li .fra {
   font-family: Kross-book;
   color: white;
   border-bottom: 0.2vh solid white;
   padding-bottom: 1vh;
 }
-
 .en-nav-bar .en-socials {
   display: grid;
   justify-content: center;
@@ -1214,26 +1149,22 @@ form ::placeholder {
   bottom: 1vh;
   width: 100%;
 }
-
 .en-nav-bar .en-socials .github {
   display: grid;
   margin-top: 11vh;
   margin-bottom: 1vh;
 }
-
 .en-nav-bar .en-socials .linkedin {
   display: grid;
   margin-top: 0.5vh;
   margin-bottom: 1vh;
 }
-
 .en-hamburger {
   display: none;
   cursor: pointer;
 }
 
-/*P4 - DESIGN MAIN PAGES*/
-
+/*PC-EN - CONTAINER SETTINGS*/
 .en-container {
   scroll-behavior: smooth;
   position: fixed;
@@ -1265,17 +1196,14 @@ form ::placeholder {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
 ::-webkit-scrollbar {
   display: none;
 }
-/*FIM P4*/
 
-/**************************************** SECTION 1 - TELA INCIAL ****************************************************/
+/*PC-EN - HOMEPAGE*/
 .en-inicio {
   margin-bottom: 10%;
 }
-
 .en-nome {
   z-index: 100;
   font-family: Brown-sugar;
@@ -1286,7 +1214,6 @@ form ::placeholder {
   margin-bottom: 0.5%;
   color: white;
 }
-
 .en-nome:nth-child(3) {
   font-size: 7vh;
   position: absolute;
@@ -1297,7 +1224,6 @@ form ::placeholder {
   color: white;
   background-color: var(--us-vermelho-norm);
 }
-
 img.en-aguia {
   left: 34vw;
   position: absolute;
@@ -1305,7 +1231,6 @@ img.en-aguia {
   width: 52vw;
   pointer-events: none;
 }
-
 .en-deslise {
   display: flex;
   position: absolute;
@@ -1323,13 +1248,13 @@ img.en-aguia {
   text-align: right;
   z-index: 999;
 }
-
 .en-circulo {
   width: 2.5em;
   margin-right: -3%;
   pointer-events: none;
 }
 
+/*PC-EN - TEXT DIVISOR*/
 .en-divisor {
   overflow: visible;
   z-index: 100;
@@ -1342,7 +1267,6 @@ img.en-aguia {
   background-color: var(--us-azul-escuro);
   margin-bottom: -40%;
 }
-
 .en-b-bg {
   animation: scrolling-left1 20s linear infinite;
 }
@@ -1356,8 +1280,6 @@ img.en-aguia {
   font-size: 9vh;
   margin-top: 165vh;
 }
-
-/* scrolling-left is continuous/repeatly text */
 @keyframes scrolling-left1 {
   0% {
     transform: translateY(700%);
@@ -1367,7 +1289,7 @@ img.en-aguia {
   }
 }
 
-/**************************************** SECTION 2 - SOBRE MIM ****************************************************/
+/*PC-EN - ABOUT ME PAGE*/
 .en-sobre {
   display: grid;
   grid-column: 2;
@@ -1385,13 +1307,11 @@ img.en-aguia {
   text-justify: inter-word;
   line-height: 250%;
 }
-
 span.en-id_ola {
   font-family: Brown-Sugar;
   color: var(--us-cinza-norm);
   font-size: 4em;
 }
-
 .en-imgbtn {
   display: flex;
   position: relative;
@@ -1403,7 +1323,6 @@ span.en-id_ola {
   width: 100%;
   margin-top: 7%;
 }
-
 .en-btn-cv {
   position: absolute;
   background-color: var(--us-vermelho-norm);
@@ -1417,11 +1336,9 @@ span.en-id_ola {
   border-style: none;
   margin-top: 7%;
 }
-
 .en-btn-cv:hover {
   color: var(--us-cinza-norm);
 }
-
 .en-lt2 {
   height: 100%;
   margin-right: 10%;
@@ -1434,7 +1351,6 @@ span.en-id_ola {
   align-items: center;
   justify-content: center;
 }
-
 .en-lt2 span {
   font-family: Brown-sugar;
   font-size: 7.3vh;
@@ -1451,12 +1367,12 @@ span.en-id_ola {
   color: transparent;
   -webkit-text-stroke: 0.01em white;
 }
-
 .en-scor:hover {
   color: white;
   -webkit-text-stroke: none;
 }
 
+/*PC-EN - TEXT DIVISOR*/
 .en-divisor1 {
   overflow: visible;
   z-index: 100;
@@ -1469,7 +1385,6 @@ span.en-id_ola {
   background-color: var(--us-azul-escuro);
   margin-bottom: -40%;
 }
-
 .en-b-bg1 {
   animation: scrolling-left2 20s linear infinite;
 }
@@ -1483,8 +1398,6 @@ span.en-id_ola {
   font-size: 9vh;
   margin-top: 165vh;
 }
-
-/* scrolling-left is continuous/repeatly text */
 @keyframes scrolling-left2 {
   0% {
     transform: translateY(700%);
@@ -1494,7 +1407,7 @@ span.en-id_ola {
   }
 }
 
-/**************************************** SECTION 3 - PORTIFOLIO ****************************************************/
+/*PC-EN - PORJECT GALLERY*/
 .en-galeria span {
   display: flex;
   position: absolute;
@@ -1512,13 +1425,11 @@ span.en-id_ola {
   text-align: left;
   z-index: 999;
 }
-
 .en-circulo-menor {
   width: 17%;
   margin-right: -10%;
   pointer-events: none;
 }
-
 .en-circulo-maior {
   display: flex;
   position: absolute;
@@ -1536,7 +1447,6 @@ span.en-id_ola {
   z-index: 20;
   pointer-events: none;
 }
-
 .en-box {
   display: flex;
   position: absolute;
@@ -1549,7 +1459,6 @@ span.en-id_ola {
   align-items: center;
   flex-direction: column;
 }
-
 .en-box-card {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -1576,7 +1485,6 @@ span.en-id_ola {
   margin-top: 5%;
   color: white;
 }
-
 .en-left-side p {
   font-family: Kross-book;
   font-size: 0.6em;
@@ -1586,7 +1494,6 @@ span.en-id_ola {
   margin-bottom: 5%;
   color: white;
 }
-
 .en-left-side button {
   font-family: Kross-bold;
   font-size: 0.8em;
@@ -1598,11 +1505,11 @@ span.en-id_ola {
   margin-bottom: 4%;
   justify-content: end;
 }
-
 .en-left-side button:hover {
   color: var(--us-cinza-norm);
 }
 
+/*PC-EN - TEXT DIVISOR*/
 .en-divisor2 {
   overflow: visible;
   z-index: 100;
@@ -1615,7 +1522,6 @@ span.en-id_ola {
   background-color: var(--us-azul-escuro);
   margin-bottom: -40%;
 }
-
 .en-b-bg2 {
   animation: scrolling-left2 20s linear infinite;
 }
@@ -1629,8 +1535,6 @@ span.en-id_ola {
   font-size: 9vh;
   margin-top: 165vh;
 }
-
-/* scrolling-left is continuous/repeatly text */
 @keyframes scrolling-left2 {
   0% {
     transform: translateY(700%);
@@ -1640,7 +1544,7 @@ span.en-id_ola {
   }
 }
 
-/**************************************** SECTION 4 - CONTATO ****************************************************/
+/*PC-EN - CONTACT PAGE*/
 .en-forms {
   width: 50%;
   height: 80%;
@@ -1654,7 +1558,6 @@ span.en-id_ola {
   align-content: space-around;
   margin-left: 12vw;
 }
-
 .en-feedback-input {
   resize: none;
   height: 6vh;
@@ -1674,7 +1577,6 @@ span.en-id_ola {
 form ::placeholder {
   color: white;
 }
-
 .en-sub {
   background-color: var(--us-vermelho-norm);
   border: none;
@@ -1687,7 +1589,6 @@ form ::placeholder {
   margin-left: 7vw;
   margin-top: 9vh;
 }
-
 [type="submit"] :hover {
   color: var(--us-cinza-norm);
 }
@@ -1698,8 +1599,14 @@ form ::placeholder {
   right: 0vw;
   pointer-events: none;
 }
-/********************************************** MEDIA QUERY */
+
+/*******
+MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZONTAL ENGLISH = TH-EN
+*******/
+
+/*SMARTPHONES*/
 @media only screen and (max-width: 480px) {
+  /*SP-EN- CONTAINER SETTINGS*/
   .en-outer-wrapper {
     width: 100vw;
     height: 400vh;
@@ -1709,6 +1616,15 @@ form ::placeholder {
     overflow-y: scroll;
     overflow-x: hidden;
   }
+  .en-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transform: rotate(0deg) translateY(0vh);
+    transform-origin: top left;
+  }
+
+  /*SP-EN- NAVBAR*/
   .en-nav-bar {
     position: fixed;
     height: 5vh;
@@ -1718,7 +1634,6 @@ form ::placeholder {
     margin: 0;
     z-index: 100;
   }
-
   .en-rotulos {
     font-family: Kross-bold;
     position: fixed;
@@ -1729,7 +1644,6 @@ form ::placeholder {
     top: -200%;
     transition: 0.5s ease-out;
   }
-
   .en-rotulos a {
     font-size: 5vh;
     font-weight: 700;
@@ -1740,7 +1654,6 @@ form ::placeholder {
     margin-right: 5%;
     border-color: var(--us-vermelho-norm);
   }
-
   .en-rotulos li:nth-child(1) {
     margin-top: 50%;
   }
@@ -1752,7 +1665,6 @@ form ::placeholder {
     justify-content: right;
     text-indent: 0%;
   }
-
   .en-rotulos.active {
     top: 0;
     transition: 0.8s;
@@ -1772,7 +1684,6 @@ form ::placeholder {
     font-size: 0.7em;
     line-height: 4vh;
   }
-
   .en-linguas li .por {
     font-size: larger;
     border-top: none;
@@ -1784,7 +1695,6 @@ form ::placeholder {
     font-size: larger;
     border-bottom: none;
   }
-
   .en-nav-bar .en-socials {
     display: none;
   }
@@ -1798,7 +1708,6 @@ form ::placeholder {
     position: absolute;
     z-index: 100;
   }
-
   .en-hamburger.active .en-bar:nth-child(2) {
     opacity: 0;
   }
@@ -1808,7 +1717,6 @@ form ::placeholder {
   .en-hamburger.active .en-bar:nth-child(3) {
     transform: translateY(-1.2vh) rotate(-45deg);
   }
-
   .en-bar {
     display: block;
     width: 3vh;
@@ -1820,14 +1728,8 @@ form ::placeholder {
     background-color: white;
     border-color: none;
   }
-  /*INÍCIO*/
-  .en-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    transform: rotate(0deg) translateY(0vh);
-    transform-origin: top left;
-  }
+
+  /*SP-EN- HOME PAGE*/
   .en-inicio {
     display: inline-block;
     justify-content: center;
@@ -1867,10 +1769,13 @@ form ::placeholder {
   .en-deslise {
     display: none;
   }
+
+  /*SP-EN- TEXT DIVISOR*/
   .en-divisor {
     display: none;
   }
 
+  /*SP-EN- ABOUT ME PAGE*/
   .en-lt1 {
     display: grid;
     width: 80%;
@@ -1888,51 +1793,47 @@ form ::placeholder {
     text-justify: inter-word;
     line-height: 250%;
   }
-
   span.en-id_ola {
     font-family: Brown-Sugar;
     color: var(--us-cinza-norm);
     font-size: 2em;
   }
-
   .en-imgbtn {
     margin-top: 15vh;
   }
   .en-lt2 {
     display: none;
   }
-
   .en-btn-cv {
     font-size: 3vh;
     padding: 3% 5% 3% 5%;
     z-index: 100;
   }
 
+  /*SP-EN- TEXT DIVISOR*/
   .en-divisor1 {
     display: none;
   }
+
+  /*SP-EN- PROJECT GALLERY*/
   .en-galeria span {
     top: 14vw;
     left: 10vh;
   }
-
   .en-galeria span h2 {
     width: 53vh;
     font-size: 2em;
     left: 1vw;
   }
-
   .en-safari {
     position: absolute;
     top: 84vh;
     left: 12vw;
     width: 77vw;
   }
-
   .en-img1 {
     height: 15vh;
   }
-
   .en-left-side p {
     font-size: 1.2vh;
   }
@@ -1942,7 +1843,6 @@ form ::placeholder {
     left: 8vw;
     width: 82vw;
   }
-
   .en-box {
     position: absolute;
     width: 90%;
@@ -1950,9 +1850,13 @@ form ::placeholder {
     left: 5%;
     top: 18vh;
   }
+
+  /*SP-EN- TEXT DIVISOR*/
   .en-divisor2 {
     display: none;
   }
+
+  /*SP-EN- CONTACT PAGE*/
   .en-forms {
     height: 43vh;
     margin: 0;
@@ -1964,7 +1868,6 @@ form ::placeholder {
     align-content: space-around;
     margin-left: 10vw;
   }
-
   [type="submit"] {
     height: 7vh;
     width: 25vw;
@@ -1980,8 +1883,10 @@ form ::placeholder {
     overflow: hidden;
   }
 }
-/*TABLETS*/
+
+/*TABLETS HORIZONTAL*/
 @media only screen and (min-width: 451px) and (max-width: 850px) {
+  /*TH-EN- CONTAINER SETTINGS*/
   .en-outer-wrapper {
     width: 100vw;
     height: 400vh;
@@ -1994,7 +1899,6 @@ form ::placeholder {
     -ms-overflow-style: none;
     -webkit-overflow-scrollin: touch;
   }
-
   .en-container {
     display: flex;
     flex-direction: column;
@@ -2003,9 +1907,12 @@ form ::placeholder {
     transform-origin: top left;
   }
 
+  /*TH-EN- TEXT DIVISOR*/
   .en-divisor {
     display: none;
   }
+
+  /*TH-EN- NAVBAR*/
   .en-nav-bar {
     position: fixed;
     width: 100%;
@@ -2028,7 +1935,6 @@ form ::placeholder {
     display: inline;
     padding: 0.5rem;
   }
-
   .en-linguas {
     display: flex;
     gap: 2vh;
@@ -2041,7 +1947,6 @@ form ::placeholder {
     font-weight: 600;
     font-size: 0.7em;
   }
-
   .en-linguas li .por {
     font-size: larger;
     border-top: none;
@@ -2053,7 +1958,6 @@ form ::placeholder {
     font-size: larger;
     border-bottom: none;
   }
-
   .en-nav-bar .en-socials {
     display: none;
   }
@@ -2063,6 +1967,8 @@ form ::placeholder {
   .en-bar {
     display: none;
   }
+
+  /*TH-EN- HOMEPAGE*/
   .en-inicio {
     margin-top: 40%;
   }
@@ -2077,7 +1983,6 @@ form ::placeholder {
     margin-right: 3%;
     color: white;
   }
-
   .en-nome:nth-child(3) {
     width: 100%;
     font-size: 8vw;
@@ -2091,7 +1996,6 @@ form ::placeholder {
     text-align: right;
     height: 27vh;
   }
-
   img.en-aguia {
     left: 2vw;
     position: absolute;
@@ -2102,6 +2006,8 @@ form ::placeholder {
   .en-deslise {
     display: none;
   }
+
+  /*TH-EN- ABOUT ME PAGE*/
   .en-lt1 {
     position: absolute;
     width: 86vw;
@@ -2123,7 +2029,6 @@ form ::placeholder {
     text-justify: inter-word;
     line-height: 4.5vw;
   }
-
   span.en-id_ola {
     font-size: 2em;
   }
@@ -2145,7 +2050,6 @@ form ::placeholder {
     padding: 0;
     animation: scrolling-left3 40s linear infinite;
   }
-  /* scrolling-left is continuous/repeatly text */
   @keyframes scrolling-left3 {
     0% {
       transform: translateX(300%);
@@ -2157,15 +2061,16 @@ form ::placeholder {
   .en-lt2 span {
     font-size: 12vh;
   }
-
   .en-btn-cv {
     z-index: 100;
   }
 
+  /*TH-EN- TEXT DIVISOR*/
   .en-divisor1 {
     display: none;
   }
 
+  /*TH-EN- PROJECT GALLERY*/
   .en-galeria span {
     position: absolute;
     left: 37vw;
@@ -2174,13 +2079,11 @@ form ::placeholder {
   .en-galeria span h2 {
     width: 84vw;
   }
-
   .en-circulo-maior {
     left: 10vw;
     bottom: -36vh;
     width: 80vw;
   }
-
   .en-safari {
     top: 73vh;
     width: 78vw;
@@ -2193,8 +2096,6 @@ form ::placeholder {
     height: 46vh;
     right: 9vw;
     top: 23vh;
-
-    /*  */
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 33% 33% 33%;
@@ -2209,9 +2110,13 @@ form ::placeholder {
     width: 37vw;
     height: 13vh;
   }
+
+  /*TH-EN- TEXT DIVISOR*/
   .en-divisor2 {
     display: none;
   }
+
+  /*TH-EN- CONTACT PAGE*/
   .en-forms {
     height: 43vh;
     margin: 0;
@@ -2223,7 +2128,6 @@ form ::placeholder {
     align-content: space-around;
     margin-left: 21vw;
   }
-
   .en-sub {
     height: 7vh;
     width: 25vw;
@@ -2240,13 +2144,11 @@ form ::placeholder {
   }
 }
 
-/* ********************************************* */
+/*********
+SITE INTERNET EN VERSION FRANÇAISE ------ ORDINATEUR PORTABLE FRANÇAIS = OP-FR
+*********/
 
-/* END ENGLISH VERSION */
-
-/* FRENCH VERSION************************************************************************ */
-/*P3 - FRENCH VERSION - DESIGN - NAVEGATION COMPONESTS PAGE*/
-
+/*OP-FR - BARRE DE NAVIGATION*/
 .fr-nav-bar {
   position: fixed;
   height: 100vh;
@@ -2262,7 +2164,6 @@ form ::placeholder {
   margin-top: 5vh;
   text-indent: -2vh;
 }
-
 .fr-rotulos a {
   font-family: Kross-book;
   font-weight: 600;
@@ -2270,11 +2171,9 @@ form ::placeholder {
   transform: rotate(180deg);
   color: var(--fr-vermelhro-norm);
 }
-
 .fr-rotulos :hover {
   color: var(--fr-rosa-claro);
 }
-
 .fr-linguas {
   display: grid;
   font-weight: 600;
@@ -2284,21 +2183,18 @@ form ::placeholder {
   margin-top: 15vh;
   line-height: 3vh;
 }
-
 .fr-linguas li .por {
   font-family: Kross-book;
   color: var(--fr-vermelhro-norm);
   border-top: 0.2vh solid var(--fr-vermelhro-norm);
   padding-top: 1vh;
 }
-
 .fr-linguas li .eng {
   font-family: Kross-book;
   color: var(--fr-vermelhro-norm);
   border-bottom: 0.2vh solid var(--fr-vermelhro-norm);
   padding-bottom: 1vh;
 }
-
 .fr-nav-bar .fr-socials {
   display: grid;
   justify-content: center;
@@ -2307,26 +2203,22 @@ form ::placeholder {
   bottom: 1vh;
   width: 100%;
 }
-
 .fr-nav-bar .fr-socials .github {
   display: grid;
   margin-top: 11vh;
   margin-bottom: 1vh;
 }
-
 .fr-nav-bar .fr-socials .linkedin {
   display: grid;
   margin-top: 0.5vh;
   margin-bottom: 1vh;
 }
-
 .fr-hamburger {
   display: none;
   cursor: pointer;
 }
 
-/*P4 - DESIGN MAIN PAGES*/
-
+/*OP-FR - PARAMÈTRES DU CONTENANT*/
 .fr-container {
   scroll-behavior: smooth;
   position: fixed;
@@ -2358,17 +2250,14 @@ form ::placeholder {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
 ::-webkit-scrollbar {
   display: none;
 }
-/*FIM P4*/
 
-/**************************************** SECTION 1 - TELA INCIAL ****************************************************/
+/*OP-FR - ACCUIEL PAGE */
 .fr-inicio {
   margin-bottom: 10%;
 }
-
 .fr-nome {
   z-index: 100;
   font-family: Brown-sugar;
@@ -2379,7 +2268,6 @@ form ::placeholder {
   margin-bottom: 0.5%;
   color: white;
 }
-
 .fr-nome:nth-child(3) {
   font-size: 7vh;
   position: absolute;
@@ -2390,7 +2278,6 @@ form ::placeholder {
   color: var(--fr-rosa-escuro);
   background-color: white;
 }
-
 img.fr-aguia {
   left: 42vw;
   position: absolute;
@@ -2398,7 +2285,6 @@ img.fr-aguia {
   width: 42vw;
   pointer-events: none;
 }
-
 .fr-deslise {
   display: flex;
   position: absolute;
@@ -2416,13 +2302,13 @@ img.fr-aguia {
   text-align: right;
   z-index: 999;
 }
-
 .fr-circulo {
   width: 2.5em;
   margin-right: -3%;
   pointer-events: none;
 }
 
+/*OP-FR - TEXTE SÉPARATEUR*/
 .fr-divisor {
   overflow: visible;
   z-index: 100;
@@ -2435,7 +2321,6 @@ img.fr-aguia {
   background-color: var(--fr-vermelhro-norm);
   margin-bottom: -40%;
 }
-
 .fr-b-bg {
   animation: scrolling-left1 20s linear infinite;
 }
@@ -2449,8 +2334,6 @@ img.fr-aguia {
   font-size: 9vh;
   margin-top: 165vh;
 }
-
-/* scrolling-left is continuous/repeatly text */
 @keyframes scrolling-left1 {
   0% {
     transform: translateY(700%);
@@ -2460,7 +2343,7 @@ img.fr-aguia {
   }
 }
 
-/**************************************** SECTION 2 - SOBRE MIM ****************************************************/
+/*OP-FR - À PROPOS DE MOI*/
 .fr-sobre {
   display: grid;
   grid-column: 2;
@@ -2478,13 +2361,11 @@ img.fr-aguia {
   text-justify: inter-word;
   line-height: 250%;
 }
-
 span.fr-id_ola {
   font-family: Brown-Sugar;
   color: var(--fr-cinza-claro);
   font-size: 4em;
 }
-
 .fr-imgbtn {
   display: flex;
   position: relative;
@@ -2496,7 +2377,6 @@ span.fr-id_ola {
   width: 100%;
   margin-top: 7%;
 }
-
 .fr-btn-cv {
   position: absolute;
   background-color: white;
@@ -2510,11 +2390,9 @@ span.fr-id_ola {
   border-style: none;
   margin-top: 7%;
 }
-
 .fr-btn-cv:hover {
   color: var(--fr-vermelhro-norm);
 }
-
 .fr-lt2 {
   height: 100%;
   margin-right: 10%;
@@ -2527,7 +2405,6 @@ span.fr-id_ola {
   align-items: center;
   justify-content: center;
 }
-
 .fr-lt2 span {
   font-family: Brown-sugar;
   font-size: 7.3vh;
@@ -2544,12 +2421,12 @@ span.fr-id_ola {
   color: transparent;
   -webkit-text-stroke: 0.01em white;
 }
-
 .fr-scor:hover {
   color: white;
   -webkit-text-stroke: none;
 }
 
+/*OP-FR - TEXTE SÉPARATEUR*/
 .fr-divisor1 {
   overflow: visible;
   z-index: 100;
@@ -2562,7 +2439,6 @@ span.fr-id_ola {
   background-color: var(--fr-vermelhro-norm);
   margin-bottom: -40%;
 }
-
 .fr-b-bg1 {
   animation: scrolling-left2 20s linear infinite;
 }
@@ -2576,8 +2452,6 @@ span.fr-id_ola {
   font-size: 9vh;
   margin-top: 165vh;
 }
-
-/* scrolling-left is continuous/repeatly text */
 @keyframes scrolling-left2 {
   0% {
     transform: translateY(700%);
@@ -2587,7 +2461,7 @@ span.fr-id_ola {
   }
 }
 
-/**************************************** SECTION 3 - PORTIFOLIO ****************************************************/
+/*OP-FR -GALERIE DE PROJETS*/
 .fr-galeria span {
   display: flex;
   position: absolute;
@@ -2605,13 +2479,11 @@ span.fr-id_ola {
   text-align: left;
   z-index: 999;
 }
-
 .fr-circulo-menor {
   width: 21%;
   margin-right: -10%;
   pointer-events: none;
 }
-
 .fr-circulo-maior {
   display: flex;
   position: absolute;
@@ -2629,7 +2501,6 @@ span.fr-id_ola {
   z-index: 20;
   pointer-events: none;
 }
-
 .fr-box {
   display: flex;
   position: absolute;
@@ -2642,7 +2513,6 @@ span.fr-id_ola {
   align-items: center;
   flex-direction: column;
 }
-
 .fr-box-card {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -2669,7 +2539,6 @@ span.fr-id_ola {
   margin-top: 5%;
   color: var(--fr-vermelhro-norm);
 }
-
 .fr-left-side p {
   font-family: Kross-book;
   font-size: 0.6em;
@@ -2679,7 +2548,6 @@ span.fr-id_ola {
   margin-bottom: 5%;
   color: var(--fr-vermelhro-norm);
 }
-
 .fr-left-side button {
   font-family: Kross-bold;
   font-size: 0.8em;
@@ -2691,11 +2559,11 @@ span.fr-id_ola {
   margin-bottom: 4%;
   justify-content: end;
 }
-
 .fr-left-side button:hover {
   color: var(--us-cinza-norm);
 }
 
+/*OP-FR - TEXTE SÉPARATEUR*/
 .fr-divisor2 {
   overflow: visible;
   z-index: 100;
@@ -2708,7 +2576,6 @@ span.fr-id_ola {
   background-color: var(--fr-vermelhro-norm);
   margin-bottom: -40%;
 }
-
 .fr-b-bg2 {
   animation: scrolling-left2 20s linear infinite;
 }
@@ -2722,8 +2589,6 @@ span.fr-id_ola {
   font-size: 9vh;
   margin-top: 165vh;
 }
-
-/* scrolling-left is continuous/repeatly text */
 @keyframes scrolling-left2 {
   0% {
     transform: translateY(700%);
@@ -2733,7 +2598,7 @@ span.fr-id_ola {
   }
 }
 
-/**************************************** SECTION 4 - CONTATO ****************************************************/
+/*OP-FR - CONTACT PAGE*/
 .fr-forms {
   width: 50%;
   height: 80%;
@@ -2747,7 +2612,6 @@ span.fr-id_ola {
   align-content: space-around;
   margin-left: 12vw;
 }
-
 .fr-feedback-input {
   resize: none;
   height: 6vh;
@@ -2767,7 +2631,6 @@ span.fr-id_ola {
 form ::placeholder {
   color: white;
 }
-
 .fr-sub {
   background-color: white;
   border: none;
@@ -2780,7 +2643,6 @@ form ::placeholder {
   margin-left: 7vw;
   margin-top: 9vh;
 }
-
 [type="submit"] :hover {
   color: var(--us-cinza-norm);
 }
@@ -2791,8 +2653,14 @@ form ::placeholder {
   right: 0vw;
   pointer-events: none;
 }
-/********************************************** MEDIA QUERY */
+
+/*******
+MEDIA QUERY VERSIONING ----- SMARTPHONE FRANÇAIS = SP-FR  -------- TABLET HORIZONTAL FRANÇAIS = TH-FR
+*******/
+
+/*SMARTPHONES*/
 @media only screen and (max-width: 480px) {
+  /*SP-FR- PARAMÈTRES DU CONTENANT*/
   .fr-outer-wrapper {
     width: 100vw;
     height: 400vh;
@@ -2802,6 +2670,14 @@ form ::placeholder {
     overflow-y: scroll;
     overflow-x: hidden;
   }
+  .fr-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transform: rotate(0deg) translateY(0vh);
+    transform-origin: top left;
+  }
+  /*SP-FR- BARRE DE NAVIGATION*/
   .fr-nav-bar {
     position: fixed;
     height: 5vh;
@@ -2811,7 +2687,6 @@ form ::placeholder {
     margin: 0;
     z-index: 100;
   }
-
   .fr-rotulos {
     font-family: Kross-bold;
     position: fixed;
@@ -2822,7 +2697,6 @@ form ::placeholder {
     top: -200%;
     transition: 0.5s ease-out;
   }
-
   .fr-rotulos a {
     font-size: 5vh;
     font-weight: 700;
@@ -2833,7 +2707,6 @@ form ::placeholder {
     margin-right: 5%;
     border-color: var(--us-vermelho-norm);
   }
-
   .fr-rotulos li:nth-child(1) {
     margin-top: 50%;
   }
@@ -2845,7 +2718,6 @@ form ::placeholder {
     justify-content: right;
     text-indent: 0%;
   }
-
   .fr-rotulos.active {
     top: 0;
     transition: 0.8s;
@@ -2865,7 +2737,6 @@ form ::placeholder {
     font-size: 0.7em;
     line-height: 4vh;
   }
-
   .fr-linguas li .por {
     font-size: larger;
     border-top: none;
@@ -2877,7 +2748,6 @@ form ::placeholder {
     font-size: larger;
     border-bottom: none;
   }
-
   .fr-nav-bar .fr-socials {
     display: none;
   }
@@ -2893,7 +2763,6 @@ form ::placeholder {
     position: absolute;
     z-index: 100;
   }
-
   .fr-hamburger.active .fr-bar:nth-child(2) {
     opacity: 0;
   }
@@ -2903,7 +2772,6 @@ form ::placeholder {
   .fr-hamburger.active .fr-bar:nth-child(3) {
     transform: translateY(-1.2vh) rotate(-45deg);
   }
-
   .fr-bar {
     display: block;
     width: 3vh;
@@ -2915,14 +2783,8 @@ form ::placeholder {
     background-color: var(--fr-vermelhro-norm);
     border-color: none;
   }
-  /*INÍCIO*/
-  .fr-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    transform: rotate(0deg) translateY(0vh);
-    transform-origin: top left;
-  }
+
+  /*SP-FR- ACCUIEL*/
   .fr-inicio {
     display: inline-block;
     justify-content: center;
@@ -2938,7 +2800,6 @@ form ::placeholder {
     margin-right: 11vw;
     text-align: center;
   }
-
   .fr-nome:nth-child(1) {
     font-size: 6.2vh;
   }
@@ -2963,10 +2824,12 @@ form ::placeholder {
   .fr-deslise {
     display: none;
   }
+
+  /*SP-FR - TEXTE SÉPARATEUR*/
   .fr-divisor {
     display: none;
   }
-
+  /*SP-FR -À PORPOS DE MOI*/
   .fr-lt1 {
     display: grid;
     width: 80%;
@@ -2984,7 +2847,6 @@ form ::placeholder {
     text-justify: inter-word;
     line-height: 250%;
   }
-
   span.fr-id_ola {
     font-family: Brown-Sugar;
     color: var(--us-cinza-norm);
@@ -2996,38 +2858,36 @@ form ::placeholder {
   .fr-lt2 {
     display: none;
   }
-
   .fr-btn-cv {
     font-size: 3vh;
     padding: 3% 5% 3% 5%;
     z-index: 100;
   }
 
+  /*SP-FR - TEXTE SÉPARATEUR*/
   .fr-divisor1 {
     display: none;
   }
+
+  /*SP-FR - GALERIE DE PROJETS*/
   .fr-galeria span {
     top: 14vw;
     left: 10vh;
   }
-
   .fr-galeria span h2 {
     width: 53vh;
     font-size: 2em;
     left: 1vw;
   }
-
   .fr-safari {
     position: absolute;
     top: 89vh;
     left: 8vw;
     width: 87vw;
   }
-
   .fr-img1 {
     height: 15vh;
   }
-
   .fr-left-side p {
     font-size: 1.2vh;
   }
@@ -3037,7 +2897,6 @@ form ::placeholder {
     left: 8vw;
     width: 82vw;
   }
-
   .fr-box {
     position: absolute;
     width: 90%;
@@ -3045,9 +2904,13 @@ form ::placeholder {
     left: 5%;
     top: 18vh;
   }
+
+  /*SP-FR - TEXTE SÉPARATEUR*/
   .fr-divisor2 {
     display: none;
   }
+
+  /*SP-FR - CONTACT PAGE*/
   .fr-forms {
     height: 43vh;
     margin: 0;
@@ -3059,7 +2922,6 @@ form ::placeholder {
     align-content: space-around;
     margin-left: 10vw;
   }
-
   [type="submit"] {
     height: 7vh;
     width: 25vw;
@@ -3075,8 +2937,10 @@ form ::placeholder {
     overflow: hidden;
   }
 }
+
 /*TABLETS*/
 @media only screen and (min-width: 451px) and (max-width: 850px) {
+  /*TH-FR -PARAMÈTRES DU CONTENANT*/
   .fr-outer-wrapper {
     width: 100vw;
     height: 400vh;
@@ -3089,7 +2953,6 @@ form ::placeholder {
     -ms-overflow-style: none;
     -webkit-overflow-scrollin: touch;
   }
-
   .fr-container {
     display: flex;
     flex-direction: column;
@@ -3098,9 +2961,12 @@ form ::placeholder {
     transform-origin: top left;
   }
 
+  /*TH-FR - TEXTE SÉPARATEUR*/
   .fr-divisor {
     display: none;
   }
+
+  /*TH-FR - BARRE DE NAVEGATION*/
   .fr-nav-bar {
     position: fixed;
     width: 100%;
@@ -3123,7 +2989,6 @@ form ::placeholder {
     display: inline;
     padding: 0.5rem;
   }
-
   .fr-linguas {
     display: flex;
     gap: 2vh;
@@ -3136,7 +3001,6 @@ form ::placeholder {
     font-weight: 600;
     font-size: 0.7em;
   }
-
   .fr-linguas li .por {
     font-size: larger;
     border-top: none;
@@ -3148,7 +3012,6 @@ form ::placeholder {
     font-size: larger;
     border-bottom: none;
   }
-
   .fr-nav-bar .fr-socials {
     display: none;
   }
@@ -3158,6 +3021,8 @@ form ::placeholder {
   .fr-bar {
     display: none;
   }
+
+  /*TH-FR - ACUUIEL*/
   .fr-inicio {
     margin-top: 40%;
   }
@@ -3172,7 +3037,6 @@ form ::placeholder {
     margin-right: 3%;
     color: white;
   }
-
   .fr-nome:nth-child(3) {
     width: 100%;
     font-size: 8vw;
@@ -3186,7 +3050,6 @@ form ::placeholder {
     text-align: right;
     height: 27vh;
   }
-
   img.fr-aguia {
     left: 15vw;
     position: absolute;
@@ -3197,6 +3060,8 @@ form ::placeholder {
   .fr-deslise {
     display: none;
   }
+
+  /*TH-FR - À PROPOS DE MOI*/
   .fr-lt1 {
     position: absolute;
     width: 86vw;
@@ -3218,7 +3083,6 @@ form ::placeholder {
     text-justify: inter-word;
     line-height: 4.5vw;
   }
-
   span.fr-id_ola {
     font-size: 2em;
   }
@@ -3240,7 +3104,6 @@ form ::placeholder {
     padding: 0;
     animation: scrolling-left3 40s linear infinite;
   }
-  /* scrolling-left is continuous/repeatly text */
   @keyframes scrolling-left3 {
     0% {
       transform: translateX(300%);
@@ -3255,10 +3118,13 @@ form ::placeholder {
   .fr-btn-cv {
     z-index: 100;
   }
+
+  /*TH-FR - TEXTE SÉPARATEUR*/
   .fr-divisor1 {
     display: none;
   }
 
+  /*TH-FR - GALERIE DE PROJETS*/
   .fr-galeria span {
     position: absolute;
     left: 37vw;
@@ -3275,7 +3141,6 @@ form ::placeholder {
     bottom: -36vh;
     width: 80vw;
   }
-
   .fr-safari {
     top: 82vh;
     width: 78vw;
@@ -3304,9 +3169,13 @@ form ::placeholder {
     width: 37vw;
     height: 13vh;
   }
+
+  /*TH-FR - TEXTE SÉPARATEUR*/
   .fr-divisor2 {
     display: none;
   }
+
+  /*TH-FR - CONTACT PAGE*/
   .fr-forms {
     height: 43vh;
     margin: 0;
@@ -3318,7 +3187,6 @@ form ::placeholder {
     align-content: space-around;
     margin-left: 21vw;
   }
-
   .fr-sub {
     height: 7vh;
     width: 25vw;
@@ -3334,7 +3202,3 @@ form ::placeholder {
     overflow: hidden;
   }
 }
-
-/* ********************************************* */
-
-/* END FRENCH VERSION */
