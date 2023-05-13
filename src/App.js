@@ -21,6 +21,7 @@ frhamburger.addEventListener("click", () => {
   frhamburger.classList.toggle("active");
   frrotulos.classList.toggle("active");
 });
+
 function App() {}
 
 export default App;
