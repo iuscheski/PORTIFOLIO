@@ -52,11 +52,13 @@
 /*PC-BR - BARRA DE NAVEGAÇÃO */
 .nav-bar {
   position: fixed;
-  height: 50vh;
-  top: 25vh;
-  left: 1vh;
+  height: 29em;
+  top: 50%;
+  left: 2em;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
   border-radius: 3em;
-  width: 2.5%;
+  width: 2.5em;
   z-index: 1;
   background-color: var(--br-amarelo-norm);
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
@@ -66,7 +68,7 @@
   justify-content: center;
   align-items: center;
   font-size: 0.79em;
-  margin-top: 4vh;
+  margin-top: 3.2em;
   text-indent: -2vh;
 }
 .rotulos a {
@@ -85,20 +87,20 @@
   justify-content: center;
   align-items: center;
   font-size: 0.7em;
-  margin-top: 6.6vh;
-  line-height: 3vh;
+  margin-top: 5em;
+  line-height: 2em;
 }
 .linguas li .eng {
   font-family: Kross-book;
   color: var(--br-azul-norm);
-  border-top: 0.2vh solid var(--br-azul-norm);
-  padding-top: 1vh;
+  border-top: 0.2em solid var(--br-azul-norm);
+  padding-top: 0.5em;
 }
 .linguas li .fra {
   font-family: Kross-book;
   color: var(--br-azul-norm);
-  border-bottom: 0.2vh solid var(--br-azul-norm);
-  padding-bottom: 1vh;
+  border-bottom: 0.2em solid var(--br-azul-norm);
+  padding-bottom: 0.5em;
 }
 .nav-bar .socials {
   display: none;
@@ -258,8 +260,7 @@ img.arara {
 }
 .sobre {
   display: grid;
-  grid-column: 2;
-  margin-top: -40vh;
+  margin-top: -25vh;
 }
 .lt1 {
   margin-left: 10%;
@@ -268,11 +269,11 @@ img.arara {
 .sobre p {
   color: white;
   font-family: Kross-book;
-  font-size: 1.4vh;
+  font-size: 1.7vh;
   width: 100%;
   text-align: justify;
   text-justify: inter-word;
-  line-height: 270%;
+  line-height: 4vh;
 }
 span.id_ola {
   font-family: Brown-Sugar;
@@ -379,6 +380,7 @@ span.id_ola {
 /*PC-BR-GALERIA DE PROJETOS*/
 #portifolio {
   background-color: var(--br-azul-norm);
+  border-color: var(--br-azul-norm);
 }
 .galeria span {
   display: flex;
@@ -391,14 +393,14 @@ span.id_ola {
 .galeria span h2 {
   width: 22vw;
   font-family: Brown-sugar;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 100;
   color: white;
   text-align: left;
   z-index: 999;
 }
 .circulo-menor {
-  width: 17%;
+  width: 7em;
   margin-right: -10%;
   pointer-events: none;
 }
@@ -609,6 +611,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     padding: 0;
     margin: 0;
     z-index: 100;
+    transform: none;
   }
   .rotulos {
     font-family: Kross-bold;
@@ -727,7 +730,6 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     margin-top: 1vh;
     margin-bottom: -1vh;
   }
-
   .nome:nth-child(3) {
     font-size: 2.4vh;
     margin-left: 0;
@@ -754,26 +756,30 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     display: grid;
     width: 80%;
     height: 40%;
-    margin-top: 27vh;
+    margin-top: 0;
   }
   .sobre {
     bottom: 0;
   }
   .sobre p {
-    margin-top: -26vh;
     font-size: 1.3vh;
     width: 100%;
     text-align: justify;
-    text-justify: inter-word;
     line-height: 250%;
   }
   span.id_ola {
     font-family: Brown-Sugar;
-    color: var(--br-amarelo-norm);
+    color: var(--br-azul-norm);
     font-size: 2em;
   }
   .imgbtn {
+    margin-top: 3vh;
+  }
+  .btn-cv {
     margin-top: 15vh;
+  }
+  .bg-btn-cv {
+    width: 85vw;
   }
   .lt2 {
     display: none;
@@ -790,7 +796,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   }
   .galeria span {
     top: 10vw;
-    left: 1ovh;
+    left: 14vh;
   }
   .galeria span h2 {
     width: 53vh;
@@ -805,9 +811,9 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   }
   .safari {
     position: absolute;
-    top: 80vh;
-    left: 12vw;
-    width: 77vw;
+    bottom: 0;
+    left: -2vw;
+    width: 106vw;
   }
   .circulo-maior {
     position: absolute;
@@ -819,9 +825,9 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     display: flex;
     position: absolute;
     right: 5%;
-    top: 10%;
+    top: 20%;
     width: 90vw;
-    height: 80%;
+    height: 65%;
     overflow-x: hidden;
     overflow-y: scroll;
     align-items: center;
@@ -845,7 +851,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
 
   /*SP-PÁGINA CONTATO*/
   .forms {
-    height: 43vh;
+    height: 10vh;
     margin: 0;
     border: 0;
   }
@@ -896,22 +902,26 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     display: none;
   }
   .nav-bar {
+    top: 2vh;
+    left: 15vh;
     position: fixed;
-    width: 100%;
-    height: 4%;
+    width: 60%;
+    height: 5%;
+    transform: none;
   }
   .rotulos {
-    padding: 1.4%;
+    padding: 3%;
     text-align: right;
-    height: 5%;
+    height: 5vh;
     align-content: center;
+    margin-top: 0;
   }
   .rotulos a {
-    display: grid;
     margin: 0;
     display: inline;
     writing-mode: horizontal-tb;
     transform: rotate(-90deg);
+    font-size: 1.2vh;
   }
   .rotulos li {
     display: inline;
@@ -919,8 +929,11 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   }
   .linguas {
     display: flex;
+    position: absolute;
     gap: 1vh;
-    margin: -1.9%;
+    margin-bottom: 0;
+    margin-top: -2.5vh;
+    line-height: 0;
     padding-left: 3%;
     justify-content: left;
   }
@@ -930,14 +943,14 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     font-size: 0.7em;
   }
   .linguas li .eng {
-    font-size: larger;
+    font-size: 1.3vh;
     border-top: none;
     border-right: 0.3vh solid var(--br-azul-norm);
     padding: 0;
     padding-right: 20%;
   }
   .linguas li .fra {
-    font-size: larger;
+    font-size: 1.3vh;
     border-bottom: none;
   }
   .nav-bar .socials {
@@ -952,7 +965,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
 
   /*TV-PÁGINA INÍCIO*/
   .inicio {
-    margin-top: 54vh;
+    margin-top: 0vh;
   }
   .nome {
     z-index: 100;
@@ -965,31 +978,35 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     margin-right: 3%;
     color: var(--br-amarelo-norm);
   }
+  .nome:nth-child(1) {
+    font-size: 5vh;
+    display: grid;
+    text-align: center;
+    margin-right: 0;
+  }
+  .nome:nth-child(2) {
+    text-align: center;
+    margin-right: 0;
+    font-size: 8vh;
+    color: white;
+  }
   .nome:nth-child(3) {
-    width: 82vw;
-    font-size: 6vw;
-    position: absolute;
+    width: 100%;
+    font-size: 3.2vh;
+    text-align: center;
     display: table;
-    padding-top: 1%;
-    padding-right: 1%;
-    bottom: 10vh;
-    left: 11vh;
-    text-align: end;
+    padding-top: 2%;
+    padding-right: 0%;
+    left: 0;
+    text-align: center;
     height: 0vh;
   }
-  .nome:nth-child(1) {
-    font-size: 10vh;
-    display: grid;
-    text-align: right;
-    margin: 0;
-    margin-right: 3%;
-  }
   img.arara {
-    left: -19vw;
+    left: -58vw;
     position: absolute;
     display: flex;
-    width: 93vw;
-    bottom: 18vh;
+    width: 210vw;
+    top: 78vh;
   }
   .deslise {
     display: none;
@@ -1049,8 +1066,17 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   .lt2 span {
     font-size: 12vh;
   }
+  .bg-btn-cv {
+    overflow: hidden;
+    position: absolute;
+    width: 73vw;
+    bottom: -91vh;
+  }
   .btn-cv {
+    margin-top: 13vh;
     z-index: 100;
+    border-radius: 0.4em;
+    padding: 3%;
   }
   .divisor1 {
     display: none;
@@ -1059,8 +1085,8 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   /*TV-PÁGINA GALERIA DE PROJETOS*/
   .galeria span {
     position: absolute;
-    left: 37vw;
-    top: 8vh;
+    left: 33vw;
+    top: 10vh;
   }
   .galeria span h2 {
     width: 84vw;
@@ -1071,9 +1097,9 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     width: 75vw;
   }
   .safari {
-    top: 66vh;
-    width: 82vw;
-    left: 8vw;
+    bottom: 0;
+    width: 105vw;
+    left: -6vw;
     z-index: 20;
   }
   .box {
@@ -1081,7 +1107,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     width: 83vw;
     height: 46vh;
     right: 9vw;
-    top: 23vh;
+    top: 30vh;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 33% 33% 33%;
@@ -1102,7 +1128,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
 
   /*TV-PÁGINA CONTATO*/
   .forms {
-    height: 43vh;
+    height: 0vh;
     margin: 0;
     border: 0;
   }
@@ -1113,7 +1139,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     margin-left: 27vw;
   }
   [type="submit"] {
-    height: 5vh;
+    height: 6vh;
     width: 19vw;
     border-radius: 0.6em;
     font-size: 2vh;
@@ -1121,19 +1147,22 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     margin-top: 3vh;
   }
   .feedback-input {
-    height: 4vh;
+    height: 5vh;
     font-size: 1.5vh;
   }
+  .feedback-input:nth-child(3) {
+    height: 17vh;
+  }
   .arara2 {
-    width: 120vw;
-    top: 56vh;
+    width: 143vw;
+    top: 0vh;
     right: -12vw;
     overflow: hidden;
   }
 }
 
 /*TABLETS  HORIZONTAL*/
-@media only screen and (min-width: 851px) and (max-height: 820px) {
+@media only screen and (min-width: 851px) and (max-width: 1200px) {
   /*TV-BR - DESIGN ÁREA CONTAINER*/
   .container {
     width: 100vw;
@@ -1145,6 +1174,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   /*TV-BR - BARRA DE NAVEGAÇÃO */
   .nav-bar {
     width: 4%;
+    height: 31em;
   }
 
   /*TV-BR - INÍCIO */
@@ -1153,38 +1183,79 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     font-size: 6vh;
     margin-left: 22vh;
   }
+  .des {
+    font-size: 1.2em;
+  }
+  .deslise {
+    width: 18em;
+  }
+  .nome:nth-child(1) {
+    font-size: 3em;
+    margin-bottom: -1vh;
+  }
+  .nome:nth-child(2) {
+    font-size: 5.5em;
+    padding-top: 1.4%;
+  }
   .nome:nth-child(3) {
-    font-size: 6vh;
+    font-size: 2.219em;
+    position: absolute;
+    margin-top: -2vh;
   }
   img.arara {
-    left: 46vw;
-    width: 50vw;
+    left: -13vh;
+    top: 83vh;
+    width: 81vw;
     z-index: 1;
   }
 
+  /*TV-BR - SOBRE MIM */
+
+  .sobre p {
+    font-size: 0.7em;
+  }
+  .btn-cv {
+    font-size: 1.5em;
+    border-radius: 0.3em;
+    padding-top: 0.3em;
+    margin-top: 20%;
+  }
+  .bg-btn-cv {
+    width: 31vw;
+    margin-top: 82vh;
+  }
   /*TV-BR - GALERIA DE PROJETOS */
   .galeria span {
-    top: 15vh;
+    top: 6vh;
+    left: 53vh;
   }
   .galeria span h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-top: 3vh;
   }
   .box {
-    right: 6%;
+    width: 77vw;
+    height: 42vh;
+    right: 11vw;
+    top: 33vh;
   }
-  .circulo-maior {
-    bottom: -35vh;
+  .box-card {
+    width: 24vw;
+  }
+  .circulo-menor {
+    width: 14vh;
   }
   .safari {
-    top: 68vh;
-    width: 42vw;
-    left: 14vw;
+    bottom: 0;
+    width: 92vw;
+    left: 4vw;
   }
 
   /*TV-BR - CONTATO */
   .forms {
-    height: 41vh;
+    position: absolute;
+    height: 0vh;
+    right: 81vh;
   }
   .forms form {
     width: 32vw;
@@ -1198,9 +1269,9 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     margin-top: 3vh;
   }
   .arara2 {
-    width: 60vw;
-    top: 46vh;
-    right: -4vw;
+    width: 101.1vw;
+    top: -20vh;
+    right: 0;
   }
 }
 
@@ -2105,7 +2176,7 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     text-align: end;
     height: 0vh;
   }
-  .nome:nth-child(1) {
+  .en-nome:nth-child(1) {
     font-size: 10vh;
     display: grid;
     text-align: right;
