@@ -55,7 +55,6 @@
   height: 29em;
   top: 50%;
   left: 2em;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
   border-radius: 3em;
   width: 2.5em;
@@ -101,24 +100,6 @@
   color: var(--br-azul-norm);
   border-bottom: 0.2em solid var(--br-azul-norm);
   padding-bottom: 0.5em;
-}
-.nav-bar .socials {
-  display: none;
-  justify-content: center;
-  position: absolute;
-  font-size: 1.7em;
-  bottom: 5vh;
-  width: 100%;
-}
-.nav-bar .socials .github {
-  display: grid;
-  margin-top: 11vh;
-  margin-bottom: 1vh;
-}
-.nav-bar .socials .linkedin {
-  display: grid;
-  margin-top: 0.5vh;
-  margin-bottom: 1vh;
 }
 .hamburger {
   display: none;
@@ -182,11 +163,21 @@
 }
 .nome:nth-child(3) {
   font-family: Kross-bold;
-  font-size: 4vh;
+  font-size: 5.27vh;
   position: absolute;
-  margin-top: -3vh;
+  margin-top: -4vh;
   display: table;
   color: var(--br-amarelo-norm);
+}
+.socials {
+  position: absolute;
+  display: flex;
+  left: 24.5vh;
+  font-size: 1.7em;
+  top: 61vh;
+}
+.socials .github {
+  padding-right: 0.5em;
 }
 img.arara {
   left: -6vw;
@@ -541,13 +532,13 @@ span.id_ola {
   margin: 2%;
   background-color: var(--br-verde-shadow);
   color: white;
-  font-family: Brown-sugar;
+  font-family: Kross-book;
   border: none;
   border-radius: 0.6em;
   padding-left: 4%;
   font-size: 2vh;
 }
-.feedback-input:nth-child(3) {
+.feedback-input:nth-child(4) {
   height: 14vh;
   padding-top: 2%;
 }
@@ -560,11 +551,11 @@ form ::placeholder {
   height: 5vh;
   width: 8vw;
   border-radius: 0.6em;
-  font-family: Brown-sugar;
+  font-family: kross-bold;
   color: var(--br-verde-norm);
   font-size: 2vh;
-  margin-left: 7vw;
-  margin-top: 9vh;
+  margin-left: 6vw;
+  margin-top: 1vh;
 }
 .arara2 {
   position: absolute;
@@ -675,9 +666,6 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     font-size: larger;
     border-bottom: none;
   }
-  .nav-bar .socials {
-    display: none;
-  }
   .hamburger {
     display: block;
     float: right;
@@ -743,6 +731,12 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     display: flex;
     width: 177vw;
     top: 88vh;
+  }
+  .socials {
+    font-size: 2em;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .deslise {
     display: none;
@@ -953,9 +947,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     font-size: 1.3vh;
     border-bottom: none;
   }
-  .nav-bar .socials {
-    display: none;
-  }
+
   .hamburger {
     display: none;
   }
@@ -1007,6 +999,12 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     display: flex;
     width: 210vw;
     top: 78vh;
+  }
+  .socials {
+    font-size: 2em;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .deslise {
     display: none;
@@ -1136,7 +1134,9 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     width: 48vw;
     height: 2vh;
     align-content: space-around;
-    margin-left: 27vw;
+    margin-top: 0%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
   }
   [type="submit"] {
     height: 6vh;
@@ -1150,7 +1150,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     height: 5vh;
     font-size: 1.5vh;
   }
-  .feedback-input:nth-child(3) {
+  .feedback-input:nth-child(4) {
     height: 17vh;
   }
   .arara2 {
@@ -1201,6 +1201,9 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     font-size: 2.219em;
     position: absolute;
     margin-top: -2vh;
+  }
+  .socials {
+    left: 22vh;
   }
   img.arara {
     left: -13vh;
@@ -1278,10 +1281,16 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
 /********* ENGLISH VERSION WEBSITE ------ PORTABLE COMPUTER ENGLISH = PC-EN *********/ /*PC-EN - NAVBAR*/
 .en-nav-bar {
   position: fixed;
-  height: 100vh;
-  width: 3%;
+  height: 29em;
+  top: 50%;
+  left: 2em;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  border-radius: 3em;
+  width: 2.5em;
   z-index: 1;
   background-color: var(--us-vermelho-norm);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
 }
 .en-rotulos li {
   display: flex;
@@ -1293,7 +1302,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
 }
 .en-rotulos a {
   font-family: Kross-book;
-  font-weight: 500;
+  font-weight: 600;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   color: white;
@@ -1307,23 +1316,23 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   justify-content: center;
   align-items: center;
   font-size: 0.7em;
-  margin-top: 15vh;
-  line-height: 3vh;
+  margin-top: 5em;
+  line-height: 2em;
 }
 .en-linguas li .por {
   font-family: Kross-book;
   color: white;
-  border-top: 0.2vh solid white;
-  padding-top: 1vh;
+  border-top: 0.2em solid white;
+  padding-top: 0.5em;
 }
 .en-linguas li .fra {
   font-family: Kross-book;
   color: white;
-  border-bottom: 0.2vh solid white;
-  padding-bottom: 1vh;
+  border-bottom: 0.2em solid white;
+  padding-bottom: 0.5em;
 }
 .en-nav-bar .en-socials {
-  display: grid;
+  display: none;
   justify-content: center;
   position: absolute;
   font-size: 1.7em;
@@ -2342,17 +2351,22 @@ SITE INTERNET EN VERSION FRANÇAISE ------ ORDINATEUR PORTABLE FRANÇAIS = OP-FR
 /*OP-FR - BARRE DE NAVIGATION*/
 .fr-nav-bar {
   position: fixed;
-  height: 100vh;
-  width: 3%;
+  height: 29em;
+  top: 50%;
+  left: 2em;
+  transform: translate(-50%, -50%);
+  border-radius: 3em;
+  width: 2.5em;
   z-index: 1;
   background-color: white;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
 }
 .fr-rotulos li {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 0.79em;
-  margin-top: 5vh;
+  margin-top: 3vh;
   text-indent: -2vh;
 }
 .fr-rotulos a {
@@ -2371,23 +2385,23 @@ SITE INTERNET EN VERSION FRANÇAISE ------ ORDINATEUR PORTABLE FRANÇAIS = OP-FR
   justify-content: center;
   align-items: center;
   font-size: 0.7em;
-  margin-top: 15vh;
-  line-height: 3vh;
+  margin-top: 5em;
+  line-height: 2em;
 }
 .fr-linguas li .por {
   font-family: Kross-book;
   color: var(--fr-vermelhro-norm);
-  border-top: 0.2vh solid var(--fr-vermelhro-norm);
-  padding-top: 1vh;
+  border-top: 0.2em solid var(--fr-vermelhro-norm);
+  padding-top: 0.5em;
 }
 .fr-linguas li .eng {
   font-family: Kross-book;
   color: var(--fr-vermelhro-norm);
-  border-bottom: 0.2vh solid var(--fr-vermelhro-norm);
-  padding-bottom: 1vh;
+  border-bottom: 0.2em solid var(--fr-vermelhro-norm);
+  padding-bottom: 0.5em;
 }
 .fr-nav-bar .fr-socials {
-  display: grid;
+  display: none;
   justify-content: center;
   position: absolute;
   font-size: 1.7em;

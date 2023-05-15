@@ -14,6 +14,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
     <script>
       function show(shown, hidden) {
         document.getElementById(shown).style.display = "block";
@@ -80,6 +81,18 @@
               <h2 class="nome">Olá, eu sou o</h2>
               <h2 class="nome">Felipe Almeida</h2>
               <h2 class="nome">DESENVOLVEDOR FRONT-END</h2>
+            </div>
+            <div class="socials">
+              <div class="github">
+                <a href="https://github.com/iuscheski">
+                  <i class="fa-brands fa-square-github" style="color: #ffffff"></i
+                ></a>
+              </div>
+              <div class="linkedin">
+                <a href="https://www.linkedin.com/in/felipe-almeida-797166105/">
+                  <i class="fa-brands fa-linkedin" style="color: #ffffff"></i
+                ></a>
+              </div>
             </div>
             <span class="deslise">
               <img
@@ -292,26 +305,13 @@
           <section id="contato">
             <div class="contato">
               <div class="forms">
-                <form>
-                  <input
-                    name="Nome"
-                    type="text"
-                    class="feedback-input"
-                    placeholder="Nome"
-                  />
-                  <input
-                    name="email"
-                    type="text"
-                    class="feedback-input"
-                    placeholder="Email"
-                  />
-                  <textarea
-                    name="text"
-                    class="feedback-input"
-                    placeholder="Mensagem"
-                  ></textarea>
-                  <input type="submit" value="ENVIAR" />
-                </form>
+                <form id="contact-form">
+                  <input type="hidden" name="contact_number">
+                  <input class="feedback-input" type="text" name="user_name" placeholder="Nome">
+                  <input class="feedback-input" type="email" name="user_email" placeholder="E-mail">
+                  <textarea class="feedback-input" name="message" placeholder="Mensagem"></textarea>
+                  <input type="submit" value="Enviar">
+              </form>   
               </div>
               <div class="img-fundo">
                 <img
@@ -325,6 +325,33 @@
         </div>
       </div>
       <script type="click" src="App.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script type="text/javascript">
+        (function() {
+            emailjs.init('1VoWirMlGGWWZXYJ8');
+        })();
+      </script>
+      <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_3iynlhp', 'template_u3aouna', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+        let form = document.getElementsByTagName("form")[0];
+        form.addEventListener("submit", (e) => {
+        e.preventDefault();
+          alert("E-mail enviado!");});
+      </script>
+
       <script>
         const hamburger = document.querySelector(".hamburger");
         const rotulos = document.querySelector(".rotulos");
