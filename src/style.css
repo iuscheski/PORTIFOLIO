@@ -26,7 +26,7 @@
   --br-laranja-norm: #ffa929;
   --br-azul-norm: #112e59;
   --us-azul-escuro: #022859;
-  --us-azul-escuro-bg: #082243;
+  --us-azul-escuro-bg: #011933;
   --us-vermelho-norm: #a6001d;
   --us-vermelho-clear: #bf1542;
   --us-cinza-norm: #a4a5a6;
@@ -159,7 +159,7 @@
 .nome:nth-child(1) {
   color: var(--br-verde-shadow);
   font-size: 7vh;
-  margin-bottom: -1vh;
+  margin-bottom: -3vh;
 }
 .nome:nth-child(3) {
   font-family: Kross-bold;
@@ -172,7 +172,7 @@
 .socials {
   position: absolute;
   display: flex;
-  left: 24.5vh;
+  left: 12%;
   font-size: 1.7em;
   top: 61vh;
 }
@@ -180,11 +180,11 @@
   padding-right: 0.5em;
 }
 img.arara {
-  left: -6vw;
-  top: 75vh;
+  left: -83vw;
+  top: 60vh;
   position: absolute;
   display: flex;
-  width: 82vw;
+  width: 175vw;
   pointer-events: none;
 }
 .deslise {
@@ -395,14 +395,6 @@ span.id_ola {
   margin-right: -10%;
   pointer-events: none;
 }
-.circulo-maior {
-  display: flex;
-  position: absolute;
-  left: 10%;
-  bottom: -59%;
-  width: 50vw;
-  pointer-events: none;
-}
 .safari {
   display: flex;
   position: absolute;
@@ -570,7 +562,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
 *******/
 
 /*SMARTPHONES*/
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 480px) {
   /*SP-CONFIGURAÇÃO CONTAINER*/
   .outer-wrapper {
     width: 100vw;
@@ -713,6 +705,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   }
   .nome:nth-child(1) {
     font-size: 3.8vh;
+    padding-bottom: 3vh;
   }
   .nome:nth-child(2) {
     margin-top: 1vh;
@@ -726,11 +719,11 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     position: relative;
   }
   img.arara {
-    left: -18vh;
+    left: -137vh;
     position: absolute;
     display: flex;
-    width: 177vw;
-    top: 88vh;
+    width: 653vw;
+    top: 66vh;
   }
   .socials {
     font-size: 2em;
@@ -805,9 +798,9 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   }
   .safari {
     position: absolute;
-    bottom: 0;
-    left: -2vw;
-    width: 106vw;
+    bottom: 0vh;
+    left: 1vw;
+    width: 97vw;
   }
   .circulo-maior {
     position: absolute;
@@ -827,7 +820,6 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     align-items: center;
     flex-direction: column;
   }
-
   .box-card {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -1297,7 +1289,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   justify-content: center;
   align-items: center;
   font-size: 0.79em;
-  margin-top: 5vh;
+  margin-top: 4vh;
   text-indent: -2vh;
 }
 .en-rotulos a {
@@ -1331,24 +1323,6 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   border-bottom: 0.2em solid white;
   padding-bottom: 0.5em;
 }
-.en-nav-bar .en-socials {
-  display: none;
-  justify-content: center;
-  position: absolute;
-  font-size: 1.7em;
-  bottom: 1vh;
-  width: 100%;
-}
-.en-nav-bar .en-socials .github {
-  display: grid;
-  margin-top: 11vh;
-  margin-bottom: 1vh;
-}
-.en-nav-bar .en-socials .linkedin {
-  display: grid;
-  margin-top: 0.5vh;
-  margin-bottom: 1vh;
-}
 .en-hamburger {
   display: none;
   cursor: pointer;
@@ -1371,9 +1345,9 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   position: relative;
   align-items: center;
   height: 100vh;
-  background-color: var(--us-azul-escuro);
+  background-color: var(--us-azul-escuro-bg);
   z-index: 56;
-  border: 1px solid var(--us-azul-escuro);
+  border: 1px solid var(--us-azul-escuro-bg);
 }
 .en-outer-wrapper {
   width: 100vh;
@@ -1392,34 +1366,48 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
 
 /*PC-EN - HOMEPAGE*/
 .en-inicio {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .en-nome {
-  z-index: 100;
   font-family: Brown-sugar;
   font-weight: 100;
-  font-size: 8vh;
+  font-size: 13vh;
   text-align: left;
   margin-left: 12%;
   margin-bottom: 0.5%;
   color: white;
 }
-.en-nome:nth-child(3) {
+.en-nome:nth-child(1) {
+  color: var(--us-azul-escuro);
   font-size: 7vh;
-  position: absolute;
-  padding-top: -1;
-  padding-left: 1vh;
-  padding-right: 1vh;
-  display: table;
-  color: white;
-  background-color: var(--us-vermelho-norm);
+  margin-bottom: -1vh;
 }
-img.en-aguia {
-  left: 34vw;
+.en-nome:nth-child(3) {
+  font-family: Kross-bold;
+  font-size: 6.5vh;
+  position: absolute;
+  margin-top: -4vh;
+  display: table;
+  color: var(--us-vermelho-norm);
+}
+.en-socials {
   position: absolute;
   display: flex;
-  width: 52vw;
+  left: 12%;
+  font-size: 1.7em;
+  top: 61vh;
+}
+.en-socials .github {
+  padding-right: 0.5em;
+}
+img.en-aguia {
+  left: -90vh;
+  bottom: -10vh;
+  position: absolute;
+  display: flex;
+  width: 156vw;
   pointer-events: none;
+  z-index: -1;
 }
 .en-deslise {
   display: flex;
@@ -1449,12 +1437,11 @@ img.en-aguia {
   overflow: visible;
   z-index: 100;
   height: 100%;
-  width: 1%;
+  width: 0%;
   display: inline-block;
   position: relative;
   text-align: left;
   white-space: nowrap;
-  background-color: var(--us-azul-escuro);
   margin-bottom: -40%;
 }
 .en-b-bg {
@@ -1480,9 +1467,14 @@ img.en-aguia {
 }
 
 /*PC-EN - ABOUT ME PAGE*/
+#en-sobre {
+  background-color: var(--us-vermelho-norm);
+  border-color: var(--us-vermelho-norm);
+}
 .en-sobre {
   display: grid;
-  grid-column: 2;
+  margin-top: -25vh;
+  z-index: 100;
 }
 .en-lt1 {
   margin-left: 10%;
@@ -1495,11 +1487,11 @@ img.en-aguia {
   width: 100%;
   text-align: justify;
   text-justify: inter-word;
-  line-height: 250%;
+  line-height: 4vh;
 }
 span.en-id_ola {
   font-family: Brown-Sugar;
-  color: var(--us-cinza-norm);
+  color: var(--us-azul-escuro-bg);
   font-size: 4em;
 }
 .en-imgbtn {
@@ -1510,21 +1502,23 @@ span.en-id_ola {
   justify-content: center;
 }
 .en-bg-btn-cv {
-  width: 100%;
-  margin-top: 7%;
+  overflow: hidden;
+  position: absolute;
+  width: 16vw;
+  margin-top: 94vh;
 }
 .en-btn-cv {
   position: absolute;
-  background-color: var(--us-vermelho-norm);
-  color: white;
+  background-color: white;
+  color: var(--us-vermelho-clear);
   padding: 0.7% 5% 0.7% 5%;
   font-family: Brown-sugar;
-  font-size: 2.2em;
+  font-size: 2em;
   font-weight: 500;
   align-self: center;
   border-radius: 0.6em;
   border-style: none;
-  margin-top: 7%;
+  margin-top: 15%;
 }
 .en-btn-cv:hover {
   color: var(--us-cinza-norm);
@@ -1547,11 +1541,11 @@ span.en-id_ola {
   line-height: 9vh;
 }
 .en-ccor {
-  color: var(--us-vermelho-clear);
+  color: var(--us-azul-escuro-bg);
 }
 .en-ccor:hover {
   color: transparent;
-  -webkit-text-stroke: 0.03em var(--us-vermelho-clear);
+  -webkit-text-stroke: 0.03em var(--us-azul-escuro-bg);
 }
 .en-scor {
   color: transparent;
@@ -1567,7 +1561,7 @@ span.en-id_ola {
   overflow: visible;
   z-index: 100;
   height: 100%;
-  width: 1%;
+  width: 0;
   display: inline-block;
   position: relative;
   text-align: left;
@@ -1598,18 +1592,22 @@ span.en-id_ola {
 }
 
 /*PC-EN - PORJECT GALLERY*/
+#en-portifolio {
+  background-color: var(--us-cinza-norm);
+  border-color: var(--us-cinza-norm);
+}
 .en-galeria span {
   display: flex;
   position: absolute;
-  top: 12%;
-  left: 12%;
+  top: 5vh;
+  left: 82vh;
   align-items: flex-start;
   text-align: left;
 }
 .en-galeria span h2 {
   width: 22vw;
   font-family: Brown-sugar;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 100;
   color: white;
   text-align: left;
@@ -1620,48 +1618,42 @@ span.en-id_ola {
   margin-right: -10%;
   pointer-events: none;
 }
-.en-circulo-maior {
-  display: flex;
-  position: absolute;
-  left: 10%;
-  bottom: -59%;
-  width: 50vw;
-  pointer-events: none;
-}
 .en-safari {
   display: flex;
   position: absolute;
-  top: 55vh;
-  width: 50vw;
-  left: 10vw;
+  bottom: 0vh;
+  width: 90vw;
+  left: 6vw;
   z-index: 20;
   pointer-events: none;
 }
 .en-box {
-  display: flex;
   position: absolute;
-  right: 10%;
-  top: 10%;
-  width: 20em;
-  height: 80%;
+  width: 68vw;
+  height: 43vh;
+  right: 18vw;
+  top: 28vh;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
   overflow-x: hidden;
   overflow-y: scroll;
   align-items: center;
-  flex-direction: column;
+  z-index: 100;
 }
 .en-box-card {
   display: grid;
   grid-template-columns: 50% 50%;
   position: relative;
-  width: 90%;
-  height: 30%;
-  top: 5%;
+  width: 21vw;
+  height: 19vh;
+  top: 2vh;
   border-radius: 0.6em;
-  background-color: var(--us-vermelho-norm);
-  margin-bottom: 5%;
+  background-color: var(--us-azul-escuro-bg);
+  margin-bottom: 5vh;
 }
 .en-img1 {
-  background-color: var(--us-cinza-norm);
+  background-color: var(--us-azul-escuro);
   width: 90%;
   height: 88%;
   margin: 5%;
@@ -1704,7 +1696,7 @@ span.en-id_ola {
   overflow: visible;
   z-index: 100;
   height: 100%;
-  width: 1%;
+  width: 0;
   display: inline-block;
   position: relative;
   text-align: left;
@@ -1739,28 +1731,30 @@ span.en-id_ola {
   width: 50%;
   height: 80%;
   display: flex;
+  z-index: 100;
 }
 .en-forms form {
   display: grid;
   position: absolute;
-  width: 23vw;
-  height: 17vh;
+  width: 21vw;
+  height: 0vh;
   align-content: space-around;
-  margin-left: 12vw;
+  margin-left: 40vw;
+  z-index: 100;
 }
 .en-feedback-input {
   resize: none;
   height: 6vh;
   margin: 2%;
-  background-color: var(--us-azul-escuro-bg);
+  background-color: var(--us-vermelho-clear);
   color: white;
-  font-family: Brown-sugar;
+  font-family: kross-book;
   border: none;
   border-radius: 0.6em;
   padding-left: 4%;
   font-size: 2vh;
 }
-.en-feedback-input:nth-child(3) {
+.en-feedback-input:nth-child(4) {
   height: 14vh;
   padding-top: 2%;
 }
@@ -1773,21 +1767,20 @@ form ::placeholder {
   height: 5vh;
   width: 8vw;
   border-radius: 0.6em;
-  font-family: Brown-sugar;
+  font-family: Kross-book;
   color: white;
   font-size: 2vh;
   margin-left: 7vw;
   margin-top: 9vh;
 }
-[type="submit"] :hover {
+[type="submit"]:hover {
   color: var(--us-cinza-norm);
 }
 .en-arara2 {
   position: absolute;
-  width: 57vw;
-  top: 29vh;
-  right: 0vw;
-  pointer-events: none;
+  width: 100vw;
+  top: -47vh;
+  right: 0;
 }
 
 /*******
@@ -1819,10 +1812,14 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     position: fixed;
     height: 5vh;
     width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0;
     transition: 0.7s ease-in;
     padding: 0;
     margin: 0;
     z-index: 100;
+    transform: none;
   }
   .en-rotulos {
     font-family: Kross-bold;
@@ -1885,9 +1882,6 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     font-size: larger;
     border-bottom: none;
   }
-  .en-nav-bar .en-socials {
-    display: none;
-  }
   .en-hamburger {
     display: block;
     float: right;
@@ -1921,41 +1915,41 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
 
   /*SP-EN- HOME PAGE*/
   .en-inicio {
-    display: inline-block;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    margin: 0 0 -50% 0;
-    margin-bottom: -37vh;
+    margin-bottom: 0;
   }
   .en-nome {
     font-family: Brown-sugar;
     font-weight: 100;
-    font-size: 5vh;
-    margin-right: 11vw;
+    font-size: 6vh;
+    margin-right: 0;
     text-align: center;
+    margin-left: 0;
   }
   .en-nome:nth-child(1) {
-    font-size: 6.2vh;
+    font-size: 3.8vh;
+    padding-bottom: 3vh;
   }
   .en-nome:nth-child(3) {
-    font-size: 5vh;
-    width: 100%;
-    height: 25vh;
-    position: absolute;
-    bottom: -2vh;
-    margin: 0;
-    display: table;
-    text-align: center;
-    padding-top: 4vh;
+    font-size: 2.9vh;
+    margin-left: 0;
+    margin-top: 0;
+    display: block;
+    position: relative;
+  }
+  .en-socials {
+    font-size: 2em;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   img.en-aguia {
-    left: -38vw;
+    left: -36vw;
     position: absolute;
     display: flex;
-    width: 131vw;
-    bottom: 40vh;
+    width: 366vw;
+    bottom: -22vh;
   }
+
   .en-deslise {
     display: none;
   }
@@ -1970,17 +1964,15 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     display: grid;
     width: 80%;
     height: 40%;
-    margin-top: 27vh;
+    margin-top: 0;
   }
   .en-sobre {
     bottom: 0;
   }
   .en-sobre p {
-    margin-top: -26vh;
     font-size: 1.3vh;
     width: 100%;
     text-align: justify;
-    text-justify: inter-word;
     line-height: 250%;
   }
   span.en-id_ola {
@@ -1989,15 +1981,21 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     font-size: 2em;
   }
   .en-imgbtn {
+    margin-top: 3vh;
+  }
+  .en-btn-cv {
     margin-top: 15vh;
+    font-size: 1.9em;
+    padding-top: 3%;
+    border-radius: 0.3em;
+  }
+  .en-bg-btn-cv {
+    width: 73vw;
+    left: 4vh;
+    z-index: -100;
   }
   .en-lt2 {
     display: none;
-  }
-  .en-btn-cv {
-    font-size: 3vh;
-    padding: 3% 5% 3% 5%;
-    z-index: 100;
   }
 
   /*SP-EN- TEXT DIVISOR*/
@@ -2007,8 +2005,8 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
 
   /*SP-EN- PROJECT GALLERY*/
   .en-galeria span {
-    top: 14vw;
-    left: 10vh;
+    top: 10vw;
+    left: 14vh;
   }
   .en-galeria span h2 {
     width: 53vh;
@@ -2017,9 +2015,9 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
   }
   .en-safari {
     position: absolute;
-    top: 84vh;
-    left: 12vw;
-    width: 77vw;
+    left: 0vw;
+    width: 100vw;
+    bottom: 0;
   }
   .en-img1 {
     height: 15vh;
@@ -2034,11 +2032,27 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     width: 82vw;
   }
   .en-box {
+    display: flex;
     position: absolute;
+    right: 5%;
+    top: 20%;
+    width: 90vw;
+    height: 65%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    align-items: center;
+    flex-direction: column;
+  }
+  .en-box-card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
     width: 90%;
-    height: 60%;
-    left: 5%;
-    top: 18vh;
+    height: 30%;
+    top: 5%;
+    border-radius: 0.6em;
+    background-color: var(--us-azul-escuro-bg);
+    margin-bottom: 5%;
   }
 
   /*SP-EN- TEXT DIVISOR*/
@@ -2048,7 +2062,7 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
 
   /*SP-EN- CONTACT PAGE*/
   .en-forms {
-    height: 43vh;
+    height: 10vh;
     margin: 0;
     border: 0;
   }
@@ -2067,9 +2081,9 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     margin-top: 4vh;
   }
   .en-arara2 {
-    width: 106vw;
-    top: 58%;
-    right: -3vw;
+    width: 333vw;
+    top: 0;
+    right: -90vw;
     overflow: hidden;
   }
 }
@@ -2399,24 +2413,6 @@ SITE INTERNET EN VERSION FRANÇAISE ------ ORDINATEUR PORTABLE FRANÇAIS = OP-FR
   color: var(--fr-vermelhro-norm);
   border-bottom: 0.2em solid var(--fr-vermelhro-norm);
   padding-bottom: 0.5em;
-}
-.fr-nav-bar .fr-socials {
-  display: none;
-  justify-content: center;
-  position: absolute;
-  font-size: 1.7em;
-  bottom: 1vh;
-  width: 100%;
-}
-.fr-nav-bar .fr-socials .github {
-  display: grid;
-  margin-top: 11vh;
-  margin-bottom: 1vh;
-}
-.fr-nav-bar .fr-socials .linkedin {
-  display: grid;
-  margin-top: 0.5vh;
-  margin-bottom: 1vh;
 }
 .fr-hamburger {
   display: none;

@@ -14,7 +14,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
     <script>
       function show(shown, hidden) {
         document.getElementById(shown).style.display = "block";
@@ -27,7 +26,7 @@
       var modify = function(color) {
           $(".bar_theme_color").attr("content", color);
       };
-      </script>
+    </script>
     <title>FELIPE ALMEIDA</title>
   </head>
   <body>  
@@ -52,27 +51,15 @@
             <a href="#inicio" class="rotulos-link">INÍCIO</a>
           </li>
         </ul>
-
         <ul class="linguas">
           <li>
-            <a class="eng" href="#" onclick="return show('eng','por'), modify('#022859');">ENG</a>
+            <a class="eng" href="#" onclick="return show('eng','por'), modify('#011933');">ENG</a>
           </li>
           <li>
             <a class="fra" href="#" onclick="return show('fra','por'), modify('#bf2121')">FRA</a>
           </li>
         </ul>
-        <div class="socials">
-          <div class="github">
-            <a href="https://github.com/iuscheski">
-              <i class="fa-brands fa-square-github" style="color: #112e59"></i
-            ></a>
-          </div>
-          <div class="linkedin">
-            <a href="https://www.linkedin.com/in/felipe-almeida-797166105/">
-              <i class="fa-brands fa-linkedin" style="color: #112e59"></i
-            ></a>
-          </div>
-        </div>
+        
       </nav>
       <div class="outer-wrapper">
         <div class="container">
@@ -85,12 +72,12 @@
             <div class="socials">
               <div class="github">
                 <a href="https://github.com/iuscheski">
-                  <i class="fa-brands fa-square-github" style="color: #ffffff"></i
+                  <i class="fa-brands fa-square-github" style="color: #0e491e"></i
                 ></a>
               </div>
               <div class="linkedin">
                 <a href="https://www.linkedin.com/in/felipe-almeida-797166105/">
-                  <i class="fa-brands fa-linkedin" style="color: #ffffff"></i
+                  <i class="fa-brands fa-linkedin" style="color: #0e491e"></i
                 ></a>
               </div>
             </div>
@@ -346,10 +333,6 @@
                     });
             });
         }
-        let form = document.getElementsByTagName("form")[0];
-        form.addEventListener("submit", (e) => {
-        e.preventDefault();
-          alert("E-mail enviado!");});
       </script>
 
       <script>
@@ -393,26 +376,26 @@
             <a class="fra" href="#" onclick="return show('fra','eng'), modify('#bf2121');">FRA</a>
           </li>
         </ul>
-        <div class="en-socials">
-          <div class="github">
-            <a href="https://github.com/iuscheski">
-              <i class="fa-brands fa-square-github" style="color: #ffffff"></i
-            ></a>
-          </div>
-          <div class="linkedin">
-            <a href="https://www.linkedin.com/in/felipe-almeida-797166105/">
-              <i class="fa-brands fa-linkedin" style="color: #ffffff"></i
-            ></a>
-          </div>
-        </div>
       </nav>
       <div class="en-outer-wrapper">
         <div class="en-container">
           <section id="en-inicio">
             <div class="en-inicio">
-              <h2 class="en-nome">Hello,</h2>
-              <h2 class="en-nome">i am felipe</h2>
-              <h2 class="en-nome">Front-end developer</h2>
+              <h2 class="en-nome">Hello, I am </h2>
+              <h2 class="en-nome">FELIPE ALMEIDA</h2>
+              <h2 class="en-nome">FRONT-END DEVELOPER</h2>
+            </div>
+            <div class="en-socials">
+              <div class="github">
+                <a href="https://github.com/iuscheski">
+                  <i class="fa-brands fa-square-github" style="color: #ffffff"></i
+                ></a>
+              </div>
+              <div class="linkedin">
+                <a href="https://www.linkedin.com/in/felipe-almeida-797166105/">
+                  <i class="fa-brands fa-linkedin" style="color: #ffffff"></i
+                ></a>
+              </div>
             </div>
             <span class="en-deslise">
               <img
@@ -424,7 +407,7 @@
             </span>
             <img
               class="en-aguia"
-              src="https://i.postimg.cc/KvPhTdfk/AGUIA-HOME.png"
+              src="/img/PG1-GOLDENGATE.svg"
               alt="aguia"
             />
           </section>
@@ -455,7 +438,7 @@
                 <div class="en-imgbtn">
                   <img
                     class="en-bg-btn-cv"
-                    src="https://i.postimg.cc/B6Hqttwk/Asset-3.png"
+                    src="/img/PG2-STATUOFLIBERTY.svg"
                     alt=""
                   />
                   <a class="en-btn-cv" href="https://drive.google.com/file/d/10_OCgxDwMWd7jDUIMfBrDGu6nfDdq5Sv/view?usp=sharing" target="_blank"> MY DIGITAL CV</a>
@@ -517,12 +500,7 @@
                 </span>
                 <img
                   class="en-safari"
-                  src="https://i.postimg.cc/GpZLcvzv/Asset-2.png"
-                  alt=""
-                />
-                <img
-                  class="en-circulo-maior"
-                  src="https://i.postimg.cc/2y5pyHtK/circulo-maior.png"
+                  src="/img/PG3-NEW-YORK.svg"
                   alt=""
                 />
               </div>
@@ -631,31 +609,18 @@
           <section id="en-contato">
             <div class="en-contato">
               <div class="en-forms">
-                <form>
-                  <input
-                    name="Nome"
-                    type="text"
-                    class="en-feedback-input"
-                    placeholder="Name"
-                  />
-                  <input
-                    name="email"
-                    type="text"
-                    class="en-feedback-input"
-                    placeholder="Email"
-                  />
-                  <textarea
-                    name="text"
-                    class="en-feedback-input"
-                    placeholder="Mensagem"
-                  ></textarea>
-                  <input class="en-sub" type="submit" value="SUBMIT" />
-                </form>
+                <form id="en-contact-form">
+                  <input type="hidden" name="contact_number">
+                  <input class="en-feedback-input" type="text" name="user_name" placeholder="Name">
+                  <input class="en-feedback-input" type="email" name="user_email" placeholder="E-mail">
+                  <textarea class="en-feedback-input" name="message" placeholder="Mensagem"></textarea>
+                  <input class="en-sub" type="submit" value="Send">
+              </form> 
               </div>
               <div class="en-img-fundo">
                 <img
                   class="en-arara2"
-                  src="https://i.postimg.cc/Wb7LRYNr/goden.png"
+                  src="/img/PG-4 NEWYORKMAP.png"
                   alt="en-arara"
                 />
               </div>
@@ -673,6 +638,23 @@
         })
       );
     </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('en-contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_3iynlhp', 'template_u3aouna', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+      </script>
+
     </div>
     <div id="fra" style="display: none">
       <nav class="fr-nav-bar">
@@ -701,21 +683,9 @@
             <a class="por" href="#" onclick="return show('por','fra'), modify('#15652b');">POR</a>
           </li>
           <li>
-            <a class="eng" href="#" onclick="return show('eng','fra'), modify('#022859');">ENG</a>
+            <a class="eng" href="#" onclick="return show('eng','fra'), modify('#011933');">ENG</a>
           </li>
         </ul>
-        <div class="fr-socials">
-          <div class="github">
-            <a href="https://github.com/iuscheski">
-              <i class="fa-brands fa-square-github" style="color: #bf2121"></i
-            ></a>
-          </div>
-          <div class="linkedin">
-            <a href="https://www.linkedin.com/in/felipe-almeida-797166105/">
-              <i class="fa-brands fa-linkedin" style="color: #bf2121"></i
-            ></a>
-          </div>
-        </div>
       </nav>
       <div class="fr-outer-wrapper">
         <div class="fr-container">
@@ -724,6 +694,18 @@
               <h2 class="fr-nome">Salut,</h2>
               <h2 class="fr-nome">Je suis felipe</h2>
               <h2 class="fr-nome">Front-end devéloppeur</h2>
+            </div>
+            <div class="fr-socials">
+              <div class="github">
+                <a href="https://github.com/iuscheski">
+                  <i class="fa-brands fa-square-github" style="color: #bf2121"></i
+                ></a>
+              </div>
+              <div class="linkedin">
+                <a href="https://www.linkedin.com/in/felipe-almeida-797166105/">
+                  <i class="fa-brands fa-linkedin" style="color: #bf2121"></i
+                ></a>
+              </div>
             </div>
             <span class="fr-deslise">
               <img
@@ -975,7 +957,24 @@
       );
     </script>
     </div>
-    
+    <script>
+      let form = document.getElementsByTagName("form")[0];
+        form.addEventListener("submit", (e) => {
+        e.preventDefault();
+          alert("E-mail enviado!");});
+    </script>
+    <script>
+      let enform = document.getElementsByTagName("form")[1];
+        enform.addEventListener("submit", (e) => {
+        e.preventDefault();
+          alert("E-mail enviado!");});
+    </script>
+    <script>
+      let frform = document.getElementsByTagName("form")[2];
+        frform.addEventListener("submit", (e) => {
+        e.preventDefault();
+          alert("E-mail enviado!");});
+    </script>
     </div>
   </body>
 </html>
