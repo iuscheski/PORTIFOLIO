@@ -27,6 +27,7 @@
   --br-azul-norm: #112e59;
   --us-azul-escuro: #022859;
   --us-azul-escuro-bg: #011933;
+  --us-azul-black: #010a14;
   --us-vermelho-norm: #a6001d;
   --us-vermelho-clear: #bf1542;
   --us-cinza-norm: #a4a5a6;
@@ -892,13 +893,14 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     left: 15vh;
     position: fixed;
     width: 60%;
-    height: 5%;
+    height: 3em;
     transform: none;
   }
   .rotulos {
-    padding: 3%;
+    padding-top: 0;
+    padding: 0.99em;
     text-align: right;
-    height: 5vh;
+    height: 0vh;
     align-content: center;
     margin-top: 0;
   }
@@ -916,9 +918,10 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   .linguas {
     display: flex;
     position: absolute;
-    gap: 1vh;
-    margin-bottom: 0;
-    margin-top: -2.5vh;
+    gap: 1.3em;
+    margin: 0;
+    padding: 0;
+    bottom: 1.8em;
     line-height: 0;
     padding-left: 3%;
     justify-content: left;
@@ -967,12 +970,14 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     display: grid;
     text-align: center;
     margin-right: 0;
+    margin-bottom: 0.2em;
   }
   .nome:nth-child(2) {
     text-align: center;
     margin-right: 0;
     font-size: 8vh;
     color: white;
+    margin-bottom: 0.1em;
   }
   .nome:nth-child(3) {
     width: 100%;
@@ -1077,6 +1082,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
     position: absolute;
     left: 33vw;
     top: 10vh;
+    align-items: center;
   }
   .galeria span h2 {
     width: 84vw;
@@ -1255,13 +1261,13 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   .forms form {
     width: 32vw;
   }
-  .feedback-input:nth-child(3) {
-    height: 19vh;
-    padding-top: 2%;
-  }
   [type="submit"] {
     margin-left: 12vw;
     margin-top: 3vh;
+  }
+  .feedback-input:nth-child(4) {
+    height: 19vh;
+    padding-top: 2%;
   }
   .arara2 {
     width: 101.1vw;
@@ -1378,7 +1384,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   color: white;
 }
 .en-nome:nth-child(1) {
-  color: var(--us-azul-escuro);
+  color: var(--us-azul-black);
   font-size: 7vh;
   margin-bottom: -1vh;
 }
@@ -1397,15 +1403,21 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   font-size: 1.7em;
   top: 61vh;
 }
-.en-socials .github {
+.en-socials .en-github {
   padding-right: 0.5em;
 }
+.fa-square-github:hover {
+  color: var(--fr-cinza-claro) !important;
+}
+.fa-linkedin:hover {
+  color: var(--fr-cinza-claro) !important;
+}
 img.en-aguia {
-  left: -90vh;
-  bottom: -10vh;
+  left: -46vh;
+  bottom: 0;
   position: absolute;
   display: flex;
-  width: 156vw;
+  width: 125vw;
   pointer-events: none;
   z-index: -1;
 }
@@ -2087,10 +2099,9 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     overflow: hidden;
   }
 }
-
-/*TABLETS HORIZONTAL*/
+/*TABLETS VERTICAL */
 @media only screen and (min-width: 451px) and (max-width: 850px) {
-  /*TH-EN- CONTAINER SETTINGS*/
+  /*TV-EN - CONTAINER SETTINGS*/
   .en-outer-wrapper {
     width: 100vw;
     height: 400vh;
@@ -2099,9 +2110,6 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    -webkit-overflow-scrollin: touch;
   }
   .en-container {
     display: flex;
@@ -2111,29 +2119,32 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     transform-origin: top left;
   }
 
-  /*TH-EN- TEXT DIVISOR*/
+  /*TV-EN - NAVBAR*/
   .en-divisor {
     display: none;
   }
-
-  /*TH-EN- NAVBAR*/
   .en-nav-bar {
+    top: 2vh;
+    left: 15vh;
     position: fixed;
-    width: 100%;
-    height: 4%;
+    width: 60%;
+    height: 3em;
+    transform: none;
   }
   .en-rotulos {
-    padding: 1.4%;
+    padding-top: 0;
+    padding: 0.99em;
     text-align: right;
-    height: 5%;
+    height: 0vh;
     align-content: center;
+    margin-top: 0;
   }
   .en-rotulos a {
-    display: grid;
     margin: 0;
     display: inline;
     writing-mode: horizontal-tb;
     transform: rotate(-90deg);
+    font-size: 1.2vh;
   }
   .en-rotulos li {
     display: inline;
@@ -2141,8 +2152,12 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
   }
   .en-linguas {
     display: flex;
-    gap: 1vh;
-    margin: -1.9%;
+    position: absolute;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+    bottom: 1.8em;
+    line-height: 0;
     padding-left: 3%;
     justify-content: left;
   }
@@ -2152,18 +2167,15 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     font-size: 0.7em;
   }
   .en-linguas li .por {
-    font-size: larger;
+    font-size: 1.3vh;
     border-top: none;
     border-right: 0.3vh solid var(--br-azul-norm);
     padding: 0;
     padding-right: 20%;
   }
   .en-linguas li .fra {
-    font-size: larger;
+    font-size: 1.3vh;
     border-bottom: none;
-  }
-  .en-nav-bar .en-socials {
-    display: none;
   }
   .en-hamburger {
     display: none;
@@ -2172,52 +2184,66 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     display: none;
   }
 
-  /*TH-EN- HOMEPAGE*/
+  /*TV-EN - HOMEPAGE*/
   .en-inicio {
-    margin-top: 54vh;
+    margin-top: 0vh;
   }
   .en-nome {
     z-index: 100;
     font-family: Brown-sugar;
     font-weight: 100;
-    font-size: 12vw;
+    font-size: 8.5vw;
     text-align: right;
     align-items: center;
     margin: 0;
     margin-right: 3%;
-    color: white;
-  }
-  .en-nome:nth-child(3) {
-    width: 82vw;
-    font-size: 6vw;
-    position: absolute;
-    display: table;
-    padding-top: 1%;
-    padding-right: 1%;
-    bottom: 10vh;
-    left: 11vh;
-    text-align: end;
-    height: 0vh;
+    color: var(--br-amarelo-norm);
   }
   .en-nome:nth-child(1) {
-    font-size: 10vh;
+    font-size: 5vh;
     display: grid;
-    text-align: right;
-    margin: 0;
-    margin-right: 3%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 0.2em;
+  }
+  .en-nome:nth-child(2) {
+    text-align: center;
+    margin-right: 0;
+    font-size: 8vh;
+    color: white;
+    margin-bottom: 0.1em;
+  }
+  .en-nome:nth-child(3) {
+    width: 100%;
+    font-size: 3.2vh;
+    text-align: center;
+    display: table;
+    padding-top: 2%;
+    padding-right: 0%;
+    left: 0;
+    text-align: center;
+    height: 0vh;
   }
   img.en-aguia {
-    left: -2vw;
+    left: -38vh;
+    bottom: 0;
     position: absolute;
     display: flex;
-    width: 99vw;
-    bottom: 28vh;
+    width: 204vw;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .en-socials {
+    font-size: 2em;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .en-deslise {
     display: none;
   }
 
-  /*TH-EN- ABOUT ME PAGE*/
+  /*TV-EN - ABOUT ME PAGE*/
   .en-lt1 {
     position: absolute;
     width: 86vw;
@@ -2271,33 +2297,41 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
   .en-lt2 span {
     font-size: 12vh;
   }
-  .en-btn-cv {
-    z-index: 100;
+  .en-bg-btn-cv {
+    overflow: hidden;
+    position: absolute;
+    width: 40vw;
+    bottom: -91vh;
   }
-
-  /*TH-EN- TEXT DIVISOR*/
+  .en-btn-cv {
+    margin-top: 13vh;
+    z-index: 100;
+    border-radius: 0.4em;
+    padding: 3%;
+  }
   .en-divisor1 {
     display: none;
   }
 
-  /*TH-EN- PROJECT GALLERY*/
+  /*TV-EN-GALLERY PAGE*/
   .en-galeria span {
     position: absolute;
-    left: 37vw;
-    top: 8vh;
+    left: 33vw;
+    top: 10vh;
+    align-items: center;
   }
   .en-galeria span h2 {
     width: 84vw;
   }
   .en-circulo-maior {
-    left: 10vw;
-    bottom: -36vh;
-    width: 80vw;
+    left: 13vw;
+    bottom: -35vh;
+    width: 75vw;
   }
   .en-safari {
-    top: 73vh;
-    width: 78vw;
-    left: 11vw;
+    bottom: 0;
+    width: 105vw;
+    left: -6vw;
     z-index: 20;
   }
   .en-box {
@@ -2305,7 +2339,7 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     width: 83vw;
     height: 46vh;
     right: 9vw;
-    top: 23vh;
+    top: 30vh;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 33% 33% 33%;
@@ -2320,15 +2354,13 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     width: 37vw;
     height: 13vh;
   }
-
-  /*TH-EN- TEXT DIVISOR*/
   .en-divisor2 {
     display: none;
   }
 
-  /*TH-EN- CONTACT PAGE*/
+  /*TV-EN-CONTACT PAGE*/
   .en-forms {
-    height: 43vh;
+    height: 0vh;
     margin: 0;
     border: 0;
   }
@@ -2336,10 +2368,12 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     width: 48vw;
     height: 2vh;
     align-content: space-around;
-    margin-left: 27vw;
+    margin-top: 0%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
   }
   .en-sub {
-    height: 5vh;
+    height: 6vh;
     width: 19vw;
     border-radius: 0.6em;
     font-size: 2vh;
@@ -2347,13 +2381,142 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
     margin-top: 3vh;
   }
   .en-feedback-input {
-    height: 4vh;
+    height: 5vh;
     font-size: 1.5vh;
   }
+  .en-feedback-input:nth-child(4) {
+    height: 17vh;
+  }
   .en-arara2 {
-    width: 105vw;
-    top: 46vh;
-    right: -1vw;
+    width: 143vw;
+    top: 0vh;
+    right: -12vw;
+    overflow: hidden;
+  }
+}
+/*TABLETS HORIZONTAL*/
+@media only screen and (min-width: 851px) and (max-width: 1200px) {
+  /*TH-EN- CONTAINER SETTINGS*/
+
+  .en-container {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  /*TH-EN- NAVBAR*/
+  .en-nav-bar {
+    width: 4%;
+    height: 31em;
+  }
+  .en-rotulos li {
+    margin-top: 5vh;
+  }
+
+  /*TH-EN- HOMEPAGE*/
+  .en-nome {
+    z-index: 200;
+    font-size: 6vh;
+    margin-left: 22vh;
+  }
+  .en-des {
+    font-size: 1.2em;
+  }
+  .en-deslise {
+    width: 18em;
+  }
+  .en-nome:nth-child(1) {
+    font-size: 3em;
+    margin-bottom: -1vh;
+  }
+  .en-nome:nth-child(2) {
+    font-size: 5.5em;
+    padding-top: 1.4%;
+  }
+  .en-nome:nth-child(3) {
+    font-size: 2.219em;
+    position: absolute;
+    margin-top: -2vh;
+  }
+  img.en-aguia {
+    left: -41vw;
+    position: absolute;
+    display: flex;
+    width: 189vw;
+    bottom: 0vh;
+  }
+  .en-socials {
+    top: 61vh;
+    left: 22vh;
+  }
+  .en-deslise {
+    display: none;
+  }
+
+  /*TH-EN- ABOUT ME PAGE*/
+  .en-sobre p {
+    font-size: 0.7em;
+  }
+  .en-bg-btn-cv {
+    width: 23vw;
+  }
+  .en-btn-cv {
+    margin-top: 13vh;
+    z-index: 100;
+    border-radius: 0.4em;
+    padding: 3%;
+  }
+
+  /*TH-EN- PROJECT GALLERY*/
+  .en-galeria span {
+    top: 6vh;
+    left: 53vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .en-galeria span h2 {
+    font-size: 2em;
+    margin-top: 3vh;
+  }
+  .en-safari {
+    bottom: 0vh;
+    width: 98vw;
+    left: 1vw;
+    z-index: 20;
+  }
+  .en-box {
+    width: 77vw;
+    height: 42vh;
+    right: 11vw;
+    top: 33vh;
+  }
+  .en-box-card {
+    width: 24vw;
+  }
+
+  /*TH-EN- CONTACT PAGE*/
+  .en-forms {
+    position: absolute;
+    height: 0vh;
+    right: 81vh;
+  }
+  .en-forms form {
+    width: 32vw;
+  }
+  .en-sub {
+    margin-left: 12vw;
+    margin-top: 3vh;
+  }
+  .en-feedback-input:nth-child(4) {
+    height: 19vh;
+    padding-top: 2%;
+  }
+  .en-arara2 {
+    width: 101vw;
+    top: 0vh;
+    right: 0;
     overflow: hidden;
   }
 }
