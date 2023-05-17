@@ -2620,33 +2620,47 @@ SITE INTERNET EN VERSION FRANÇAISE ------ ORDINATEUR PORTABLE FRANÇAIS = OP-FR
 
 /*OP-FR - ACCUIEL PAGE */
 .fr-inicio {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .fr-nome {
-  z-index: 100;
   font-family: Brown-sugar;
   font-weight: 100;
-  font-size: 8vh;
+  font-size: 13vh;
   text-align: left;
   margin-left: 12%;
   margin-bottom: 0.5%;
   color: white;
 }
-.fr-nome:nth-child(3) {
+.fr-nome:nth-child(1) {
+  color: var(--fr-rosa-claro);
   font-size: 7vh;
-  position: absolute;
-  padding-top: -1;
-  padding-left: 1vh;
-  padding-right: 1vh;
-  display: table;
-  color: var(--fr-rosa-escuro);
-  background-color: white;
+  margin-bottom: -1vh;
 }
-img.fr-aguia {
-  left: 42vw;
+.fr-nome:nth-child(3) {
+  font-family: Kross-bold;
+  font-size: 6.5vh;
+  position: absolute;
+  margin-top: -4vh;
+  display: table;
+  color: var(--fr-vermelhro-escuro);
+  z-index: 100;
+}
+.fr-socials {
   position: absolute;
   display: flex;
-  width: 42vw;
+  left: 12%;
+  font-size: 1.7em;
+  top: 61vh;
+}
+.fr-socials .fr-github {
+  padding-right: 0.5em;
+}
+img.fr-aguia {
+  bottom: 0vh;
+  left: 5vw;
+  position: absolute;
+  display: flex;
+  width: 85vw;
   pointer-events: none;
 }
 .fr-deslise {
@@ -2677,7 +2691,7 @@ img.fr-aguia {
   overflow: visible;
   z-index: 100;
   height: 100%;
-  width: 1%;
+  width: 0;
   display: inline-block;
   position: relative;
   text-align: left;
@@ -2708,6 +2722,10 @@ img.fr-aguia {
 }
 
 /*OP-FR - À PROPOS DE MOI*/
+#fr-sobre {
+  background-color: var(--fr-cinza-claro);
+  border-color: var(--fr-cinza-claro);
+}
 .fr-sobre {
   display: grid;
   grid-column: 2;
@@ -2795,7 +2813,7 @@ span.fr-id_ola {
   overflow: visible;
   z-index: 100;
   height: 100%;
-  width: 1%;
+  width: 0;
   display: inline-block;
   position: relative;
   text-align: left;
@@ -2805,6 +2823,11 @@ span.fr-id_ola {
 }
 .fr-b-bg1 {
   animation: scrolling-left2 20s linear infinite;
+}
+
+#fr-portifolio {
+  background-color: white;
+  border-color: white;
 }
 .fr-dportifolio {
   white-space: nowrap;
