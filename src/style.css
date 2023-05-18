@@ -728,7 +728,7 @@ VERSIONAMENTO PARA OUTROS DISPOSITIVOS
   }
   .socials {
     font-size: 2em;
-    top: 60%;
+    top: 17em;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -1950,7 +1950,7 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE ENGLISH = SP-EN  -------- TABLET HORIZON
   }
   .en-socials {
     font-size: 2em;
-    top: 60%;
+    top: 17em;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -3198,7 +3198,7 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE FRANÇAIS = SP-FR  -------- TABLET HORIZ
   }
   .fr-socials {
     font-size: 2em;
-    top: 60%;
+    top: 17em;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
@@ -3346,7 +3346,6 @@ MEDIA QUERY VERSIONING ----- SMARTPHONE FRANÇAIS = SP-FR  -------- TABLET HORIZ
     overflow: hidden;
   }
 }
-
 /*TABLETS VERTICAL*/
 @media only screen and (min-width: 451px) and (max-width: 850px) {
   /*TH-FR -PARAMÈTRES DU CONTENANT*/

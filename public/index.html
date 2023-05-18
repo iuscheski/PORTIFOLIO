@@ -334,7 +334,6 @@
             });
         }
       </script>
-
       <script>
         const hamburger = document.querySelector(".hamburger");
         const rotulos = document.querySelector(".rotulos");
@@ -628,32 +627,33 @@
           </section>
         </div>
       </div>
-      <script>
-      const enhamburger = docufrt.querySelector(".en-hamburger");
-      const enrotulos = document.querySelector(".en-rotulos");
-      document.querySelectorAll(".en-rotulos-link").forEach((n) =>
-        n.addEventListener("click", () => {
-          enhamburger.classList.remove("active");
-          enrotulos.classList.remove("active");
+      
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('en-contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = Math.random() * 100000 | 0;
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_3iynlhp', 'template_u3aouna', this)
+                        .then(function() {
+                            console.log('SUCCESS!');
+                        }, function(error) {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
+          </script>
+          <script>
+            const enhamburger = document.querySelector(".en-hamburger");
+            const enrotulos = document.querySelector(".en-rotulos");
+            document.querySelectorAll(".en-rotulos-link").forEach((n) =>
+              n.addEventListener("click", () => {
+                enhamburger.classList.remove("active");
+                enrotulos.classList.remove("active");
         })
       );
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('en-contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_3iynlhp', 'template_u3aouna', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-      </script>
+          </script>
     </div>
     <div id="fra" style="display: none">
       <nav class="fr-nav-bar">
@@ -958,19 +958,25 @@
       let form = document.getElementsByTagName("form")[0];
         form.addEventListener("submit", (e) => {
         e.preventDefault();
-          alert("E-mail enviado!");});
+          alert("E-mail enviado!");
+          $("form")[1].reset();});
     </script>
     <script>
       let enform = document.getElementsByTagName("form")[1];
         enform.addEventListener("submit", (e) => {
         e.preventDefault();
-          alert("E-mail enviado!");});
+          alert("E-mail enviado!");
+          $("form")[1].reset();});
+          document.form['enform'].reset()
     </script>
     <script>
       let frform = document.getElementsByTagName("form")[2];
         frform.addEventListener("submit", (e) => {
         e.preventDefault();
-          alert("E-mail enviado!");});
+          alert("E-mail enviado!");
+          $("form")[2].reset();
+        });
+          
     </script>
     </div>
   </body>
