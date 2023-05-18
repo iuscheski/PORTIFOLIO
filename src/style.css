@@ -1669,7 +1669,6 @@ span.en-id_ola {
   width: 90%;
   height: 88%;
   margin: 5%;
-
   justify-content: center;
   border-radius: 0.5em;
 }
@@ -1791,8 +1790,9 @@ form ::placeholder {
 .en-arara2 {
   position: absolute;
   width: 100vw;
-  top: -47vh;
+  top: -49vh;
   right: 0;
+  left: 0;
 }
 
 /*******
@@ -2728,7 +2728,8 @@ img.fr-aguia {
 }
 .fr-sobre {
   display: grid;
-  grid-column: 2;
+  margin-top: -25vh;
+  z-index: 100;
 }
 .fr-lt1 {
   margin-left: 10%;
@@ -2741,11 +2742,11 @@ img.fr-aguia {
   width: 100%;
   text-align: justify;
   text-justify: inter-word;
-  line-height: 250%;
+  line-height: 4vh;
 }
 span.fr-id_ola {
   font-family: Brown-Sugar;
-  color: var(--fr-cinza-claro);
+  color: var(--fr-vermelhro-norm);
   font-size: 4em;
 }
 .fr-imgbtn {
@@ -2756,24 +2757,26 @@ span.fr-id_ola {
   justify-content: center;
 }
 .fr-bg-btn-cv {
-  width: 100%;
-  margin-top: 7%;
+  overflow: hidden;
+  position: absolute;
+  width: 28vw;
+  margin-top: 49vh;
 }
 .fr-btn-cv {
   position: absolute;
-  background-color: white;
-  color: var(--us-cinza-norm);
+  background-color: var(--fr-vermelhro-norm);
+  color: white;
   padding: 0.7% 5% 0.7% 5%;
   font-family: Brown-sugar;
-  font-size: 2.2em;
+  font-size: 2em;
   font-weight: 500;
   align-self: center;
   border-radius: 0.6em;
   border-style: none;
-  margin-top: 7%;
+  margin-top: 15%;
 }
 .fr-btn-cv:hover {
-  color: var(--fr-vermelhro-norm);
+  color: var(--fr-rosa-claro);
 }
 .fr-lt2 {
   height: 100%;
@@ -2797,7 +2800,7 @@ span.fr-id_ola {
 }
 .fr-ccor:hover {
   color: transparent;
-  -webkit-text-stroke: 0.03em var(--fr-vermelhro-escuro);
+  -webkit-text-stroke: 0.03em var(--fr-rosa-claro);
 }
 .fr-scor {
   color: transparent;
@@ -2824,7 +2827,6 @@ span.fr-id_ola {
 .fr-b-bg1 {
   animation: scrolling-left2 20s linear infinite;
 }
-
 #fr-portifolio {
   background-color: white;
   border-color: white;
@@ -2832,7 +2834,7 @@ span.fr-id_ola {
 .fr-dportifolio {
   white-space: nowrap;
   letter-spacing: 1vh;
-  color: white;
+  color: var(--fr-rosa-claro);
   font-family: Brown-Sugar;
   font-weight: 100;
   transform: rotate(-90deg);
@@ -2852,8 +2854,8 @@ span.fr-id_ola {
 .fr-galeria span {
   display: flex;
   position: absolute;
-  top: 12%;
-  left: 12%;
+  top: 5vh;
+  left: 82vh;
   align-items: flex-start;
   text-align: left;
 }
@@ -2862,7 +2864,7 @@ span.fr-id_ola {
   font-family: Brown-sugar;
   font-size: 3em;
   font-weight: 100;
-  color: white;
+  color: var(--fr-rosa-claro);
   text-align: left;
   z-index: 999;
 }
@@ -2882,41 +2884,42 @@ span.fr-id_ola {
 .fr-safari {
   display: flex;
   position: absolute;
-  top: 62vh;
-  width: 67vw;
-  left: 4vw;
+  bottom: 0vh;
+  width: 90vw;
+  left: 6vw;
   z-index: 20;
   pointer-events: none;
 }
 .fr-box {
-  display: flex;
   position: absolute;
-  right: 10%;
-  top: 10%;
-  width: 20em;
-  height: 80%;
+  width: 68vw;
+  height: 43vh;
+  right: 18vw;
+  top: 28vh;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
   overflow-x: hidden;
   overflow-y: scroll;
   align-items: center;
-  flex-direction: column;
+  z-index: 100;
 }
 .fr-box-card {
   display: grid;
   grid-template-columns: 50% 50%;
   position: relative;
-  width: 90%;
-  height: 30%;
-  top: 5%;
+  width: 21vw;
+  height: 19vh;
+  top: 2vh;
   border-radius: 0.6em;
-  background-color: white;
-  margin-bottom: 5%;
+  background-color: var(--fr-vermelhro-escuro);
+  margin-bottom: 5vh;
 }
 .fr-img1 {
-  background-color: var(--us-cinza-norm);
+  background-color: var(--fr-cinza-claro);
   width: 90%;
   height: 88%;
   margin: 5%;
-
   justify-content: center;
   border-radius: 0.5em;
 }
@@ -2924,7 +2927,7 @@ span.fr-id_ola {
   font-family: Brown-sugar;
   font-size: 1em;
   margin-top: 5%;
-  color: var(--fr-vermelhro-norm);
+  color: white;
 }
 .fr-left-side p {
   font-family: Kross-book;
@@ -2933,12 +2936,12 @@ span.fr-id_ola {
   text-align: justify;
   text-justify: inter-word;
   margin-bottom: 5%;
-  color: var(--fr-vermelhro-norm);
+  color: white;
 }
 .fr-left-side button {
   font-family: Kross-bold;
   font-size: 0.8em;
-  background-color: var(--fr-vermelhro-escuro);
+  background-color: var(--fr-vermelhro-norm);
   border: none;
   padding: 2%;
   color: white;
@@ -2955,7 +2958,7 @@ span.fr-id_ola {
   overflow: visible;
   z-index: 100;
   height: 100%;
-  width: 1%;
+  width: 0%;
   display: inline-block;
   position: relative;
   text-align: left;
@@ -2969,7 +2972,7 @@ span.fr-id_ola {
 .fr-dcontato {
   white-space: nowrap;
   letter-spacing: 1vh;
-  color: white;
+  color: var(--fr-vermelhro-escuro);
   font-family: Brown-Sugar;
   font-weight: 100;
   transform: rotate(-90deg);
@@ -2990,14 +2993,16 @@ span.fr-id_ola {
   width: 50%;
   height: 80%;
   display: flex;
+  z-index: 100;
 }
 .fr-forms form {
   display: grid;
   position: absolute;
-  width: 23vw;
-  height: 17vh;
+  width: 21vw;
+  height: 0vh;
   align-content: space-around;
-  margin-left: 12vw;
+  margin-left: 40vw;
+  z-index: 100;
 }
 .fr-feedback-input {
   resize: none;
@@ -3005,13 +3010,13 @@ span.fr-id_ola {
   margin: 2%;
   background-color: var(--fr-vermelhro-escuro);
   color: white;
-  font-family: Brown-sugar;
+  font-family: kross-book;
   border: none;
   border-radius: 0.6em;
   padding-left: 4%;
   font-size: 2vh;
 }
-.fr-feedback-input:nth-child(3) {
+.fr-feedback-input:nth-child(4) {
   height: 14vh;
   padding-top: 2%;
 }
@@ -3019,25 +3024,25 @@ form ::placeholder {
   color: white;
 }
 .fr-sub {
-  background-color: white;
+  background-color: var(--us-vermelho-norm);
   border: none;
   height: 5vh;
   width: 8vw;
   border-radius: 0.6em;
-  font-family: Brown-sugar;
-  color: var(--fr-vermelhro-norm);
+  font-family: Kross-book;
+  color: white;
   font-size: 2vh;
   margin-left: 7vw;
   margin-top: 9vh;
 }
-[type="submit"] :hover {
+[type="submit"]:hover {
   color: var(--us-cinza-norm);
 }
 .fr-arara2 {
   position: absolute;
-  width: 57vw;
-  top: 29vh;
-  right: 0vw;
+  width: 100vw;
+  top: -47vh;
+  right: 0;
   pointer-events: none;
 }
 

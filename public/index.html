@@ -654,7 +654,6 @@
             });
         }
       </script>
-
     </div>
     <div id="fra" style="display: none">
       <nav class="fr-nav-bar">
@@ -738,7 +737,7 @@
                 <div class="fr-imgbtn">
                   <img
                     class="fr-bg-btn-cv"
-                    src="https://i.postimg.cc/59BKyd1X/br-button.png"
+                    src="/img/FR-PG2-BALL.svg"
                     alt=""
                   />
                   <a class="fr-btn-cv" href="https://drive.google.com/file/d/10_OCgxDwMWd7jDUIMfBrDGu6nfDdq5Sv/view?usp=sharing" target="_blank"> MON CV DIGITAL</a>
@@ -790,7 +789,7 @@
                 <span>
                   <img
                     class="fr-circulo-menor"
-                    src="https://i.postimg.cc/qBGnH1RW/Asset-3.png"
+                    src="/img/DRAKRED-CIRCLE-FR.svg"
                     alt=""
                   />
                   <h2>
@@ -800,12 +799,7 @@
                 </span>
                 <img
                   class="fr-safari"
-                  src="https://i.postimg.cc/bNL60xZ8/city.png"
-                  alt=""
-                />
-                <img
-                  class="fr-circulo-maior"
-                  src="https://i.postimg.cc/qqx15nQs/circulo3.png"
+                  src="/img/FR-PG3-QUEBEC.svg"
                   alt=""
                 />
               </div>
@@ -914,37 +908,40 @@
           <section id="fr-contato">
             <div class="fr-contato">
               <div class="fr-forms">
-                <form>
-                  <input
-                    name="Nome"
-                    type="text"
-                    class="fr-feedback-input"
-                    placeholder="NOM"
-                  />
-                  <input
-                    name="email"
-                    type="text"
-                    class="fr-feedback-input"
-                    placeholder="Email"
-                  />
-                  <textarea
-                    name="text"
-                    class="fr-feedback-input"
-                    placeholder="Mesagem"
-                  ></textarea>
-                  <input class="fr-sub" type="submit" value="ENVOYER" />
-                </form>
+                <form id="fr-contact-form">
+                  <input type="hidden" name="contact_number">
+                  <input class="fr-feedback-input" type="text" name="user_name" placeholder="Nom">
+                  <input class="fr-feedback-input" type="email" name="user_email" placeholder="E-mail">
+                  <textarea class="fr-feedback-input" name="message" placeholder="Message"></textarea>
+                  <input class="fr-sub" type="submit" value="Envoyer">
+              </form> 
               </div>
               <div class="fr-img-fundo">
                 <img
                   class="fr-arara2"
-                  src="https://i.postimg.cc/DwZxxSGG/castle.png"
+                  src="/img/MAPQUEBEC.png"
                   alt="fr-arara"
                 />
               </div>
             </div>
           </section>
         </div>
+        <script type="text/javascript">
+          window.onload = function() {
+              document.getElementById('fr-contact-form').addEventListener('submit', function(event) {
+                  event.preventDefault();
+                  // generate a five digit number for the contact_number variable
+                  this.contact_number.value = Math.random() * 100000 | 0;
+                  // these IDs from the previous steps
+                  emailjs.sendForm('service_3iynlhp', 'template_u3aouna', this)
+                      .then(function() {
+                          console.log('SUCCESS!');
+                      }, function(error) {
+                          console.log('FAILED...', error);
+                      });
+              });
+          }
+        </script>
       </div>
       <script>
       const frhamburger = document.querySelector(".fr-hamburger");
